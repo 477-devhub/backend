@@ -1,0 +1,32 @@
+{
+  "adapter_version": "common-adapter-v2",
+  "purpose": "Final-prediction logical consistency only (is_incident vs event_type). Not a calibration layer: no threshold, probability, category answer, risk, confidence, human_review, priority, attention order or same_incident value is changed.",
+  "incident_threshold": 0.5,
+  "incident_threshold_source": "identical to P1-v1/P2-v1 adapter.is_incident_threshold (experiments/p1_decisions/configs/decisions_questions_v1.json); shared by every model",
+  "rules": [
+    {"id": "R1", "when": "p_incident is a number and p_incident < 0.5", "is_incident": false, "event_type": "no clear incident"},
+    {"id": "R2", "when": "p_incident >= 0.5 and raw category is one of the incident-like categories", "is_incident": true, "event_type": "event_type_map[raw category]"},
+    {"id": "R2b", "when": "p_incident >= 0.5 and raw category is no_clear_incident", "is_incident": true, "event_type": "uncertain",
+     "reason": "R2 would otherwise produce the reverse contradiction (is_incident=true, event_type='no clear incident'); mapped to the existing taxonomy value 'uncertain'"},
+    {"id": "R3", "when": "p_incident >= 0.5 and raw category answer unavailable (refused/invalid)", "is_incident": true, "event_type": "event_type_map['__refusal__']"},
+    {"id": "R4", "when": "p_incident unavailable (refused/invalid)", "is_incident": false, "event_type": "uncertain (incident decision unavailable)",
+     "reason": "the frozen v1 adapters already set is_incident=false when p_incident is unavailable; the event_type states the decision is unknown instead of showing a category as if an incident were decided"}
+  ],
+  "incident_like_categories": ["possible_fall_or_person_down", "possible_physical_conflict", "possible_scene_or_boundary_entry", "other_safety_relevant", "uncertain"],
+  "event_type_map": {
+    "no_clear_incident": "no clear incident",
+    "possible_fall_or_person_down": "possible fall or person-down event",
+    "possible_physical_conflict": "possible physical conflict",
+    "possible_scene_or_boundary_entry": "possible scene or boundary entry (boundary semantics unknown)",
+    "other_safety_relevant": "other safety-relevant condition",
+    "uncertain": "uncertain",
+    "__refusal__": "uncertain (category decision refused)"
+  },
+  "event_type_map_source": "copied verbatim from P1-v1 decisions_questions_v1.json adapter.event_type_map (checked by scripts/validate_normalized.py)",
+  "allowed_changed_prediction_fields": ["event_type"],
+  "must_not_change": ["p_incident", "raw category", "category confidence", "is_incident", "severity", "imminence", "exposure", "persistence",
+                      "confidence", "human_review_required", "priority_score", "attention order", "attention_queue", "same_incident",
+                      "observations", "temporal_summary", "uncertainties", "reason", "camera_evidence", "cross_camera_summary",
+                      "additional_information_from_second_view"],
+  "raw_category_preservation": "runtime_config.common_adapter_v2.assessments[*].raw_decision keeps incident_probability, incident_category, incident_category_confidence"
+}

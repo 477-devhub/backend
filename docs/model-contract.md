@@ -1,5 +1,11 @@
 # 모델 계약 1.1
 
+현재 AI 연동 v1: optional RoutingAssessment/evidence_descriptions/metadata.stage_trace 추가.
+P1 구간 관측 기반 정상 제외는 frozen gate와 backend risk<20를 모두 통과해야 하며
+비어 있는 citation을 만들지 않는다. execute는 실제 입력 프레임이 있는 검증된 P1 normal만
+구간 관측 예외로 허용한다. 나머지 risk 측정 결과는 실제 frame citation을 요구한다.
+실행 설정·한계는 docs/ai-integration.md 참조.
+
 Local CV registry는 `get_adapter("local_cv", resolver=prepared.resolver)`로 실제 CPU HOG
 관측 adapter를 생성한다. `.[local-cv]`가 필요하며 resolver 미주입은 명시 미설정 실패다.
 기본4-frame/640x360 sampling의 실제 clip-frame 일치를 재검증한다. 관측과 IoU 추적만

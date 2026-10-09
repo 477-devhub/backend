@@ -37,6 +37,13 @@ class MediaResolver:
             combined[key] = value
         return type(self)(self.root, self.mapping, assets=combined)
 
+    def trusted_path(self, opaque_ref: str) -> Path:
+        """Resolve a registered file without reading it; never accept a caller path."""
+        path = (self.root / self.mapping[opaque_ref]).resolve()
+        if not path.is_relative_to(self.root):
+            raise ValueError("media escapes root")
+        return path
+
     def read(self, opaque_ref: str, *, max_bytes: int | None = None) -> bytes:
         if max_bytes is not None and max_bytes <= 0:
             raise ValueError("max_bytes must be positive")
@@ -45,9 +52,7 @@ class MediaResolver:
             if max_bytes is not None and len(value) > max_bytes:
                 raise ValueError("media exceeds byte budget")
             return value
-        relative=self.mapping[opaque_ref]
-        path=(self.root/relative).resolve()
-        if not path.is_relative_to(self.root):raise ValueError("media escapes root")
+        path = self.trusted_path(opaque_ref)
         with path.open("rb") as stream:
             value = stream.read() if max_bytes is None else stream.read(max_bytes + 1)
         if max_bytes is not None and len(value) > max_bytes:

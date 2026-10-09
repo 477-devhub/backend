@@ -1,0 +1,144 @@
+{
+  "decision_questions_version": "decisions-v1",
+  "model": "gpt-6-luna",
+  "endpoint": "/v1/decisions",
+  "note": "Generic CCTV safety decision questions written before any API call; not derived from benchmark samples. Frozen with freeze/p1_freeze.json.",
+  "policy": "Use only the supplied computer-vision observations. Do not assume a medical diagnosis. Do not infer criminal intent. Do not infer authorization or lack of authorization. Do not infer identity. Do not infer weapons unless supported by supplied evidence. Treat null/unavailable fields as unknown, not false. Treat low-reliability CV proxies (reliability \"limited\") as uncertain evidence. Confidence and risk are separate concepts.",
+  "scope": {
+    "single": "Consider the observations of the single supplied camera.",
+    "camera": "Consider only the observations for camera {camera}; ignore the other cameras for this question.",
+    "multi_camera": "Consider the observations from all supplied cameras together. Camera clips are not synchronized and person identity across cameras is not established."
+  },
+  "per_assessment_questions": [
+    {
+      "key": "incident",
+      "type": "predicate",
+      "instructions": "Does the provided CV evidence indicate a safety-relevant incident or condition that should be surfaced to a CCTV operator?"
+    },
+    {
+      "key": "incident_category",
+      "type": "choice",
+      "instructions": "Which generic category best describes the most safety-relevant pattern in the CV observations?",
+      "choices": [
+        {"value": "no_clear_incident", "description": "Observations show ordinary presence or movement with no safety-relevant pattern."},
+        {"value": "possible_fall_or_person_down", "description": "A person shows a transition to, or prolonged, low or horizontal posture."},
+        {"value": "possible_physical_conflict", "description": "Two or more people show sustained close proximity together with rapid relative movement or limb-motion proxies."},
+        {"value": "possible_scene_or_boundary_entry", "description": "A person enters, appears in, or moves across the scene in a way an operator may want to check; boundary semantics are not known."},
+        {"value": "other_safety_relevant", "description": "Another safety-relevant pattern not covered by the other categories."},
+        {"value": "uncertain", "description": "The observations are too unreliable or ambiguous to choose a category."}
+      ]
+    },
+    {
+      "key": "severity",
+      "type": "score",
+      "instructions": "How severe is the potential harm suggested by the observed pattern, if it is what it appears to be?",
+      "levels": [
+        {"label": "none", "description": "No potential harm suggested."},
+        {"label": "minor", "description": "Minor or unlikely harm."},
+        {"label": "moderate", "description": "Possible injury or harm that warrants attention."},
+        {"label": "serious", "description": "Likely injury or serious harm to a person."},
+        {"label": "critical", "description": "Potentially life-threatening or very serious harm."}
+      ]
+    },
+    {
+      "key": "imminence",
+      "type": "score",
+      "instructions": "How urgently does a CCTV operator need to look at this camera now?",
+      "levels": [
+        {"label": "none", "description": "No operator attention needed."},
+        {"label": "low", "description": "Can be reviewed later."},
+        {"label": "moderate", "description": "Should be checked soon."},
+        {"label": "high", "description": "Should be checked promptly."},
+        {"label": "immediate", "description": "Needs attention right now; the condition is ongoing at the end of the observation."}
+      ]
+    },
+    {
+      "key": "exposure",
+      "type": "score",
+      "instructions": "Based on the observable number of people and the extent of the pattern, how many people are involved in or exposed to it?",
+      "levels": [
+        {"label": "none", "description": "Nobody involved."},
+        {"label": "one", "description": "One person involved."},
+        {"label": "two", "description": "Two people involved."},
+        {"label": "small_group", "description": "Three or four people involved or nearby."},
+        {"label": "many", "description": "Five or more people or a wide area involved."}
+      ]
+    },
+    {
+      "key": "persistence",
+      "type": "score",
+      "instructions": "How long does the observed incident-like pattern persist over the sampled observation window?",
+      "levels": [
+        {"label": "none", "description": "No incident-like pattern."},
+        {"label": "momentary", "description": "Seen in one or two samples only."},
+        {"label": "short", "description": "Persists for a few seconds."},
+        {"label": "sustained", "description": "Persists for a large part of the remaining observation."},
+        {"label": "ongoing", "description": "Persists until the end of the observation."}
+      ]
+    },
+    {
+      "key": "human_review",
+      "type": "predicate",
+      "instructions": "Should a human CCTV operator review this candidate because of either risk or uncertainty?"
+    }
+  ],
+  "attention_questions": [
+    {
+      "key": "attention_first",
+      "type": "choice",
+      "instructions": "These cameras are presented as concurrent alerts. Considering the observations of all cameras, which camera most needs a CCTV operator's attention first?",
+      "choices": [
+        {"value": "CAM_01", "description": "Camera CAM_01 needs attention first."},
+        {"value": "CAM_02", "description": "Camera CAM_02 needs attention first."},
+        {"value": "CAM_03", "description": "Camera CAM_03 needs attention first."},
+        {"value": "no_clear_priority", "description": "No camera clearly needs attention before the others."}
+      ]
+    }
+  ],
+  "multi_camera_questions": [
+    {
+      "key": "same_incident",
+      "type": "predicate",
+      "instructions": "Do the supplied camera-level CV observation patterns support the interpretation that the cameras may be observing the same underlying incident? Do not assume identity or synchronization has been confirmed."
+    },
+    {
+      "key": "second_view_adds",
+      "type": "predicate",
+      "instructions": "Does the second camera view add useful evidence beyond what the best single camera view provides?"
+    },
+    {
+      "key": "multiview_value",
+      "type": "score",
+      "instructions": "How much evidential value does combining the camera views add?",
+      "levels": [
+        {"label": "none", "description": "Combining views adds nothing."},
+        {"label": "low", "description": "Minor added evidence."},
+        {"label": "moderate", "description": "Clearly useful added evidence."},
+        {"label": "high", "description": "Substantially more complete evidence."},
+        {"label": "very_high", "description": "The combined views are essential to understand the situation."}
+      ]
+    }
+  ],
+  "adapter": {
+    "is_incident_threshold": 0.5,
+    "human_review_threshold": 0.5,
+    "same_incident_threshold": 0.5,
+    "second_view_threshold": 0.5,
+    "score_normalization": "score / (number_of_levels - 1), clipped to [0,1]",
+    "refused_score_value": 0.5,
+    "refused_score_note": "uninformative midpoint used only because prediction.schema.json requires a number; flagged in uncertainties and forces human review",
+    "confidence_formula": "mean of available [incident_category.confidence, max(p_incident, 1 - p_incident)]; multiplied by 0.5 if any of these two answers is a refusal; 0.0 if both refused",
+    "low_confidence_review_threshold": 0.4,
+    "priority_weights": {"severity": 0.35, "imminence": 0.30, "exposure": 0.20, "persistence": 0.15},
+    "attention_tie_break": ["priority_score_desc", "severity_desc", "confidence_desc", "input_camera_order_asc"],
+    "event_type_map": {
+      "no_clear_incident": "no clear incident",
+      "possible_fall_or_person_down": "possible fall or person-down event",
+      "possible_physical_conflict": "possible physical conflict",
+      "possible_scene_or_boundary_entry": "possible scene or boundary entry (boundary semantics unknown)",
+      "other_safety_relevant": "other safety-relevant condition",
+      "uncertain": "uncertain",
+      "__refusal__": "uncertain (category decision refused)"
+    }
+  }
+}

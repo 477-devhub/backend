@@ -1,5 +1,10 @@
 # 프론트 API 계약 1.2 — HACKATHON-DAY 연동 준비
 
+현재 AI 연동 추가: development 모드의 POST /api/analysis/jobs(202),
+GET /api/analysis/jobs/{job_id}, GET /api/analysis/stats.
+등록 파일 MP4를 비동기 분석하여 기존 사건/검토/제외·WS에 전달한다.
+기존 API1.2 의미는 유지하고 docs/ai-integration.md에 요청·응답·실패·통계 범위를 정의한다.
+
 출처: https://www.figma.com/design/pK7WGcPjkNjP7zaAbK4c13/477?node-id=61-14&m=dev
 확인: 2026-10-06. 링크 node 61:14는 API 주석 페이지 60:2의 사각형입니다.
 페이지 공통 API 60:1758 및 주석 61:18, 61:115, 61:182, 62:18, 62:106, 62:200을 읽었습니다.

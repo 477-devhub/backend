@@ -1,0 +1,12 @@
+{
+  "$comment": "P4 multi-camera template: visual_single fields, but evidence is split per camera (evidence_by_camera.<CAM>, 1-6 items each, frame_ref enum restricted to that camera's refs), plus same_incident / second_view_adds / multiview_value as in P3. Built by src/visual_prompt_builder.py.",
+  "replace_evidence_with": {
+    "evidence_by_camera": {"type": "object", "additionalProperties": false, "required": ["__CAMERAS__"],
+                           "properties": {"__CAMERA__": "__EVIDENCE_ARRAY_WITH_CAMERA_FRAME_REFS__"}}
+  },
+  "multi_camera_extra": {
+    "same_incident": {"type": "object", "additionalProperties": false, "required": ["probability"], "properties": {"probability": {"type": "number", "minimum": 0, "maximum": 1}}},
+    "second_view_adds": {"type": "object", "additionalProperties": false, "required": ["probability"], "properties": {"probability": {"type": "number", "minimum": 0, "maximum": 1}}},
+    "multiview_value": {"type": "object", "additionalProperties": false, "required": ["score"], "properties": {"score": {"type": "number", "minimum": 0, "maximum": 1}}}
+  }
+}

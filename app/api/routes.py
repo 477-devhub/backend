@@ -92,9 +92,14 @@ async def restore(suppressed_id: str, request: Request, idempotency_key: str | N
     def action():
         item=s.store.suppressed[suppressed_id]
         if not item["restored"]:
-            s.store.put(Incident(id="RESTORED-"+suppressed_id,sample_id="restore-"+suppressed_id,type="uncertain",
+            restored_id = "RESTORED-"+suppressed_id
+            s.store.put(Incident(id=restored_id,sample_id="restore-"+suppressed_id,type="uncertain",
                 title="제외 알림 재검토",primary_cam=item["cam_id"],risk=None,level="UNKNOWN",risk_axes=None,confidence=0,
                 needs_human_review=True,uncertainty_reason="operator_restored",created_at=datetime.now(timezone.utc)))
+            if suppressed_id in s.store.media_context:
+                s.store.media_context[restored_id] = dict(s.store.media_context[suppressed_id])
+            if suppressed_id in s.store.incident_resolvers:
+                s.store.incident_resolvers[restored_id] = s.store.incident_resolvers[suppressed_id]
             item["restored"]=True;s.store.revision+=1
             s.store.audit.append({"action":"restore","suppressed_id":suppressed_id,"at":datetime.now(timezone.utc).isoformat()})
         return {"ok":True,"revision":s.store.revision}

@@ -1,0 +1,128 @@
+{
+  "version": "backend-frozen-v1",
+  "adaptations": [
+    "Package relative imports; trusted explicit weights; environment-only credentials; sanitized errors. Benchmark loader replaced by actual PTS native-resolution loader."
+  ],
+  "files": [
+    {
+      "source": "experiments/p0_cv_only/src/feature_extractor.py",
+      "source_sha256": "edd9966a12a0f15b3369c3d602af857c1f96149bd0d1a57e9176ce2e39cdfa06",
+      "ported": "feature_extractor.py",
+      "ported_sha256": "eb1dac1464962bf8d680ff8f202bb0be197c6e4c95837f5d5afa81f77bc1f0fb"
+    },
+    {
+      "source": "experiments/p0_cv_only/src/sparse_tracker.py",
+      "source_sha256": "7f517ede9e665f245615383bd9fe32d8cde8a32a19f3595f4ed988cf08ab7647",
+      "ported": "sparse_tracker.py",
+      "ported_sha256": "0de49eafebd27ee8c411a650993da27476af630350e230a2823d03c0425dce47"
+    },
+    {
+      "source": "experiments/p0_cv_only/src/pose_detector.py",
+      "source_sha256": "da8db158171a79464c0acf285b944924a36fc183881f28a4f84d58a4fbb87e49",
+      "ported": "pose_detector.py",
+      "ported_sha256": "a8f039e9da498d1941b8c55ac3a9d653d54754acb84805572c68559dc4440595"
+    },
+    {
+      "source": "experiments/p1_decisions/src/compact_serializer.py",
+      "source_sha256": "b667538b6d81d3530489b0b2287877dcdf1fe26b0ebb9eaeca692ff593a14533",
+      "ported": "compact_serializer.py",
+      "ported_sha256": "ef5f0312b713c06bde33e8587581806a9fd15f3afe175b09ec41e6bb58a56bd3"
+    },
+    {
+      "source": "experiments/p1_decisions/src/decision_adapter.py",
+      "source_sha256": "c6d951fa1689787d00e1a1a2f8a9cf38b4895baad273379f7a4d5c23161b712e",
+      "ported": "decision_adapter.py",
+      "ported_sha256": "eff73f63a6e646dfd8b6bae7222369c8366854dedc93a03d759395288c57a290"
+    },
+    {
+      "source": "experiments/p1_decisions/src/decisions_client.py",
+      "source_sha256": "e77d66ea957136a7a67a02461ee50629603e62a894740f560083754660659496",
+      "ported": "decisions_client.py",
+      "ported_sha256": "988fac44af36578fb27a09c211296213a82b5372a4ea89965a82d6df428c44c8"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/src/visual_prompt_builder.py",
+      "source_sha256": "66252280aed00e28156d0644a937be705918cc412275056c2851d5bdb5039b57",
+      "ported": "visual_prompt_builder.py",
+      "ported_sha256": "db996058f94c31f20d9229e2e95765f14902ee28e668058b32b8e36286ae6d7b"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/src/openai_client.py",
+      "source_sha256": "a9fabd7e629f030017c9444d9c79a3cd91172827d526ee542a25206bc3969278",
+      "ported": "openai_client.py",
+      "ported_sha256": "da54fbcd454482b28ed4cbf0d49160788be6156f37cd0bffb32fb7125ff192fd"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/src/raw_visual_adapter.py",
+      "source_sha256": "1c5e1f329d251b969f8eb1cb10795c64bc08a3e1e050e82123a9824bbbed602a",
+      "ported": "raw_visual_adapter.py",
+      "ported_sha256": "1a39d50d8c49a9f14e6a9c94aa17a271bf3de28f0e86b39b3d79257308ebe955"
+    },
+    {
+      "source": "experiments/p0_cv_only/configs/cv_state_v1.yaml",
+      "source_sha256": "efe509eb7a2b803416d4eb7f4dbe927fb0995189a256264057f8c759d144d173",
+      "ported": "cv_state_v1.yaml",
+      "ported_sha256": "afbc50928539b5fba69a0688fe48e4fa524c3b12c757ee3858ab9934074c7448"
+    },
+    {
+      "source": "experiments/p1_decisions/configs/compact_state_v1.yaml",
+      "source_sha256": "137dbf6375975f8f9d5f55cac8fe00772bdd43b44347802a1c489ea88ec47f44",
+      "ported": "compact_state_v1.yaml",
+      "ported_sha256": "2852704034d986866d61eaced538bd5a736918d2fed9a8557905f404591a5fd4"
+    },
+    {
+      "source": "experiments/p1_decisions/configs/decisions_questions_v1.json",
+      "source_sha256": "2e8f9967d83ae500acc07055648a913a0454789a9fa9d4d6ee956dd9cc3b47d4",
+      "ported": "decisions_questions_v1.json",
+      "ported_sha256": "ad22b3cd11954ed66d286fb82fccfc2b60e5e1bdb85f962892dadf52bb78ce1f"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/configs/visual_prompt_v1.txt",
+      "source_sha256": "c6624b759317cdeca064b0dda93f489696611303b50d26e2fd9c34e8534f7237",
+      "ported": "visual_prompt_v1.txt",
+      "ported_sha256": "a24387864229af489154e3b4ed6ccf4d0a1143f5b2b6b41e6149a890c1361bf5"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/configs/p4_v1.json",
+      "source_sha256": "589aef81fedd91693057fcbfcd41599edb544881a324c6f07ca6a18d9606928c",
+      "ported": "p4_v1.json",
+      "ported_sha256": "78c7db2188fbf8041dc3b2af3b5842997cb786f419c3581245accdd240cc73e6"
+    },
+    {
+      "source": "experiments/common_adapter_v2/config/adapter_v2.json",
+      "source_sha256": "dd04161724a92874f242a93560877dd3ea44485773a35815c67dec81fcb1f8e9",
+      "ported": "adapter_v2.json",
+      "ported_sha256": "9d5a977b51bf75bd733b01b4580b577e60f18a7a840853091695f273b3d8b32f"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/schemas/visual_single.schema.json",
+      "source_sha256": "a2297b691dfedee2c0c7b9b8eb10188bdd63afa05f61422730740e8626a36e3b",
+      "ported": "schemas/visual_single.schema.json",
+      "ported_sha256": "5e2f347c77ecfe59ec52886177644eb7bcc29ae5551f2b2d9838073e7783a4f6"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/schemas/visual_multi.schema.json",
+      "source_sha256": "e1eeb37c7819b653f3230f207c5e4923746430d76edf455b8616359db36aa61b",
+      "ported": "schemas/visual_multi.schema.json",
+      "ported_sha256": "89c63cbe19d75fc990b6e9300132184561b8c065a3082e6dabd85bc178014ba4"
+    },
+    {
+      "source": "experiments/p4_gpt61_sol_vision/schemas/visual_attention.schema.json",
+      "source_sha256": "f89d76fbf43ea04909c16ec5f664fa7121e1339d45cd1458b11fda8b9b1b37a8",
+      "ported": "schemas/visual_attention.schema.json",
+      "ported_sha256": "1e183268edbacc46913b5792a53041d52dcbd059e189a7446860916fcde1e469"
+    },
+    {
+      "source": "experiments/common_adapter_v2/src/common_adapter_v2.py",
+      "source_sha256": "4f274d6d91d178083a2c7c7bf78f507cb8112bba085d78f971d7137e7c1a11de",
+      "ported": "common_adapter_v2.py",
+      "ported_sha256": "4051b077dfc44bdab48f97d55365ca3c32ae14665f6163c015b2b37a9acfa1c5"
+    }
+  ],
+  "weights": {
+    "source": "experiments/p0_cv_only/models/yolo26n-pose.pt",
+    "sha256": "eb3bb8268828aeaf515cec23a4bfafd793944a86fe9af94ba7823609c14522a9",
+    "size_bytes": 7878574,
+    "copied": false
+  }
+}
