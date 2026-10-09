@@ -20,7 +20,7 @@ def make_incident(mi: ModelInput, a: ModelAssessment) -> Incident:
         risk=d.risk, risk_axes=a.risk_axes, level=risk_level(d.risk), confidence=a.event_confidence,
         needs_human_review=d.disposition == "review", uncertainty_reason=a.uncertainty_reason,
         evidence=[Evidence(frame_id=e.frame_id, timestamp_ms=e.timestamp_ms,
-            t=f"{e.timestamp_ms//60000:02d}:{e.timestamp_ms//1000%60:02d}", text="Referenced observation")
+            t=f"{e.timestamp_ms//60000:02d}:{e.timestamp_ms//1000%60:02d}", text=a.evidence_descriptions.get(e.frame_id, "Referenced observation"))
             for e in mi.evidence if e.frame_id in refs],
         ai_opinion=a.ai_opinion, recommended_actions=a.recommended_actions,
         created_at=datetime.now(timezone.utc))
@@ -78,6 +78,8 @@ def apply_assessment(store: MemoryStore, mi: ModelInput, a: ModelAssessment) -> 
             "created_at": datetime.now(timezone.utc).isoformat(),
             "evidence_refs": list(a.evidence_refs),
             "metadata": a.metadata.model_dump(mode="json"),
+            "routing": a.routing.model_dump(mode="json") if a.routing else None,
+            "evidence_scope": a.routing.evidence_scope if a.routing else ("cited_frames" if a.evidence_refs else "none"),
         }
         records = store.suppressed
     else:
@@ -93,7 +95,7 @@ def apply_assessment(store: MemoryStore, mi: ModelInput, a: ModelAssessment) -> 
         "kind": "suppressed" if decision.disposition == "suppressed" else "incident",
         "id": record_id,
     }
-    if decision.disposition != "suppressed":
-        store.media_context[record_id] = {"start_ms":mi.window.start_ms,"end_ms":mi.window.end_ms,"clip_ref":mi.clip_ref}
+    # Window observations still have a source clip, even without cited frames.
+    store.media_context[record_id] = {"start_ms":mi.window.start_ms,"end_ms":mi.window.end_ms,"clip_ref":mi.clip_ref}
     store.revision += 1
     return AppliedAssessment(decision, record, True)

@@ -47,6 +47,47 @@ def test_restore(client):
     assert x['risk'] is None and x['level']=='UNKNOWN' and x['needs_human_review']
     assert len(client.app.state.store.incidents)==1
 
+
+def test_p1_suppression_restore_retains_source_video_and_window_without_citations(tmp_path):
+    from app.models.base import ModelAdapter
+    from app.models.media import MediaResolver
+    from app.schemas.model import (ModelInput, ModelAssessment, ModelMetadata, RiskAxes,
+                                  RoutingAssessment, CameraContext, TimeWindow, EvidenceFrame)
+
+    class Normal(ModelAdapter):
+        name = "restore_contract_test"
+
+        async def evaluate(self, model_input):
+            return ModelAssessment(event_type="normal", event_confidence=.99,
+                risk_axes=RiskAxes(severity=.1, imminence=.1, exposure=.1, persistence=.1),
+                metadata=ModelMetadata(adapter=self.name, model="test"),
+                routing=RoutingAssessment(mode="frozen_cascade_v1", selected_stage="p1",
+                    p_incident=.001, frozen_guard_passed=True, backend_guard_passed=True,
+                    evidence_scope="window_observations"))
+
+    media = tmp_path / "registered-source.mp4"
+    # This is synthetic transport bytes; decoding/model performance is not under test.
+    media.write_bytes(b"registered-synthetic-source-video")
+    resolver = MediaResolver(tmp_path, {"neutral-clip": media.name})
+    app = create_app(Settings(mode="development", media_root=tmp_path),
+                     adapter=Normal(), media_resolver=resolver)
+    model_input = ModelInput(sample_id="new-analysis", camera=CameraContext(id="CAM_01"),
+        clip_ref="neutral-clip", window=TimeWindow(start_ms=1200, end_ms=3400),
+        evidence=[EvidenceFrame(frame_id="observed-0", timestamp_ms=1200, media_ref="prepared-frame-0")])
+    with TestClient(app) as c:
+        applied = c.portal.call(app.state.ingest_model_input, model_input)
+        suppressed_id = applied.record["id"]
+        restored_id = "RESTORED-" + suppressed_id
+        assert applied.record["evidence_refs"] == []
+        assert post(c, f"/api/suppressed/{suppressed_id}/restore", {}, "restore-real").status_code == 200
+        incident = c.get(f"/api/incidents/{restored_id}").json()
+        assert incident["evidence"] == [] and incident["needs_human_review"]
+        clip = c.get(f"/api/incidents/{restored_id}/clip").json()
+        assert clip["start"] == 1.2 and clip["end"] == 3.4
+        assert clip["source"] == "incident_source" and clip["range_source"] == "model_input_window"
+        assert c.get(clip["clip_url"]).content == media.read_bytes()
+        assert app.state.store.incident_resolvers[restored_id] is resolver
+
 def test_unknown_and_media(client):
     assert client.get('/api/incidents/unknown/clip').status_code==404
     assert client.get('/stream/unknown').status_code==404

@@ -1,0 +1,13 @@
+{
+  "$comment": "P4 attention template: one visual_single assessment per camera (frame_ref enum restricted to that camera's refs) + supplementary attention_first. Built by src/visual_prompt_builder.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["camera_assessments", "attention_first"],
+  "properties": {
+    "camera_assessments": {"type": "object", "additionalProperties": false, "required": ["__CAMERAS__"],
+                           "properties": {"__CAMERA__": "__VISUAL_SINGLE_WITH_CAMERA_FRAME_REFS__"}},
+    "attention_first": {"type": "object", "additionalProperties": false, "required": ["camera", "confidence"],
+                        "properties": {"camera": {"type": "string", "enum": ["__CAMERAS__", "no_clear_priority"]},
+                                       "confidence": {"type": "number", "minimum": 0, "maximum": 1}}}
+  }
+}

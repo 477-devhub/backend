@@ -1,0 +1,77 @@
+# Shared Cheap CV Layer configuration (cv-state-v1).
+# This file defines the Canonical CV State shared by P0 / P1 / P2 / P3.
+# It contains only generic observation parameters: no item IDs, no scene ROIs,
+# no event-specific thresholds. Its SHA256 is part of the camera-state cache key.
+state_version: cv-state-v1
+
+model:
+  weights: models/yolo26n-pose.pt     # relative to experiment root; pretrained, not fine-tuned
+  imgsz: 1280                         # 1920x1080 CCTV with small persons; letterboxed long side
+  conf: 0.25                          # minimum person detection confidence
+  iou: 0.7
+  max_det: 50
+  half: true                          # FP16 when CUDA is available, FP32 on CPU
+  batch: 16                           # frames per forward pass (fixed for determinism)
+  classes: [0]                        # person
+
+keypoints:
+  visible_conf: 0.5                   # keypoint counted as visible above this confidence
+  min_visible_for_pose: 6             # fewer visible keypoints -> pose features null
+
+appearance:                           # very cheap colour histogram (no ReID network)
+  h_bins: 16
+  s_bins: 4
+  crop_max_side: 64
+
+tracker:                              # timestamp-aware sparse association, per camera only
+  max_gap_sec: 3.0                    # track may be re-linked within this sampled gap
+  gate_base_body_heights: 0.6         # allowed centre jump independent of dt
+  gate_speed_body_heights_per_sec: 3.0
+  weights: {motion: 0.35, iou: 0.15, size: 0.15, pose: 0.10, appearance: 0.25}
+  min_affinity: 0.40                  # below this a link is refused (new track instead)
+  ambiguity_margin: 0.10              # best-vs-second affinity margin flagged ambiguous
+  min_reliable_observations: 3
+  fragment_link_max_gap_sec: 3.0      # possible-same-person fragment hints (never merged)
+  fragment_link_max_distance_body_heights: 1.5
+
+posture:
+  min_confidence: 0.40                # below -> "unknown"
+  low_height_ratio: 0.65              # bbox height / reference standing height
+  ambiguity_margin: 0.15              # crouched vs horizontal tie -> "low_posture"
+  bbox_only_horizontal_aspect: 0.75   # h/w below this without keypoints -> horizontal (low conf)
+  bbox_only_confidence: 0.45
+  reference_window_sec: 6.0           # reference standing height taken from recent upright samples
+
+motion:
+  low_motion_body_heights_per_sec: 0.15
+  direction_change_deg: 90
+  min_segment_body_heights: 0.2
+
+vertical_transition:
+  max_window_sec: 4.0
+  min_known_posture_obs: 3            # fewer -> transition flags null (unknown), not false
+
+interaction:
+  min_co_observed: 2
+  close_distance_body_heights: 1.0
+  far_hysteresis: 1.3
+  rapid_approach_ref_body_heights_per_sec: 1.5
+  relative_motion_ref_body_heights_per_sec: 1.0
+  limb_speed_ref_torso_per_sec: 3.0
+  arm_extension_min: 0.6
+  arm_extension_full: 1.2
+  wrist_bbox_expand: 0.05
+  contact_basis_min: 0.5
+
+scene:
+  edge_margin: 0.02
+  large_transition_frame_heights: 0.35
+
+quality:
+  small_person_height: 0.08           # bbox height / frame height
+  dark_brightness: 20                 # mean gray level
+  overlap_occlusion: 0.3
+  reliability_labels: {high: 0.7, medium: 0.5}
+
+cross_camera:
+  phase_bins: 16

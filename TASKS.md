@@ -1,5 +1,13 @@
 # 실제 상태 — 검증 완료 항목과 후속 과제
 
+## 2026-10-09 현재 AI 백엔드 연동 v1
+
+- Cheap CV/P1/P4 어댑터·등록 MP4 분석 job·실제 단계 통계·기존 사건/WS/근거/ACK/복구 연결.
+- shadow 기본, frozen gate 활성 시 기존 backend normal/risk<20 조건도 유지.
+- 전체264testsPASS, 계약검사PASS, 독립리뷰4BLOCK수정→PASS.
+- 실제영상 offline64RGBhash/CV PASS; 승인 유료smoke 결과 outputs/ai-live-smoke 참조.
+- 실행 docs/ai-integration.md, 검증/한계 handoffs/ai-integration-v1.md.
+
 ## 2026-10-09 백엔드 벤치마크 제거
 
 - 사용자 요청: 백엔드 폴더에서 불필요한 벤치마크 기능 및 대용량 실험 자료 삭제.
