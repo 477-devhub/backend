@@ -19,7 +19,7 @@ def create_app(settings: Settings | None = None, *, adapter: ModelAdapter | None
                media_resolver: MediaResolver | None = None):
     settings=settings or Settings.from_env()
     app=FastAPI(title="477 AI Role 1 Development Backend",version="0.2.0")
-    app.state.settings=settings;app.state.store=MemoryStore(mode=settings.mode, media_root=settings.media_root);app.state.hub=SnapshotHub();app.state.lock=asyncio.Lock()
+    app.state.settings=settings;app.state.store=MemoryStore(mode=settings.mode, media_root=settings.media_root, scenario_path=settings.demo_scenario_path);app.state.hub=SnapshotHub();app.state.lock=asyncio.Lock()
     if media_resolver is None and settings.asset_map_path is not None:
         media_resolver = MediaResolver.from_asset_map(settings.asset_map_path, settings.asset_root)
     app.state.model_adapter = adapter if adapter is not None else get_adapter(

@@ -1,0 +1,120 @@
+{
+  "schema_version": "demo-scenario-1",
+  "decision_source": "scripted_not_ai",
+  "cameras": [
+    {
+      "id": "CAM_01",
+      "region": "지역 A",
+      "sync_group": "event-a",
+      "offset_sec": 0,
+      "role": "same_event",
+      "video_file": "CAM_01.mp4"
+    },
+    {
+      "id": "CAM_02",
+      "region": "지역 A",
+      "sync_group": "event-a",
+      "offset_sec": 0,
+      "role": "same_event",
+      "video_file": "CAM_02.mp4"
+    },
+    {
+      "id": "CAM_03",
+      "region": "지역 A",
+      "sync_group": "event-a",
+      "offset_sec": 0,
+      "role": "same_event",
+      "video_file": "CAM_03.mp4"
+    },
+    {
+      "id": "CAM_04",
+      "region": "독립 구역 4",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_04.mp4"
+    },
+    {
+      "id": "CAM_05",
+      "region": "독립 구역 5",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_05.mp4"
+    },
+    {
+      "id": "CAM_06",
+      "region": "독립 구역 6",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_06.mp4"
+    },
+    {
+      "id": "CAM_07",
+      "region": "독립 구역 7",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_07.mp4"
+    },
+    {
+      "id": "CAM_08",
+      "region": "독립 구역 8",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_08.mp4"
+    },
+    {
+      "id": "CAM_09",
+      "region": "독립 구역 9",
+      "sync_group": null,
+      "offset_sec": 0,
+      "role": "unassigned",
+      "video_file": "CAM_09.mp4"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "SCENE-A",
+      "title": "시나리오: 다각도 위험 사건",
+      "type": "collapse",
+      "members": [
+        "CAM_01",
+        "CAM_02",
+        "CAM_03"
+      ],
+      "primary_cam": "CAM_02",
+      "min_step": 3,
+      "enabled": true,
+      "risk_axes": {
+        "severity": 0.9,
+        "imminence": 0.95,
+        "exposure": 0.8,
+        "persistence": 0.85
+      },
+      "confidence": 0.92,
+      "needs_human_review": false
+    },
+    {
+      "id": "SCENE-CANDIDATE",
+      "title": "시나리오: 위험도 기반 사건 후보 (임시 예시)",
+      "type": "uncertain",
+      "members": [
+        "CAM_06"
+      ],
+      "primary_cam": "CAM_06",
+      "min_step": 4,
+      "enabled": true,
+      "risk_axes": {
+        "severity": 0.8,
+        "imminence": 0.8,
+        "exposure": 0.5,
+        "persistence": 0.6
+      },
+      "confidence": 0.89,
+      "needs_human_review": false
+    }
+  ]
+}

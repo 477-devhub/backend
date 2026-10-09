@@ -1,3 +1,4 @@
+from app.demo.scenario import load_scenario
 from datetime import datetime, timezone
 from pathlib import Path
 from uuid import uuid4
@@ -7,7 +8,8 @@ from app.services.risk import risk_score, risk_level
 
 class MemoryStore:
     """Demo only: one ASGI worker; restart loses state. Mutations locked by routes."""
-    def __init__(self, *, mode="demo", media_root=None):
+    def __init__(self, *, mode="demo", media_root=None, scenario_path=None):
+        self.scenario = load_scenario(scenario_path) if mode=="demo" else None
         self.mode = mode
         self.media_root = Path(media_root or "media")
         self.server_instance_id = str(uuid4())
@@ -24,6 +26,10 @@ class MemoryStore:
         self.step = 1
         self.cameras = [{"id":f"CAM_{i:02d}","name":f"CAM {i:02d}","location":"demo",
             "stream_url":f"/stream/CAM_{i:02d}","status":"normal","bbox":[]} for i in range(1,10)]
+        if self.scenario:
+            regions={c.id:c.region for c in self.scenario.cameras}
+            for camera in self.cameras:
+                camera.update(location=regions[camera["id"]],status="unobserved")
     def get(self, incident_id):
         return self.incidents[incident_id]
     def put(self, incident):
@@ -43,7 +49,7 @@ class MemoryStore:
         active = self.ordered()
         result = []
         for cam in self.cameras:
-            relevant = [x for x in active if cam["id"] in [x.primary_cam,*x.related_cams]]
+            relevant = [x for x in active if cam["id"] == x.primary_cam]
             c = {**cam, "level":None, "suppressed":False}
             observed = any(x.get("camera_id") == cam["id"] for x in self.assessment_inputs.values())
             media_path = (self.media_root.resolve() / (cam["id"] + ".mp4")).resolve()
@@ -107,4 +113,9 @@ class MemoryStore:
                 self.put(Incident(id=key,sample_id="demo-"+key,type=event,title="데모: "+event,primary_cam=cam,
                     risk=score,level=risk_level(score),risk_axes=a,confidence=confidence,needs_human_review=review,
                     uncertainty_reason="occlusion" if review else None,created_at=now))
+        if self.scenario:
+            self.incidents.clear()
+            self.suppressed.clear()
+            for record in self.scenario.records(step,now):
+                self.put(record)
         self.revision += 1

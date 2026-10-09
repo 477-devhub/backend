@@ -11,6 +11,7 @@ class Settings:
     model_timeout_sec: float = 5.0
     asset_map_path: Path | None = None
     asset_root: Path | None = None
+    demo_scenario_path: Path | None = None
     def __post_init__(self):
         if not math.isfinite(self.model_timeout_sec) or self.model_timeout_sec <= 0:
             raise ValueError("MODEL_TIMEOUT_SEC must be positive and finite")
@@ -23,4 +24,5 @@ class Settings:
             model_adapter=os.getenv("MODEL_ADAPTER", "local_cv"),
             model_timeout_sec=float(os.getenv("MODEL_TIMEOUT_SEC", "5")),
             asset_map_path=Path(os.environ["ASSET_MAP"]) if os.getenv("ASSET_MAP") else None,
-            asset_root=Path(os.environ["ASSET_ROOT"]) if os.getenv("ASSET_ROOT") else None)
+            asset_root=Path(os.environ["ASSET_ROOT"]) if os.getenv("ASSET_ROOT") else None,
+            demo_scenario_path=Path(os.environ["DEMO_SCENARIO_PATH"]) if os.getenv("DEMO_SCENARIO_PATH") else None)
