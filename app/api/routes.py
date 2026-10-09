@@ -162,3 +162,11 @@ async def attention(ws: WebSocket):
         s.hub.unsubscribe(q);task.cancel()
         try: await task
         except (asyncio.CancelledError,WebSocketDisconnect,RuntimeError): pass
+
+
+@router.get("/api/demo/scenario")
+async def demo_scenario(request: Request):
+    s=state(request)
+    if s.settings.mode!="demo":
+        raise HTTPException(404,"demo disabled")
+    return {"configured":bool(s.store.scenario),"scenario":s.store.scenario.model_dump(mode="json") if s.store.scenario else None}

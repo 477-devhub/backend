@@ -368,3 +368,16 @@ focused35pass/full121pass/hashPASS. 중립 window grid·실제 PTS·raw temporal
   변경 없는 파일의 hash 차이는 클론의 줄바꿈 형식과 관련된다.
 - 한계: 메모리/1worker/인증 없음, crop/실시간 영상/실제 bbox 추적/단계별 실측 집계는 미구현.
   준비만 하고 ingest하지 않은 frame resolver는 앱 메모리에 남을 수 있어 운영용 cache lifecycle은 후속 과제.
+## 2026-10-09 HACKATHON-DAY — scripted multi-camera demo
+- Scope: app/demo, config/demo-scenario.json, config/main/memory/routes, backend tests, docs/DEMO_SCENARIO and handoff. No AI or dataset execution.
+- Completion: grouped SCENE-A/CAM01-03, primaryCAM02 only highlight, editable independentCAM06 review example, development disabled, safe camera filenames, metadata endpoint. PASS.
+- Python3.12 + existingFFmpeg processPATH: full633PASS1SKIP102.71s/contracts match. Final incomplete-axis guard: focused4PASS0.16s.
+- Actual Vite→API metadata/2events/CAM02incident/CAM06review/restunobserved verified. Frontend15unit+1integration+buildPASS.
+- Config/API docs hashes updated deliberately; model/incident frozen schemas and benchmark originals unchanged.
+- Missing input video and browser runtime prevent actual media synchronization/visual QA; Not verified. Details: handoffs/demo-scenario.md. No commits/push.
+
+## HACKATHON-DAY — candidate threshold >65
+- User selected strict >65 yellow representative-camera border, no fixed CAM06 review.
+- Scripted CAM06 numericrisk71/confidence0.89/reviewfalse; no model call.
+- Frontend17unitPASS/1actualAPIintegrationPASS/buildPASS; backend633PASS1SKIP98.41s/contracts match.
+- API doc hash re-frozen after explicit display policy update. Server risk/ranking/suppression/ACK preserved. Visual browser QA still Not verified.

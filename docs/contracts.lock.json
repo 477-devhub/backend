@@ -1,5 +1,5 @@
 {
-  "app/config.py": "151da276b35c067f3702e0dba352ad6b553c91349bdaa8e47e7a6d43e0ac80a6",
+  "app/config.py": "9366a4e289b9b348a36fe2a3565e20e798642ba7d5106c7812e79ec5ed7b51a6",
   "app/models/base.py": "7d2f541e7f57e20054c1df276fb67436392dfde6aa8a60a134da0feedf7e233f",
   "app/models/benchmark_assessment.py": "d1d6ca56219ee5d1107df2c6003e541e4e74cd8c3b8a564fb656b8e24ba5944f",
   "app/models/benchmark_media.py": "6983dcde9e376234ae30e449939b5099ac80aee986da08b1cd1c85006e549e95",
@@ -12,7 +12,7 @@
   "app/schemas/benchmark.py": "1c033d8f8aa0b6345eee4980bf907f0f8516dbeb0dfa1ae6086e7d3a7aa01684",
   "app/schemas/incident.py": "84deeec532b16eb842dbe9051818c6adb0402a7d37a77bdf837e9b4c6b9ac604",
   "app/schemas/model.py": "204bebc98f9fb46eb05a07da478f09bf8168d6c16969998b27c8f9935f6a061c",
-  "docs/api-contract.md": "25cf0031377ef90f3fe08c6a52b86d8614b2a16981f0dcd8b6658c78a189ad35",
+  "docs/api-contract.md": "67c0ccd4847fdf63c8fea501df47e45ca1409a3f7fa27a32d888bf12f1d7014c",
   "docs/dataset-handoff.md": "1843ff2951d82f336640cb43d6fa62fa0d62eb3632396381ca3772f9395dc790",
   "docs/evaluation-contract.md": "8b6e5dd10cd899bae0c549a033dadb93a423e7c7319fec5b2d201a0b5c7af782",
   "docs/model-contract.md": "73d0d1476ffd27c169623e2351f8dc3eb193f2b6a6a4c29ab4223ad4207e31e8"

@@ -134,3 +134,11 @@ validation fields는loc/type/msg만제공하고입력값·Pydantic context·cred
 CORS_ORIGINS에프론트실제origin을설정한다. 상대영상URL은API origin/proxy에연결해야한다.
 1worker/메모리저장소한계는유지한다. restart시incident/audit/idempotency/asset연결은소실된다.
 HTTP model ingestion, 영구DB, 인증, realtime RTSP/HLS는이번수정범위가아니다.
+
+## HACKATHON-DAY: scripted multi-camera scenario
+DEMO_SCENARIO_PATH=config/demo-scenario.json enables an explicitly scripted demo in APP_MODE=demo only. GET /api/demo/scenario returns configured/scenario metadata with decision_source=scripted_not_ai. This is not an AI classification endpoint. Existing incident primary_cam is the chosen representative, related_cams are other cameras of the same event; only primary_cam receives incident/review camera status. Auxiliary cameras remain unhighlighted, which does not mean they are safe. ACK applies to the event, not each view.
+CAM01-03 are configured as one scripted event, primary CAM02. CAM04-09 are independent regions with unassigned data roles. CAM06 is an editable temporary review candidate example, not a classification of a received video. Its enabled flag may be disabled or its members/primary changed when data arrives. Unknown risk remains null/UNKNOWN/review.
+Camera filenames are restricted to MEDIA_ROOT/CAM_XX.mp4. Shared source offsets are configuration metadata, not evidence of actual time calibration. Scenario metadata does not include media bytes or secrets. No AI requests are made by demo steps.
+
+### HACKATHON-DAY: candidate display threshold
+User-selected candidate border rule is risk > 65, strictly exclusive. CAM06 scripted example now supplies numeric risk71, confidence0.89, reviewfalse, levelHIGH. Frontend renders yellow only for the event representative above this threshold; CRITICAL retains red. Independent review is preserved rather than generated from camera number. The threshold is a presentation rule and does not suppress incidents or alter server risk/ranking. Prior CAM06 UNKNOWN/review example is superseded for this default configuration.
