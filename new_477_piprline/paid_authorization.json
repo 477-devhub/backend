@@ -1,9 +1,0 @@
-{
-  "authorized": true,
-  "date": "2026-10-08",
-  "source": "Explicit user instruction: DeepSeek and Clef may run without the previous cost restriction.",
-  "scope": "Sequential real execution of the 12 new477 representative items with DeepSeek and Clef; preserve cumulative prior records.",
-  "total_cap_usd": null,
-  "supersedes_prior_limit_usd": 5,
-  "automatic_retries": 0
-}

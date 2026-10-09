@@ -1,6 +1,0 @@
-{
-  "ground_truth/ai_review_v1/sources.json": "e4801f35c3949e7c69988b8ca59f8ad1f9868441e0ee82643bb7beb3ffe903f7",
-  "ground_truth/ai_review_v1/box_review_decisions.json": "f02a00b54afa1dd7a0e72c2f75f45b88095788492a074bb2fa4a9ac90f4bf2b2",
-  "ground_truth/ai_review_v1/visual_event_review.json": "f1532cdcc9303bb5b8203460ca32836eac1e120096361cf3e29c96ff877a0668",
-  "ground_truth/ai_review_v1/rtdetr_candidates.json": "0117612ecce578a3889f7b959197e730ae2880e9bb9e6e348110ec72cea048ba"
-}

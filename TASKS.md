@@ -1,5 +1,15 @@
 # 실제 상태 — 검증 완료 항목과 후속 과제
 
+## 2026-10-09 백엔드 벤치마크 제거
+
+- 사용자 요청: 백엔드 폴더에서 불필요한 벤치마크 기능 및 대용량 실험 자료 삭제.
+- 범위: new_477_piprline, 477_modeling_benchmark_v1, final_candidates_v1 및 전용
+  app 코드·테스트·scripts·docs·reports·handoffs, pyproject의 benchmark extra.
+- 완료 기준: 대용량 폴더 삭제, API/데모/실제 local_cv 연결 보존, 전체 회귀 테스트 및 계약 검사.
+- 작업 전 Git 변경 없음. Git 이력과 다른 프로젝트 폴더는 보존.
+- 하단 벤치마크 진행 기록은 과거 이력이며 현재 기능·재실행 안내가 아님.
+- 검증 결과: handoffs/backend-benchmark-cleanup.md 참조.
+
 ## 2026-10-07 순차 실행 기록
 
 **최종 현 상태:**00~09 직접 읽기/순차 진행 및 각 역할 실제 생성·review 확인 완료.
