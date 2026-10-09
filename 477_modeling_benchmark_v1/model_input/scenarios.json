@@ -1,0 +1,101 @@
+{
+  "benchmark_version": "477-reasoning-v1",
+  "protocol": {
+    "id": "uniform_total64_v1",
+    "transport": "decoded RGB frames",
+    "total_frames_per_item": 64,
+    "allocation": "equal per camera, remainder to cameras in manifest order",
+    "frame_selection": "round-half-up(j*(frame_count-1)/(allocation-1)), j=0..allocation-1",
+    "timestamps": "zero-based output frame number / 30, relative to each clip; no cross-camera synchronization asserted",
+    "image_size": [
+      1920,
+      1080
+    ],
+    "prompt_language": "English",
+    "model_input_policy": "pixels, generic camera IDs, neutral relative times, common prompt and response structure only"
+  },
+  "items": [
+    {
+      "item_id": "ITEM_01",
+      "task": "single",
+      "cameras": [
+        {
+          "camera": "CAM_01",
+          "asset": "ASSET_01"
+        }
+      ]
+    },
+    {
+      "item_id": "ITEM_02",
+      "task": "single",
+      "cameras": [
+        {
+          "camera": "CAM_01",
+          "asset": "ASSET_02"
+        }
+      ]
+    },
+    {
+      "item_id": "ITEM_03",
+      "task": "single",
+      "cameras": [
+        {
+          "camera": "CAM_01",
+          "asset": "ASSET_03"
+        }
+      ]
+    },
+    {
+      "item_id": "ITEM_04",
+      "task": "attention",
+      "cameras": [
+        {
+          "camera": "CAM_01",
+          "asset": "ASSET_01"
+        },
+        {
+          "camera": "CAM_02",
+          "asset": "ASSET_04"
+        },
+        {
+          "camera": "CAM_03",
+          "asset": "ASSET_02"
+        }
+      ]
+    },
+    {
+      "item_id": "ITEM_05",
+      "task": "single",
+      "cameras": [
+        {
+          "camera": "CAM_01",
+          "asset": "ASSET_05"
+        }
+      ]
+    },
+    {
+      "item_id": "ITEM_06",
+      "task": "single",
+      "cameras": [
+        {
+          "camera": "CAM_02",
+          "asset": "ASSET_06"
+        }
+      ]
+    },
+    {
+      "item_id": "ITEM_07",
+      "task": "multi_camera",
+      "cameras": [
+        {
+          "camera": "CAM_01",
+          "asset": "ASSET_05"
+        },
+        {
+          "camera": "CAM_02",
+          "asset": "ASSET_06"
+        }
+      ]
+    }
+  ]
+}

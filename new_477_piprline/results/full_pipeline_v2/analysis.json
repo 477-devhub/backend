@@ -1,0 +1,112 @@
+{
+  "items": 12,
+  "json_cells_valid": true,
+  "referenced_paths_checked": 216,
+  "missing_referenced_paths": [],
+  "stage_statuses": {
+    "yolo": {
+      "ok": 12
+    },
+    "clef": {
+      "ok": 12
+    },
+    "vlm": {
+      "ok": 2,
+      "error": 10
+    }
+  },
+  "all_stages_completed": 2,
+  "format_valid_items": 12,
+  "reference_valid_items": 12,
+  "fallback_items": 0,
+  "failure_categories_item_count": {
+    "benchmark": 0,
+    "model": 10,
+    "execution": 0,
+    "evaluation_unavailable": 12
+  },
+  "error_codes": {
+    "evaluation:ground_truth_review_pending": 12,
+    "vlm:human_review_contract_invalid": 10,
+    "vlm:human_review_policy_invalid": 18
+  },
+  "latency": {
+    "yolo": {
+      "n": 12,
+      "median_ms": 44394.570399890654,
+      "min_ms": 37682.99730005674,
+      "max_ms": 97323.19830008782
+    },
+    "clef": {
+      "n": 12,
+      "median_ms": 7032.593950047158,
+      "min_ms": 3191.43890007399,
+      "max_ms": 25039.803999941796
+    },
+    "vlm": {
+      "n": 12,
+      "median_ms": 15890.381600009277,
+      "min_ms": 9845.163800055161,
+      "max_ms": 18212.872199947014
+    },
+    "current_run_wall": {
+      "n": 12,
+      "median_ms": 73632.36940011848,
+      "min_ms": 55174.589900067076,
+      "max_ms": 142141.449799994
+    },
+    "total_first_use": {
+      "n": 12,
+      "median_ms": 129312.17534991447,
+      "min_ms": 73123.07840003632,
+      "max_ms": 196755.32099977136
+    }
+  },
+  "costs": {
+    "yolo": {
+      "known_usage_estimate_usd": 0,
+      "unknown_items": 0,
+      "complete_estimate_usd": 0,
+      "invoice_usd": null
+    },
+    "clef": {
+      "known_usage_estimate_usd": 0.07569432000000001,
+      "unknown_items": 0,
+      "complete_estimate_usd": 0.07569432000000001,
+      "invoice_usd": null
+    },
+    "vlm": {
+      "known_usage_estimate_usd": 0.11124813599999998,
+      "unknown_items": 0,
+      "complete_estimate_usd": 0.11124813599999998,
+      "invoice_usd": null
+    }
+  },
+  "known_partial_usage_estimate_usd": 0.18694245599999998,
+  "complete_usage_estimate_usd": 0.18694245599999998,
+  "actual_invoice_usd": null,
+  "semantic_metrics": {
+    "detection_map50_by_item": {
+      "P001": null,
+      "P002": null,
+      "P003": null,
+      "P004": null,
+      "P005": null,
+      "P006": null,
+      "P007": null,
+      "P008": null,
+      "P009": null,
+      "P010": null,
+      "P011": null,
+      "P012": null
+    },
+    "route_accuracy": null,
+    "event_accuracy_including_omissions": null,
+    "reviewed_route_occurrences": 0,
+    "reviewed_event_occurrences": 0,
+    "evidence_content_accuracy": null,
+    "reason": "Only reviewed truth is scored; source occurrences repeat across items."
+  },
+  "repeats": 1,
+  "scope": "6 unique clips repeatedly composed into 12 small-demo items; no CCTV generalization"
+}

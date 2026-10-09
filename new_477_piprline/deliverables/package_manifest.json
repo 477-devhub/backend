@@ -1,0 +1,18 @@
+{
+  "public_zip": "C:\\Users\\user\\python_project\\477_ai_pr\\ai_477_camera\\new_477_piprline\\deliverables\\477_team_tools_v1.zip",
+  "public_bytes": 117759,
+  "private_reference_zip": "C:\\Users\\user\\python_project\\477_ai_pr\\ai_477_camera\\new_477_piprline\\deliverables\\477_evaluator_reference_v1.zip",
+  "private_bytes": 63279,
+  "fixed_public_lock_entries": 784,
+  "items": 12,
+  "image_slots": 768,
+  "unique_pngs": 638,
+  "lossless_aliases": 130,
+  "after_extract": "python restore_inputs.py",
+  "archive_contains_images": false,
+  "complete_delivery_folder": "C:\\Users\\user\\python_project\\477_ai_pr\\ai_477_camera\\new_477_piprline\\team_benchmark_v1",
+  "handoff": "Copy entire team_benchmark_v1 folder including data/frames; tools ZIP alone excludes images",
+  "api_keys_included": false,
+  "model_calls": 0,
+  "warning": "Private evaluator reference is for scoring only, never model input."
+}

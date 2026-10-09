@@ -1,0 +1,17 @@
+{
+  "policy": "Evaluation only. Resolve each source from sources.json. All stage truths are currently review-pending; reference_label is not scored.",
+  "items": [
+    {"item_id":"P001","sources":["SRC01"]},
+    {"item_id":"P002","sources":["SRC02"]},
+    {"item_id":"P003","sources":["SRC03"]},
+    {"item_id":"P004","sources":["SRC04"]},
+    {"item_id":"P005","sources":["SRC05"]},
+    {"item_id":"P006","sources":["SRC06"]},
+    {"item_id":"P007","sources":["SRC01","SRC02"]},
+    {"item_id":"P008","sources":["SRC05","SRC06"]},
+    {"item_id":"P009","sources":["SRC01","SRC03","SRC05"]},
+    {"item_id":"P010","sources":["SRC01","SRC02","SRC03","SRC04"]},
+    {"item_id":"P011","sources":["SRC01","SRC02","SRC03","SRC04","SRC05"]},
+    {"item_id":"P012","sources":["SRC01","SRC02","SRC03","SRC04","SRC05","SRC06"]}
+  ]
+}

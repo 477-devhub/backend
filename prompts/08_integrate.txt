@@ -1,0 +1,9 @@
+MAIN으로 전체를 통합해줘. 실제 모델 호출에서 repository와 WS까지 연결된 테스트를 실행해줘.
+실제 영상 누락/가림, provider timeout, JSON 오류, 중복 후보/ACK, 네트워크 끊김/재연결,
+동시 incident, 순위 변경, suppression restore, 고위험 저확신을 검증해줘.
+reviewer를 읽기 전용으로 실행하고 BLOCK이면 수정 후 재검증해줘.
+python -m pytest -q, python scripts/check_contracts.py, 설치/CLI/API smoke test를 실행하고 실제 결과를 적어줘.
+프론트/데이터 handoff와 TASKS를 현 상태에 맞게 갱신해줘.
+production 인증/DB/477 연결이 아직 없으면 '운영 배포 완료'라고 쓰지 마.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

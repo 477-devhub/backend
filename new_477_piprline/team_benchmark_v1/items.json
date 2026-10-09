@@ -1,0 +1,224 @@
+{
+  "version": "new477-total64-v1",
+  "item_count": 12,
+  "items": [
+    {
+      "item_id": "P001",
+      "sources": [
+        {
+          "source_id": "SRC01",
+          "frame_count": 64
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P002",
+      "sources": [
+        {
+          "source_id": "SRC02",
+          "frame_count": 64
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P003",
+      "sources": [
+        {
+          "source_id": "SRC03",
+          "frame_count": 64
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P004",
+      "sources": [
+        {
+          "source_id": "SRC04",
+          "frame_count": 64
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P005",
+      "sources": [
+        {
+          "source_id": "SRC05",
+          "frame_count": 64
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P006",
+      "sources": [
+        {
+          "source_id": "SRC06",
+          "frame_count": 64
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P007",
+      "sources": [
+        {
+          "source_id": "SRC01",
+          "frame_count": 32
+        },
+        {
+          "source_id": "SRC02",
+          "frame_count": 32
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P008",
+      "sources": [
+        {
+          "source_id": "SRC05",
+          "frame_count": 32
+        },
+        {
+          "source_id": "SRC06",
+          "frame_count": 32
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [
+        [
+          "SRC05",
+          "SRC06"
+        ]
+      ],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P009",
+      "sources": [
+        {
+          "source_id": "SRC01",
+          "frame_count": 22
+        },
+        {
+          "source_id": "SRC03",
+          "frame_count": 21
+        },
+        {
+          "source_id": "SRC05",
+          "frame_count": 21
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P010",
+      "sources": [
+        {
+          "source_id": "SRC01",
+          "frame_count": 16
+        },
+        {
+          "source_id": "SRC02",
+          "frame_count": 16
+        },
+        {
+          "source_id": "SRC03",
+          "frame_count": 16
+        },
+        {
+          "source_id": "SRC04",
+          "frame_count": 16
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P011",
+      "sources": [
+        {
+          "source_id": "SRC01",
+          "frame_count": 13
+        },
+        {
+          "source_id": "SRC02",
+          "frame_count": 13
+        },
+        {
+          "source_id": "SRC03",
+          "frame_count": 13
+        },
+        {
+          "source_id": "SRC04",
+          "frame_count": 13
+        },
+        {
+          "source_id": "SRC05",
+          "frame_count": 12
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [],
+      "synchronization": "not_established"
+    },
+    {
+      "item_id": "P012",
+      "sources": [
+        {
+          "source_id": "SRC01",
+          "frame_count": 11
+        },
+        {
+          "source_id": "SRC02",
+          "frame_count": 11
+        },
+        {
+          "source_id": "SRC03",
+          "frame_count": 11
+        },
+        {
+          "source_id": "SRC04",
+          "frame_count": 11
+        },
+        {
+          "source_id": "SRC05",
+          "frame_count": 10
+        },
+        {
+          "source_id": "SRC06",
+          "frame_count": 10
+        }
+      ],
+      "scenario_semantics": "independent_clip_bundle_per_source_assessment",
+      "same_incident_groups": [
+        [
+          "SRC05",
+          "SRC06"
+        ]
+      ],
+      "synchronization": "not_established"
+    }
+  ]
+}

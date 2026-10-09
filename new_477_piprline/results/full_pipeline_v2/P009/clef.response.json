@@ -1,0 +1,56 @@
+{
+  "result": {
+    "model": "clef",
+    "answers": {
+      "incident.SRC01": {
+        "type": "noul",
+        "noul": 0.4868
+      },
+      "route.SRC01": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.2743,
+          "no_action": 0.0199,
+          "human_review": 0.7058
+        },
+        "confidence": 0.3606
+      },
+      "incident.SRC03": {
+        "type": "noul",
+        "noul": 0.2802
+      },
+      "route.SRC03": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.1312,
+          "no_action": 0.0234,
+          "human_review": 0.8454
+        },
+        "confidence": 0.5987
+      },
+      "incident.SRC05": {
+        "type": "noul",
+        "noul": 0.1688
+      },
+      "route.SRC05": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.0523,
+          "no_action": 0.0216,
+          "human_review": 0.9261
+        },
+        "confidence": 0.7913
+      }
+    },
+    "usage": {
+      "input_tokens": 32722,
+      "output_tokens": 0
+    }
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}

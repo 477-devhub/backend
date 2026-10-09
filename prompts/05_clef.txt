@@ -1,0 +1,9 @@
+03 단계에서 확인한 공식 provider capability에 맞춰 clef_direct 하나만 구현해줘.
+model_engineer 소유: app/models/adapters/clef_direct.py, 관련 helper와 tests/models/test_clef*.py.
+실제 지원 modality만 사용해. 이미지 불가면 features-only 실험으로 정확히 이름 붙여줘.
+API access가 없으면 BLOCKED 상태와 근거를 기록하고 mock을 real로 대체하지 마. 그 경우 C 단계는 계속 가능해.
+출력은 ModelAssessment와 유효 evidence_refs로 검증하고 SDK/JSON 오류는 공통 execute의 review 경로로 보내줘.
+usage/model/prompt/latency/cost를 제공되는 범위에서 기록하고 없는 비용은 null로 남겨줘.
+MAIN이 registry/settings/optional dependency를 반영하고 reviewer PASS 후 handoffs/clef.md에 결과를 남겨줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

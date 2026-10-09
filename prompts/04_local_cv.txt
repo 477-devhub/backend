@@ -1,0 +1,11 @@
+model_engineer에게 local_cv adapter 하나만 구현시켜줘.
+허용: app/models/adapters/local_cv.py와 해당 helper, tests/models/test_local_cv*.py.
+ModelInput.clip_ref와 evidence를 trusted resolver로 실제 영상 bytes로 읽고, annotation/manifest/path를 모델에 넘기지 마.
+일단 최소 이벤트 지원 범위부터 시작해서 tracking/pose/zone/time 관측을 측정해줘.
+conflict 등 지원하지 않는 이벤트를 검증 없이 지원한다고 하지 마. 측정 못 하는 risk axes는 null/review로 표시해줘.
+동기 decode/CV는 bounded process/GPU worker로 분리하고 timeout/cancel/backpressure를 검증해줘.
+MAIN은 dependency extra/registry 주입만 반영해줘. real local_cv가 mock을 반환하지 않게 해줘.
+실제 영상 표본으로 실행 결과와 전처리/모델 latency, 장비, version을 handoffs/local-cv.md에 남겨줘.
+fixture만 있는 경우 구현 가능 범위까지만 하고 실제 영상 검증은 미완료로 적어줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

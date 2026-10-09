@@ -1,0 +1,98 @@
+{
+  "result": {
+    "model": "clef",
+    "answers": {
+      "incident.SRC01": {
+        "type": "noul",
+        "noul": 0.3434
+      },
+      "route.SRC01": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.1901,
+          "no_action": 0.0226,
+          "human_review": 0.7873
+        },
+        "confidence": 0.4848
+      },
+      "incident.SRC02": {
+        "type": "noul",
+        "noul": 0.1033
+      },
+      "route.SRC02": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.0412,
+          "no_action": 0.029,
+          "human_review": 0.9298
+        },
+        "confidence": 0.8007
+      },
+      "incident.SRC03": {
+        "type": "noul",
+        "noul": 0.2712
+      },
+      "route.SRC03": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.0692,
+          "no_action": 0.022,
+          "human_review": 0.9088
+        },
+        "confidence": 0.7466
+      },
+      "incident.SRC04": {
+        "type": "noul",
+        "noul": 0.4739
+      },
+      "route.SRC04": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.113,
+          "no_action": 0.0399,
+          "human_review": 0.8471
+        },
+        "confidence": 0.5979
+      },
+      "incident.SRC05": {
+        "type": "noul",
+        "noul": 0.0792
+      },
+      "route.SRC05": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.0468,
+          "no_action": 0.0398,
+          "human_review": 0.9134
+        },
+        "confidence": 0.7571
+      },
+      "incident.SRC06": {
+        "type": "noul",
+        "noul": 0.1074
+      },
+      "route.SRC06": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.0405,
+          "no_action": 0.0225,
+          "human_review": 0.937
+        },
+        "confidence": 0.8202
+      }
+    },
+    "usage": {
+      "input_tokens": 31299,
+      "output_tokens": 0
+    }
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}

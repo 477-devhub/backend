@@ -1,0 +1,10 @@
+MAIN으로 계약만 먼저 확정해줘. docs/api-contract.md와 docs/dataset-handoff.md를 기준으로
+risk=null/UNKNOWN, CAM_08 id, ACK 상태 의미, Idempotency-Key, WS revision/전체 snapshot,
+clip JSON, suppressed restore, manifest source/scenario 그룹 규칙을 검토해줘.
+프론트/데이터 담당자에게 전달할 짧은 계약 안내를 handoffs/에 작성해줘. 직접 보내지는 마.
+실제 답이 필요한 누락 사항만 나에게 한 번에 묻고, 독립적인 fixture/API 테스트는 계속해줘.
+변경 시 schema/docs/tests를 MAIN이 함께 수정하고 python scripts/freeze_contracts.py로 hash를 갱신해줘.
+python -m pytest -q와 python scripts/check_contracts.py를 통과시켜줘.
+스키마를 모든 worker에게 동일하게 전달할 수 있도록 handoffs/contracts.md에 버전과 변경점을 남겨줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

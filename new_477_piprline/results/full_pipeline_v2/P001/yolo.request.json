@@ -1,0 +1,1112 @@
+{
+  "phase": "ready",
+  "input_type": "canonical_png_to_rgb_bytes",
+  "frames": [
+    {
+      "frame_id": "SRC01-F000000",
+      "source_id": "SRC01",
+      "frame_number": 0,
+      "timestamp_sec": 0.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3a01efd15e0b8de8469abf7886265005e3fa05a3ab8d43bcb158f96337ee62ff"
+    },
+    {
+      "frame_id": "SRC01-F000017",
+      "source_id": "SRC01",
+      "frame_number": 17,
+      "timestamp_sec": 0.5666666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1f26158ea9dbcdff6524f4d7ab7d752dd8b20f3d2fb10cee79a9e0a26b596fd3"
+    },
+    {
+      "frame_id": "SRC01-F000033",
+      "source_id": "SRC01",
+      "frame_number": 33,
+      "timestamp_sec": 1.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dbd0436cbf572df4735e012c5a0faba011f67865a349df659a5f8c822cd33785"
+    },
+    {
+      "frame_id": "SRC01-F000050",
+      "source_id": "SRC01",
+      "frame_number": 50,
+      "timestamp_sec": 1.6666666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b955953e15dcda42a7c8bf63c213c41aeb7457e87c9a6067d771e4041cee6b3c"
+    },
+    {
+      "frame_id": "SRC01-F000067",
+      "source_id": "SRC01",
+      "frame_number": 67,
+      "timestamp_sec": 2.2333333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3e31266909521f1c81d1f6e98ce5bd4d0113dc0fdd874f04ff0731103a7b75cd"
+    },
+    {
+      "frame_id": "SRC01-F000083",
+      "source_id": "SRC01",
+      "frame_number": 83,
+      "timestamp_sec": 2.7666666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7d80b12cb94d10a7a6376101d29262c305ea319cf270813e12d5dd55dfe25cf4"
+    },
+    {
+      "frame_id": "SRC01-F000100",
+      "source_id": "SRC01",
+      "frame_number": 100,
+      "timestamp_sec": 3.3333333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "303b949b8fb53df1e3202ef9a76599080443348e012078ab40100b72a25dafc7"
+    },
+    {
+      "frame_id": "SRC01-F000117",
+      "source_id": "SRC01",
+      "frame_number": 117,
+      "timestamp_sec": 3.9,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b825ba96556aa2faf3d735670ae41792023ebacad7d45c786e0f786b4dc1f383"
+    },
+    {
+      "frame_id": "SRC01-F000133",
+      "source_id": "SRC01",
+      "frame_number": 133,
+      "timestamp_sec": 4.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "778b040b9ad4d92915d2d55089eec430700b76215aa03755bd20e5d5b057d3b9"
+    },
+    {
+      "frame_id": "SRC01-F000150",
+      "source_id": "SRC01",
+      "frame_number": 150,
+      "timestamp_sec": 5.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6ec39203f8160d04f4668dfe3d93c24d49d26997d612349ace146056fb78ee30"
+    },
+    {
+      "frame_id": "SRC01-F000167",
+      "source_id": "SRC01",
+      "frame_number": 167,
+      "timestamp_sec": 5.566666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "051ec94c3c8bcb2ab3fc6992dcfbc85d14d1000dded945e34085ed29e5ac007d"
+    },
+    {
+      "frame_id": "SRC01-F000183",
+      "source_id": "SRC01",
+      "frame_number": 183,
+      "timestamp_sec": 6.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1c944403d7b073136ce7a59949312b7daa67f76ff639c5ed47cacba5e269786d"
+    },
+    {
+      "frame_id": "SRC01-F000200",
+      "source_id": "SRC01",
+      "frame_number": 200,
+      "timestamp_sec": 6.666666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a53238212a456576513e5fbd750f95c358133d699683f8b4bd63ef2c9134d02c"
+    },
+    {
+      "frame_id": "SRC01-F000216",
+      "source_id": "SRC01",
+      "frame_number": 216,
+      "timestamp_sec": 7.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "95afa64aa01b39ceedc06a7c83ee6d5a102884385ce0bbec27371601413a2f7f"
+    },
+    {
+      "frame_id": "SRC01-F000233",
+      "source_id": "SRC01",
+      "frame_number": 233,
+      "timestamp_sec": 7.766666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "c5ffccde976c3ce23d325f012afb36cd9df781946f94c26bcb7f9a17869aca61"
+    },
+    {
+      "frame_id": "SRC01-F000250",
+      "source_id": "SRC01",
+      "frame_number": 250,
+      "timestamp_sec": 8.333333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b35ae20d54cea638a04efee53bd3adf73b383b72b4513fb7e054bdbffc76145b"
+    },
+    {
+      "frame_id": "SRC01-F000266",
+      "source_id": "SRC01",
+      "frame_number": 266,
+      "timestamp_sec": 8.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f23082656eed250d7ed07d498bf84c67cb5188e6414b2124858df0315c07ee66"
+    },
+    {
+      "frame_id": "SRC01-F000283",
+      "source_id": "SRC01",
+      "frame_number": 283,
+      "timestamp_sec": 9.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "172a9f49524d7e79f3efa8e7774e8cb1130bce1fe416a6df0b84d64feeacb34e"
+    },
+    {
+      "frame_id": "SRC01-F000300",
+      "source_id": "SRC01",
+      "frame_number": 300,
+      "timestamp_sec": 10.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "842d15d299e67cffe65bf4892e169d36b47bd10b7bdee0b838ac2736e6d3ead6"
+    },
+    {
+      "frame_id": "SRC01-F000316",
+      "source_id": "SRC01",
+      "frame_number": 316,
+      "timestamp_sec": 10.533333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2164e344f590debe3657d3315c885a9f6ef1a8e513f7f0b810321a03140a312b"
+    },
+    {
+      "frame_id": "SRC01-F000333",
+      "source_id": "SRC01",
+      "frame_number": 333,
+      "timestamp_sec": 11.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "665ea193a2a3b50f1b437ba545b0e8fed2f325d8a7d18ea1541733c5249ea0b8"
+    },
+    {
+      "frame_id": "SRC01-F000350",
+      "source_id": "SRC01",
+      "frame_number": 350,
+      "timestamp_sec": 11.666666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "770b9aa39e34d914718e4f5b69ed40e28134ef43fa1449f718e90e3fc2555177"
+    },
+    {
+      "frame_id": "SRC01-F000366",
+      "source_id": "SRC01",
+      "frame_number": 366,
+      "timestamp_sec": 12.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f99ba602d3ab0305579cf8526aafcdf020eb0cf26d492905d6d5b51425d20efa"
+    },
+    {
+      "frame_id": "SRC01-F000383",
+      "source_id": "SRC01",
+      "frame_number": 383,
+      "timestamp_sec": 12.766666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "50bf272ff98a0ff939e5a9b63391683435ca4c341d9afb0c271f90c16d0e2102"
+    },
+    {
+      "frame_id": "SRC01-F000400",
+      "source_id": "SRC01",
+      "frame_number": 400,
+      "timestamp_sec": 13.333333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "49b14595b9289869f8b4be80a20757234841413dd7730b854cb76345ef6ad5a7"
+    },
+    {
+      "frame_id": "SRC01-F000416",
+      "source_id": "SRC01",
+      "frame_number": 416,
+      "timestamp_sec": 13.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f28e1d1974523d29fe784385dabfc97da7551292f50d87cbaf5498d3f22cb62c"
+    },
+    {
+      "frame_id": "SRC01-F000433",
+      "source_id": "SRC01",
+      "frame_number": 433,
+      "timestamp_sec": 14.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "789f03724717446e013f1f0d94c63b7a292f419fdedc98a155c1ed6c759a54dd"
+    },
+    {
+      "frame_id": "SRC01-F000450",
+      "source_id": "SRC01",
+      "frame_number": 450,
+      "timestamp_sec": 15.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "0fc9a513e9f6bf9e53d9ce2f16e1325b7d2211c386fe40642f274df8f697270f"
+    },
+    {
+      "frame_id": "SRC01-F000466",
+      "source_id": "SRC01",
+      "frame_number": 466,
+      "timestamp_sec": 15.533333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8de3a7e5d97e9f8dbab538c109e8d37c2013e8cda0ab3e9386337771e17bbaa0"
+    },
+    {
+      "frame_id": "SRC01-F000483",
+      "source_id": "SRC01",
+      "frame_number": 483,
+      "timestamp_sec": 16.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d8e8a1a7442857221fcf98bbf7733fda13e1756513c92da4b144df29d4c08f20"
+    },
+    {
+      "frame_id": "SRC01-F000500",
+      "source_id": "SRC01",
+      "frame_number": 500,
+      "timestamp_sec": 16.666666666666668,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "30e680b10f78472007e897799011b9a1b53622b66add8e0851824e27e22e4d0e"
+    },
+    {
+      "frame_id": "SRC01-F000516",
+      "source_id": "SRC01",
+      "frame_number": 516,
+      "timestamp_sec": 17.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7c7cea384c9a75cc00a32be723e56e1a278e3999fcf4a22678adcdca25b6556e"
+    },
+    {
+      "frame_id": "SRC01-F000533",
+      "source_id": "SRC01",
+      "frame_number": 533,
+      "timestamp_sec": 17.766666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "519a09971264a0dde43e0d4c727ee44ad258c2e84e97504d2b27190b7ffca43b"
+    },
+    {
+      "frame_id": "SRC01-F000549",
+      "source_id": "SRC01",
+      "frame_number": 549,
+      "timestamp_sec": 18.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "843b6842a85129e4a6dc825dfdc2b01cb6ffdb875cfb355a418d39338ea8ea30"
+    },
+    {
+      "frame_id": "SRC01-F000566",
+      "source_id": "SRC01",
+      "frame_number": 566,
+      "timestamp_sec": 18.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2ef3a399e23d9ddf013e2fddba48d452b4a6376a14dc9317e5d03ee22cde4585"
+    },
+    {
+      "frame_id": "SRC01-F000583",
+      "source_id": "SRC01",
+      "frame_number": 583,
+      "timestamp_sec": 19.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "9a15fb706efc6874de2aa4bcbf757c5d7fa524c5489e2a0955ae5277b11b0f12"
+    },
+    {
+      "frame_id": "SRC01-F000599",
+      "source_id": "SRC01",
+      "frame_number": 599,
+      "timestamp_sec": 19.966666666666665,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8c1244e0eb3f1b4504eccb037858dd1b14129fef0bff1a32c3c04a14eb498c17"
+    },
+    {
+      "frame_id": "SRC01-F000616",
+      "source_id": "SRC01",
+      "frame_number": 616,
+      "timestamp_sec": 20.533333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ff16500ca990fe7e9010d13ad1e5a154575a8187dcd5ad2b0108089d15ef079d"
+    },
+    {
+      "frame_id": "SRC01-F000633",
+      "source_id": "SRC01",
+      "frame_number": 633,
+      "timestamp_sec": 21.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "236f6cb7b215a0beef9e772eb0eb1a3cc448ecb29fedcccfbbf83686b11fbaa6"
+    },
+    {
+      "frame_id": "SRC01-F000649",
+      "source_id": "SRC01",
+      "frame_number": 649,
+      "timestamp_sec": 21.633333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3942a77ccdcd25b797f91db774244772e276d2ac52c01f9f88ee3fdb94f489f1"
+    },
+    {
+      "frame_id": "SRC01-F000666",
+      "source_id": "SRC01",
+      "frame_number": 666,
+      "timestamp_sec": 22.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "feef9549943b71ecc3117af8528f0d1bce10089185bcfb0d30a5027ebe7e6245"
+    },
+    {
+      "frame_id": "SRC01-F000683",
+      "source_id": "SRC01",
+      "frame_number": 683,
+      "timestamp_sec": 22.766666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "77389afe2ed05a862fd4f778dc52aa30e4f40ea22b992d6a19457d153802f34b"
+    },
+    {
+      "frame_id": "SRC01-F000699",
+      "source_id": "SRC01",
+      "frame_number": 699,
+      "timestamp_sec": 23.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3c0079f5101ccbded31d63d1267158286f91b6eae899f7dfa07417e6753718e1"
+    },
+    {
+      "frame_id": "SRC01-F000716",
+      "source_id": "SRC01",
+      "frame_number": 716,
+      "timestamp_sec": 23.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8e3fca28692f1a09a3bc6aec16aabf5f9c580bfd5504d0d33a9aac80a8692a72"
+    },
+    {
+      "frame_id": "SRC01-F000733",
+      "source_id": "SRC01",
+      "frame_number": 733,
+      "timestamp_sec": 24.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7a323835ca09576c7d3ab9e7ee8be1402ed693cd562d47b2548138ff04f15e67"
+    },
+    {
+      "frame_id": "SRC01-F000749",
+      "source_id": "SRC01",
+      "frame_number": 749,
+      "timestamp_sec": 24.966666666666665,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1f8630a288f444ddc2d02833d159241f4f7f2af647b8b3419d8fbebfd47fcbf9"
+    },
+    {
+      "frame_id": "SRC01-F000766",
+      "source_id": "SRC01",
+      "frame_number": 766,
+      "timestamp_sec": 25.533333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3d051a9036c5c14618198311e477f26c3e824575aab23d4da909dbbf55b52561"
+    },
+    {
+      "frame_id": "SRC01-F000783",
+      "source_id": "SRC01",
+      "frame_number": 783,
+      "timestamp_sec": 26.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b723a7132bde463c5c6b79fe9442462994e434ad03eae0a661e29af115a4d00b"
+    },
+    {
+      "frame_id": "SRC01-F000799",
+      "source_id": "SRC01",
+      "frame_number": 799,
+      "timestamp_sec": 26.633333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f292db6e3b89859bc9f6fe22041de2e9e1ae08fa36a09266e4c02eaaed865ad3"
+    },
+    {
+      "frame_id": "SRC01-F000816",
+      "source_id": "SRC01",
+      "frame_number": 816,
+      "timestamp_sec": 27.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "da7f541798e1589b608338bffe43a7a9e59f73b1537924ae06ba54376a83aca8"
+    },
+    {
+      "frame_id": "SRC01-F000833",
+      "source_id": "SRC01",
+      "frame_number": 833,
+      "timestamp_sec": 27.766666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "acee7bf5438fa5d3a7cd630b352658d28b77df725d28cd818c99b0652653d084"
+    },
+    {
+      "frame_id": "SRC01-F000849",
+      "source_id": "SRC01",
+      "frame_number": 849,
+      "timestamp_sec": 28.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a0479704ae8af2e76155e3f843cb99e2fe9b370aee44db772bc12bbd21d6882c"
+    },
+    {
+      "frame_id": "SRC01-F000866",
+      "source_id": "SRC01",
+      "frame_number": 866,
+      "timestamp_sec": 28.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1a7b1f318d0120d22b87c70277ccd4710a74ab9eacd18b144546dba03fceec91"
+    },
+    {
+      "frame_id": "SRC01-F000882",
+      "source_id": "SRC01",
+      "frame_number": 882,
+      "timestamp_sec": 29.4,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e737aed6f44af896e6493e9fa25f93e2f164439e83a89c5b675c69bde216b740"
+    },
+    {
+      "frame_id": "SRC01-F000899",
+      "source_id": "SRC01",
+      "frame_number": 899,
+      "timestamp_sec": 29.966666666666665,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f085350962b2d93aa7ff2778b17a7ea409e75a43fdb5111c113f364020fd5eb8"
+    },
+    {
+      "frame_id": "SRC01-F000916",
+      "source_id": "SRC01",
+      "frame_number": 916,
+      "timestamp_sec": 30.533333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "78f241cb941424698d56676393f657a9b76877e54cb7f74362e4357b8e38e58a"
+    },
+    {
+      "frame_id": "SRC01-F000932",
+      "source_id": "SRC01",
+      "frame_number": 932,
+      "timestamp_sec": 31.066666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "67db40b25487975846a35871240a1522faa0ca6737124d0c874f910a0bb0c197"
+    },
+    {
+      "frame_id": "SRC01-F000949",
+      "source_id": "SRC01",
+      "frame_number": 949,
+      "timestamp_sec": 31.633333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "45c1a4a099d53caf64bdfa62fc2964cd66ad094e86f557552c1b836fc61c11f6"
+    },
+    {
+      "frame_id": "SRC01-F000966",
+      "source_id": "SRC01",
+      "frame_number": 966,
+      "timestamp_sec": 32.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "47231abc293c382c665be57ff4081efa518f20b60ee060e6e04a95a5655794d3"
+    },
+    {
+      "frame_id": "SRC01-F000982",
+      "source_id": "SRC01",
+      "frame_number": 982,
+      "timestamp_sec": 32.733333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "212c33d0c86f9b7f885578fc74657926dfef5f90b5f8f341ee2008c78b987e84"
+    },
+    {
+      "frame_id": "SRC01-F000999",
+      "source_id": "SRC01",
+      "frame_number": 999,
+      "timestamp_sec": 33.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "c8e71829c5c8f97ee53c8cda9129e9d8cb81a2129eec56b3706d972c2bd1222c"
+    },
+    {
+      "frame_id": "SRC01-F001016",
+      "source_id": "SRC01",
+      "frame_number": 1016,
+      "timestamp_sec": 33.86666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1ff801454b8acbb5eb21a57d82c22cfca86194e81c13b4a527bd7b93692787c0"
+    },
+    {
+      "frame_id": "SRC01-F001032",
+      "source_id": "SRC01",
+      "frame_number": 1032,
+      "timestamp_sec": 34.4,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d3c45333459eee5622ae1e318d130a1bd53700755b15dd2df0659949722967be"
+    },
+    {
+      "frame_id": "SRC01-F001049",
+      "source_id": "SRC01",
+      "frame_number": 1049,
+      "timestamp_sec": 34.96666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1e5d430d4f6cc4530931ffe9398e5370a0fce633bc3195084729573560339453"
+    }
+  ],
+  "frame_count": 64,
+  "config": {
+    "device": "cpu",
+    "imgsz": 960,
+    "conf": 0.1,
+    "max_det": 100,
+    "lost_seconds": 5.0,
+    "dwell_seconds": 15.0,
+    "pose_conf": 0.4,
+    "low_posture_ratio": 1.2,
+    "low_posture_seconds": 1.0,
+    "max_output_bytes": 1048576
+  },
+  "detector_file": "yolo26s.pt",
+  "annotations_in_input": false,
+  "worker_frames": [
+    {
+      "frame_index": 0,
+      "camera": "SRC01",
+      "timestamp_sec": 0.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2071273897450e9547c7caa1215effd06f9d7db41cac8c1aa7a516439de96f2f"
+    },
+    {
+      "frame_index": 1,
+      "camera": "SRC01",
+      "timestamp_sec": 0.5666666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2a405528ce81d1392dde0eb22a1a97a193e994caaafc8bf1be063009aa8b011d"
+    },
+    {
+      "frame_index": 2,
+      "camera": "SRC01",
+      "timestamp_sec": 1.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1b6e51681eeb8d4431639e2753cea63ea833a5ef3dd14d7a17ed118d62aa3db7"
+    },
+    {
+      "frame_index": 3,
+      "camera": "SRC01",
+      "timestamp_sec": 1.6666666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3084be9e43d45af9fdeb7769ce02b87e337c6d3fc18ac2fc6b1509789931bafd"
+    },
+    {
+      "frame_index": 4,
+      "camera": "SRC01",
+      "timestamp_sec": 2.2333333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ae0534a32176a1d90761899788b944fa5de4550e182e97f05b2602debf088627"
+    },
+    {
+      "frame_index": 5,
+      "camera": "SRC01",
+      "timestamp_sec": 2.7666666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d6f15a13b4ce0cac674ca4da416cc01bf64f1d628769bb6174551a0a97319996"
+    },
+    {
+      "frame_index": 6,
+      "camera": "SRC01",
+      "timestamp_sec": 3.3333333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ee2e1c8ca964b970dead3ccc8d296691f9cf85665f8aff121f587c33979d06a9"
+    },
+    {
+      "frame_index": 7,
+      "camera": "SRC01",
+      "timestamp_sec": 3.9,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7f260dc4ac9172934a19d6f8cd46b3e2edf2a226b65983e1f62247ba45e50b5c"
+    },
+    {
+      "frame_index": 8,
+      "camera": "SRC01",
+      "timestamp_sec": 4.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e044062cc4f0b22b05ba0035e9db82fff21f8f7a32d5543c44cad8370fea3a66"
+    },
+    {
+      "frame_index": 9,
+      "camera": "SRC01",
+      "timestamp_sec": 5.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a0e7303e470990add2f89e9d18ad9f5858389c1edf79d40e40973ee0b056b117"
+    },
+    {
+      "frame_index": 10,
+      "camera": "SRC01",
+      "timestamp_sec": 5.566666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "50d4f74015d19b842fa1e5f3326bbf67dfe76bb7ac2fa9a508a32000401b96b7"
+    },
+    {
+      "frame_index": 11,
+      "camera": "SRC01",
+      "timestamp_sec": 6.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b012612a9f15102610dbb5bb346ac0e89a8d225b0e7506e1927db92332c21371"
+    },
+    {
+      "frame_index": 12,
+      "camera": "SRC01",
+      "timestamp_sec": 6.666666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "af9f576a9df01f7f10605b00b76da6c14f5cfe4afe9fab2340e3d3ce18171d24"
+    },
+    {
+      "frame_index": 13,
+      "camera": "SRC01",
+      "timestamp_sec": 7.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "10a08ebb1038a19131e821e16e80efb56670a649f21ff4fdf7aa3c46c3a2713d"
+    },
+    {
+      "frame_index": 14,
+      "camera": "SRC01",
+      "timestamp_sec": 7.766666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a96b59b1700821191c1a406360b8bc3d42f8ef3dc3dd4f4ee6cae813cd493165"
+    },
+    {
+      "frame_index": 15,
+      "camera": "SRC01",
+      "timestamp_sec": 8.333333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "60381564d6528575d73e4b91ab0a4b3fdcb5efaa15aec7db09afb2dc34a559ee"
+    },
+    {
+      "frame_index": 16,
+      "camera": "SRC01",
+      "timestamp_sec": 8.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e6e65a57b07fe20d5245759f17fbdcd08b811d830836c1b34765b08ebea33a79"
+    },
+    {
+      "frame_index": 17,
+      "camera": "SRC01",
+      "timestamp_sec": 9.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8e0cecac123a6f818b70dbc7f1af7c2cd96c7d09e39581171fa7e7cdb24acf1f"
+    },
+    {
+      "frame_index": 18,
+      "camera": "SRC01",
+      "timestamp_sec": 10.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "631bc45fd9af26a6155490fcb999fe6afc48dd3d7941fa3e8e0ac9aafcbd8279"
+    },
+    {
+      "frame_index": 19,
+      "camera": "SRC01",
+      "timestamp_sec": 10.533333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a902adcd4b408622ca4548336112359d8bc670cefbe793c79ac29201128c98f7"
+    },
+    {
+      "frame_index": 20,
+      "camera": "SRC01",
+      "timestamp_sec": 11.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "aeb5081900bd543f5cd0aee4af07d5dc96384d9ddf536aebca3ea82c35107971"
+    },
+    {
+      "frame_index": 21,
+      "camera": "SRC01",
+      "timestamp_sec": 11.666666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "bfe12b0b7707cfcb050638d6d7e149985f7c3b215721d63f7be7d0dfc9455ece"
+    },
+    {
+      "frame_index": 22,
+      "camera": "SRC01",
+      "timestamp_sec": 12.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d9167230784581e658f6cd55503cda509f2bfb41d0657a2303f8706709a0ef43"
+    },
+    {
+      "frame_index": 23,
+      "camera": "SRC01",
+      "timestamp_sec": 12.766666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "c9b0c5f75ae45412d85b4a9787a0ba4ed083cd9e0455fd2cc237c6929ea1975f"
+    },
+    {
+      "frame_index": 24,
+      "camera": "SRC01",
+      "timestamp_sec": 13.333333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "cf9191d3ca1504722d63bfdaee356b5fe04d8690acf3138bfc52f03d34258cb4"
+    },
+    {
+      "frame_index": 25,
+      "camera": "SRC01",
+      "timestamp_sec": 13.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6772f070de088f1d9110bd21a85a93f34ed74ada02e4a43e93f4dedbe4d9511b"
+    },
+    {
+      "frame_index": 26,
+      "camera": "SRC01",
+      "timestamp_sec": 14.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e1f9d434444ea8164d8b7e4f3698fba0b0137f989cf9d7217b6330290d55d026"
+    },
+    {
+      "frame_index": 27,
+      "camera": "SRC01",
+      "timestamp_sec": 15.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f3635532c6043292a0f42fe14b7ea34ed8d39ef566039be60fe71bea622fd59b"
+    },
+    {
+      "frame_index": 28,
+      "camera": "SRC01",
+      "timestamp_sec": 15.533333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "38f186a2710a383084d3a2b98bbe9ec4981b23b07ad11fa33d5285642d849dbf"
+    },
+    {
+      "frame_index": 29,
+      "camera": "SRC01",
+      "timestamp_sec": 16.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b0ef308aa16b89832b165cd45430c4ad792d8058b12c55b3f7dc4ca17c6fdc2b"
+    },
+    {
+      "frame_index": 30,
+      "camera": "SRC01",
+      "timestamp_sec": 16.666666666666668,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3c196b5a5d25aad47f7371ab7a65f4643e1ed49cb6c63a27d20f5912a1565294"
+    },
+    {
+      "frame_index": 31,
+      "camera": "SRC01",
+      "timestamp_sec": 17.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a83b579a0b836c551d339e269182b61e7a76fb18ce008513ad651bf0c605b383"
+    },
+    {
+      "frame_index": 32,
+      "camera": "SRC01",
+      "timestamp_sec": 17.766666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e05ea9795a422c504b22cbe9067b92d55e962abe9f1cf11a9526ecbbdd0f6df8"
+    },
+    {
+      "frame_index": 33,
+      "camera": "SRC01",
+      "timestamp_sec": 18.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dc350146d62f6817ca95d526e41ce79a6f116497696227e7a596305aa697bb75"
+    },
+    {
+      "frame_index": 34,
+      "camera": "SRC01",
+      "timestamp_sec": 18.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2e1ba34dce7dc1c2915c809f489791a01da61379a65071ccece2e57cd7f978c4"
+    },
+    {
+      "frame_index": 35,
+      "camera": "SRC01",
+      "timestamp_sec": 19.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "17d528c906da42efd208f7285ab0a4065ae91e29e3a77460cd280461943795ce"
+    },
+    {
+      "frame_index": 36,
+      "camera": "SRC01",
+      "timestamp_sec": 19.966666666666665,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "24802e52a23f09132b99d99a0cba95d0d0261a82371e7830c3b4cd5edfd5ca5a"
+    },
+    {
+      "frame_index": 37,
+      "camera": "SRC01",
+      "timestamp_sec": 20.533333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ce9db80531c39464728c813e386e0f00b549cd440bbd373cb1f9bb5347d0f70c"
+    },
+    {
+      "frame_index": 38,
+      "camera": "SRC01",
+      "timestamp_sec": 21.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6aa31f20faf546fa65f8dc61a0bcf5d3d26ef9956d15381890dbdf73126fc26d"
+    },
+    {
+      "frame_index": 39,
+      "camera": "SRC01",
+      "timestamp_sec": 21.633333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2e8dd8356ed8043db7e053faf34b0ba0c3aac71201b6bbc479e972cda124e33e"
+    },
+    {
+      "frame_index": 40,
+      "camera": "SRC01",
+      "timestamp_sec": 22.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a2d4be65484d4ebf7d163ee2fe88c862acbcc1729e711d520feefcdc3426b0e7"
+    },
+    {
+      "frame_index": 41,
+      "camera": "SRC01",
+      "timestamp_sec": 22.766666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1e7887d503227a8ccca63f9c17da5b92f934f40c0915edb7ce20eba904efabbf"
+    },
+    {
+      "frame_index": 42,
+      "camera": "SRC01",
+      "timestamp_sec": 23.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f65fa6ecb705f376e3e09d728ef784933b044cd0098504e98ca92f7f5b733086"
+    },
+    {
+      "frame_index": 43,
+      "camera": "SRC01",
+      "timestamp_sec": 23.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "07c1f5dd2ee72d31ec2c2b7b15c848bcd731468cc1813a56d8f194fbe5b5369e"
+    },
+    {
+      "frame_index": 44,
+      "camera": "SRC01",
+      "timestamp_sec": 24.433333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "808079c26b2e5982c5dbe4cf9605bc543b9ece441e8a88e00d932f35edf1cbff"
+    },
+    {
+      "frame_index": 45,
+      "camera": "SRC01",
+      "timestamp_sec": 24.966666666666665,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "9b51c9a3efaffcba1b819f9b0ec85b00e88f85ced9a6875bf1d4163ce273dbd0"
+    },
+    {
+      "frame_index": 46,
+      "camera": "SRC01",
+      "timestamp_sec": 25.533333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3a984e9a5683f06d757226f14788ccfb4a28191b25b51ff7e84e07b07013af32"
+    },
+    {
+      "frame_index": 47,
+      "camera": "SRC01",
+      "timestamp_sec": 26.1,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "487d9cb5d27cbb00be0c293603204c6f3943b7af3dc47caeb7b48eaaab62a07c"
+    },
+    {
+      "frame_index": 48,
+      "camera": "SRC01",
+      "timestamp_sec": 26.633333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3810c1b9e93f76390c5578389bb2f1e2507ff233d10164b2c9f223cd3c8f4000"
+    },
+    {
+      "frame_index": 49,
+      "camera": "SRC01",
+      "timestamp_sec": 27.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7cc5604ac233c5095f3d919d058e1055402e24aea55b7eb3e953652ee1f29159"
+    },
+    {
+      "frame_index": 50,
+      "camera": "SRC01",
+      "timestamp_sec": 27.766666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6168f2e6db2f13c42ee83f8ff32c24bfb398b536de2f3d3715e8659ed7a41cc4"
+    },
+    {
+      "frame_index": 51,
+      "camera": "SRC01",
+      "timestamp_sec": 28.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "9495f7473e2f87579807c55cb66d24bbaa21291473c1b847d23e71261cf0700c"
+    },
+    {
+      "frame_index": 52,
+      "camera": "SRC01",
+      "timestamp_sec": 28.866666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "fb90901cc0e5bfed585f7b575f1f877ba3e3f0547719edbcae7cdc35c761a435"
+    },
+    {
+      "frame_index": 53,
+      "camera": "SRC01",
+      "timestamp_sec": 29.4,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "05233a455b06543abd3a75d869c65520ddfe6d4b9ee423f9edf5b4486ca5497c"
+    },
+    {
+      "frame_index": 54,
+      "camera": "SRC01",
+      "timestamp_sec": 29.966666666666665,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "836efd20044312a5bf44d2f4a4fb62fecb8688ae696878670981ad53dffefce1"
+    },
+    {
+      "frame_index": 55,
+      "camera": "SRC01",
+      "timestamp_sec": 30.533333333333335,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "c8a27fb53b27a425b69e10c9283e4d639ab7ac20450c14897f625434cb212b31"
+    },
+    {
+      "frame_index": 56,
+      "camera": "SRC01",
+      "timestamp_sec": 31.066666666666666,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a08c093a8a9b30eb000bb1bea73cbef024e5376b24942063fbb61529c9923ebe"
+    },
+    {
+      "frame_index": 57,
+      "camera": "SRC01",
+      "timestamp_sec": 31.633333333333333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "64cc72b656e1746fa59f656669d0bb1f5de416a3e9886df2ee64846583caf1cf"
+    },
+    {
+      "frame_index": 58,
+      "camera": "SRC01",
+      "timestamp_sec": 32.2,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dc0156514f28d7877bfed30fa0da5a5447a2b37c125c4ec335892991755c178d"
+    },
+    {
+      "frame_index": 59,
+      "camera": "SRC01",
+      "timestamp_sec": 32.733333333333334,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dd3522f78fba88ff481eb469c09764d0dd6b6b76efa8ca96ccb7ce9dd496a83c"
+    },
+    {
+      "frame_index": 60,
+      "camera": "SRC01",
+      "timestamp_sec": 33.3,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "35b879c223474684135514157ae2703a507d782ae5cf6f12f22235336e97c9e0"
+    },
+    {
+      "frame_index": 61,
+      "camera": "SRC01",
+      "timestamp_sec": 33.86666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "02a30345d6237f9f77e1a9508a0d925b2f85df149afe06846e4e6b0dcce00882"
+    },
+    {
+      "frame_index": 62,
+      "camera": "SRC01",
+      "timestamp_sec": 34.4,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2f30170ebd372a35d8f7e8ce09dc99c07d5242514a8366b6f0d5f675766c9107"
+    },
+    {
+      "frame_index": 63,
+      "camera": "SRC01",
+      "timestamp_sec": 34.96666666666667,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "46509a0c87f8d8d4d4f20a28bb4f2e6b16ef3ef464e6afb7122f1fcb6f175d07"
+    }
+  ],
+  "conversion_ms": 8259.860699996352
+}

@@ -1,0 +1,11 @@
+name = "evaluation_engineer"
+description = "Implement manifest loader, metrics and evaluation runner."
+
+model = "gpt-6.1-sol"
+model_reasoning_effort = "high"
+sandbox_mode = "workspace-write"
+
+developer_instructions = """
+Own only app/eval/ and tests/eval/. No provider SDK imports. Include all failures in metrics. Forbid mocks in real evaluation. No test tuning. Preserve source/scenario split groups. Missing annotation/cost is null, not zero.
+Always report changed files, commands/results, assumptions and blockers. Never claim unrun tests passed. Do not spawn nested agents.
+"""

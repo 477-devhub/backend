@@ -1,0 +1,96 @@
+{
+  "ground_truth_validation": {
+    "valid": true,
+    "errors": [],
+    "review_required": []
+  },
+  "yolo": {
+    "evaluated_frame_count": 4,
+    "evaluated_object_count": 7,
+    "unannotated_frame_count": 60,
+    "partial_annotation_frame_count": 0,
+    "noncanonical_annotation_frame_count": 0,
+    "missing_prediction_frame_count": 0,
+    "true_positives": 6,
+    "false_positives": 0,
+    "false_negatives": 1,
+    "precision": 1.0,
+    "recall": 0.8571428571428571,
+    "map50": 0.8514851485148515,
+    "per_class": {
+      "person": {
+        "object_count": 7,
+        "prediction_count": 6,
+        "true_positives": 6,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "ap50": 0.8514851485148515
+      }
+    },
+    "output_mapping_valid": true,
+    "output_errors": [],
+    "stage_status": "ok",
+    "event_classification_accuracy": null
+  },
+  "clef": {
+    "per_source": {
+      "SRC06": {
+        "expected_invoke_vlm": true,
+        "actual_invoke_vlm": true,
+        "correct": true,
+        "proposed_route": "human_review",
+        "proposed_correct": true,
+        "reviewed": true
+      }
+    },
+    "reviewed_source_count": 1,
+    "available_decision_count": 1,
+    "unavailable_decision_count": 0,
+    "accuracy_including_unavailable": 1.0,
+    "conditional_decision_accuracy": 1.0,
+    "false_negative_calls": 0,
+    "false_positive_calls": 0,
+    "missing_required_calls": 0,
+    "output_format_valid": true,
+    "output_errors": []
+  },
+  "vlm": {
+    "per_source": {
+      "SRC06": {
+        "expected_event_type": "physical_conflict",
+        "predicted_event_type": "physical_conflict",
+        "semantic_correct": true,
+        "executed": true,
+        "output_format_valid": true,
+        "input_reference_valid": true,
+        "evidence_content_accuracy": null,
+        "safety_policy_valid": true,
+        "status": "ok",
+        "omission_cause": null,
+        "omitted_reviewed_source": false
+      }
+    },
+    "reviewed_source_count": 1,
+    "attempted_reviewed_source_count": 1,
+    "pipeline_event_accuracy_including_omissions": 1.0,
+    "conditional_attempted_event_accuracy": 1.0,
+    "omitted_reviewed_source_count": 0,
+    "output_format_valid": true,
+    "input_reference_valid": true,
+    "evidence_content_accuracy": null,
+    "output_errors": []
+  },
+  "pipeline": {
+    "all_stages_ok": true,
+    "event_accuracy": 1.0,
+    "stage_statuses": {
+      "yolo": "ok",
+      "clef": "ok",
+      "vlm": "ok"
+    },
+    "fallback_recorded": false,
+    "semantic_evidence_accuracy": null
+  }
+}

@@ -1,0 +1,894 @@
+{
+  "SRC01": {
+    "reviewer": "MAIN AI visual review",
+    "reviewed_at": "2026-10-09",
+    "yolo": {
+      "frames": [
+        {
+          "frame_number": 0,
+          "frame_id": "SRC01-F000000",
+          "timestamp_sec": 0.0,
+          "sha256": "3a01efd15e0b8de8469abf7886265005e3fa05a3ab8d43bcb158f96337ee62ff",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "car",
+              "bbox": [
+                554,
+                371,
+                1523,
+                1080
+              ],
+              "candidate_index": 0,
+              "review_action": "corrected"
+            }
+          ],
+          "review_note": "One vehicle, no person visible. Extend vehicle box to truncated image edge."
+        },
+        {
+          "frame_number": 350,
+          "frame_id": "SRC01-F000350",
+          "timestamp_sec": 11.666666666666666,
+          "sha256": "770b9aa39e34d914718e4f5b69ed40e28134ef43fa1449f718e90e3fc2555177",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "car",
+              "bbox": [
+                554,
+                371,
+                1523,
+                1080
+              ],
+              "candidate_index": 0,
+              "review_action": "corrected"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                779,
+                386,
+                987,
+                519
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "One vehicle and one ground-posture person."
+        },
+        {
+          "frame_number": 699,
+          "frame_id": "SRC01-F000699",
+          "timestamp_sec": 23.3,
+          "sha256": "3c0079f5101ccbded31d63d1267158286f91b6eae899f7dfa07417e6753718e1",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "car",
+              "bbox": [
+                554,
+                371,
+                1523,
+                1080
+              ],
+              "candidate_index": 0,
+              "review_action": "corrected"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                779,
+                386,
+                987,
+                519
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "One vehicle and one ground-posture person."
+        },
+        {
+          "frame_number": 1049,
+          "frame_id": "SRC01-F001049",
+          "timestamp_sec": 34.96666666666667,
+          "sha256": "1e5d430d4f6cc4530931ffe9398e5370a0fce633bc3195084729573560339453",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "car",
+              "bbox": [
+                554,
+                371,
+                1523,
+                1080
+              ],
+              "candidate_index": 0,
+              "review_action": "corrected"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                779,
+                387,
+                987,
+                519
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "One vehicle and one ground-posture person."
+        }
+      ],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "AI visual-reviewed sparse reference. Complete means exhaustive only within declared class scope; partial frames unscored."
+    },
+    "clef": {
+      "invoke_vlm": true,
+      "reviewed": true,
+      "rationale": "A person transitions from upright movement to persistent ground posture; detection alone cannot determine what happened or required assistance.",
+      "policy": "Invoke VLM for visible abnormal movement/interaction, or unresolved authorization, visibility or action ambiguity requiring visual/human review. Suppress only explicit confident normal with all risk axes known and low risk. Do not infer routing solely from event name."
+    },
+    "vlm": {
+      "label": "fall_ground_posture",
+      "reviewed": true,
+      "reference_label": "fall_ground_posture",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth.",
+      "observation": "Chronological frames show a walking person fall and then remain on the ground. This is observable posture, not a medical collapse diagnosis.",
+      "support_frame_interval": [
+        233,
+        1049
+      ],
+      "support_interval_precision": "coarse_visual_support_not_exact_boundary",
+      "review_artifacts": [
+        "SRC01_sequence.jpg",
+        "SRC01_zoom.jpg"
+      ]
+    },
+    "reference_quality": "AI-assisted demo reference; not independent expert/human gold",
+    "revision": "ai-visual-reference-v1"
+  },
+  "SRC02": {
+    "reviewer": "MAIN AI visual review",
+    "reviewed_at": "2026-10-09",
+    "yolo": {
+      "frames": [
+        {
+          "frame_number": 0,
+          "frame_id": "SRC02-F000000",
+          "timestamp_sec": 0.0,
+          "sha256": "43b4db536313f043db83b463ddc2e77e62024dcf67a973b6607819a4a7054f81",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1005,
+                434,
+                1080,
+                627
+              ],
+              "candidate_index": 0,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Person scope only. Background person candidates 3/4/5 are posts or static objects, rejected."
+        },
+        {
+          "frame_number": 350,
+          "frame_id": "SRC02-F000350",
+          "timestamp_sec": 11.666666666666666,
+          "sha256": "56c47cedc507e9160ee9dfea614b22210f3633592b7d4b41efdb4959f454da64",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                590,
+                750,
+                708,
+                1006
+              ],
+              "candidate_index": 1,
+              "review_action": "corrected"
+            }
+          ],
+          "review_note": "Person scope only. Correct visible lower leg/foot extent; background posts rejected."
+        },
+        {
+          "frame_number": 699,
+          "frame_id": "SRC02-F000699",
+          "timestamp_sec": 23.3,
+          "sha256": "50ba3f302a40c9eb438ba129235491e4e52e8057a0b278be1a0fe3d057d5a7ae",
+          "complete": true,
+          "objects": [],
+          "review_note": "Person scope only. Main person has left; background person proposals are posts."
+        },
+        {
+          "frame_number": 1049,
+          "frame_id": "SRC02-F001049",
+          "timestamp_sec": 34.96666666666667,
+          "sha256": "ff3be01f4fc3c26770b4dc15cffdba64bc1ae227303190db670c1a8dadd8fc7c",
+          "complete": true,
+          "objects": [],
+          "review_note": "Person scope only. No visually confirmed person; background posts rejected."
+        }
+      ],
+      "class_scope": [
+        "person"
+      ],
+      "note": "AI visual-reviewed sparse reference. Complete means exhaustive only within declared class scope; partial frames unscored."
+    },
+    "clef": {
+      "invoke_vlm": true,
+      "reviewed": true,
+      "rationale": "A visible boundary-crossing sequence needs visual interpretation; authorization and risk cannot be established from object tracks alone.",
+      "policy": "Invoke VLM for visible abnormal movement/interaction, or unresolved authorization, visibility or action ambiguity requiring visual/human review. Suppress only explicit confident normal with all risk axes known and low risk. Do not infer routing solely from event name."
+    },
+    "vlm": {
+      "label": "boundary_crossing",
+      "reviewed": true,
+      "reference_label": "boundary_crossing",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth.",
+      "observation": "The person approaches the low brick boundary from outside, climbs across it and moves along the inner path. Authorization is not visible.",
+      "support_frame_interval": [
+        183,
+        350
+      ],
+      "support_interval_precision": "coarse_visual_support_not_exact_boundary",
+      "review_artifacts": [
+        "SRC02_sequence.jpg",
+        "SRC02_zoom.jpg"
+      ]
+    },
+    "reference_quality": "AI-assisted demo reference; not independent expert/human gold",
+    "revision": "ai-visual-reference-v1"
+  },
+  "SRC03": {
+    "reviewer": "MAIN AI visual review",
+    "reviewed_at": "2026-10-09",
+    "yolo": {
+      "frames": [
+        {
+          "frame_number": 0,
+          "frame_id": "SRC03-F000000",
+          "timestamp_sec": 0.0,
+          "sha256": "3511f87adc18657dbc9649a81fcae4483f563b67b8ca5fdc5166cf802df64d54",
+          "complete": false,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                679,
+                309,
+                730,
+                517
+              ],
+              "candidate_index": 3,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Near person confirmed. Far-alley people/objects cannot be exhaustively adjudicated; frame unscored."
+        },
+        {
+          "frame_number": 350,
+          "frame_id": "SRC03-F000350",
+          "timestamp_sec": 11.666666666666666,
+          "sha256": "71fb219d2619cc2f06268883981be42ad4e44dd3ae17d6ab97789971f8d51610",
+          "complete": false,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                667,
+                311,
+                733,
+                516
+              ],
+              "candidate_index": 4,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Near person confirmed; distant person candidate unresolved; frame unscored."
+        },
+        {
+          "frame_number": 699,
+          "frame_id": "SRC03-F000699",
+          "timestamp_sec": 23.3,
+          "sha256": "59f7436727e5078df4bf77d245ab4e598dd80e4c2eb36a357a5731764c6eadfe",
+          "complete": false,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                712,
+                364,
+                782,
+                599
+              ],
+              "candidate_index": 4,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Near person confirmed; far-alley exhaustive review unresolved; frame unscored."
+        },
+        {
+          "frame_number": 1049,
+          "frame_id": "SRC03-F001049",
+          "timestamp_sec": 34.96666666666667,
+          "sha256": "c758c035fa95be42f5e168402f40858873e1e5cf03951a2135c29ce70735e310",
+          "complete": false,
+          "objects": [],
+          "review_note": "Main person inside gate and absent. Distant objects unresolved; this is not an exhaustive negative."
+        }
+      ],
+      "class_scope": [
+        "person"
+      ],
+      "note": "AI visual-reviewed sparse reference. Complete means exhaustive only within declared class scope; partial frames unscored."
+    },
+    "clef": {
+      "invoke_vlm": true,
+      "reviewed": true,
+      "rationale": "Gate entry is visible but authorization is unresolved; route for visual/human review rather than suppressing as ordinary walking or declaring illegal intrusion.",
+      "policy": "Invoke VLM for visible abnormal movement/interaction, or unresolved authorization, visibility or action ambiguity requiring visual/human review. Suppress only explicit confident normal with all risk axes known and low risk. Do not infer routing solely from event name."
+    },
+    "vlm": {
+      "label": "gate_entry_authorization_unknown",
+      "reviewed": true,
+      "reference_label": "gate_entry_authorization_unknown",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth.",
+      "observation": "A red-hat person changes direction, reapproaches the gate, opens/passes the entrance and disappears inside. Permission and intent remain unknown.",
+      "support_frame_interval": [
+        749,
+        982
+      ],
+      "support_interval_precision": "coarse_visual_support_not_exact_boundary",
+      "review_artifacts": [
+        "SRC03_sequence.jpg",
+        "SRC03_zoom.jpg"
+      ]
+    },
+    "reference_quality": "AI-assisted demo reference; not independent expert/human gold",
+    "revision": "ai-visual-reference-v1"
+  },
+  "SRC04": {
+    "reviewer": "MAIN AI visual review",
+    "reviewed_at": "2026-10-09",
+    "yolo": {
+      "frames": [
+        {
+          "frame_number": 0,
+          "frame_id": "SRC04-F000000",
+          "timestamp_sec": 0.0,
+          "sha256": "e042d0d2b51e5be35ec4798e9e207661ff74b7480841fdb1e79b1ef87fffd76b",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1683,
+                467,
+                1821,
+                697
+              ],
+              "candidate_index": 0,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1796,
+                506,
+                1919,
+                769
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1227,
+                463,
+                1318,
+                726
+              ],
+              "candidate_index": 2,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1325,
+                441,
+                1439,
+                705
+              ],
+              "candidate_index": 3,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Four people, no other scoped objects."
+        },
+        {
+          "frame_number": 350,
+          "frame_id": "SRC04-F000350",
+          "timestamp_sec": 11.666666666666666,
+          "sha256": "dffc02279892520ebf79dd87fe895e10a8140a69aabf210c37a11c9b25d532d4",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1683,
+                473,
+                1815,
+                696
+              ],
+              "candidate_index": 0,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1793,
+                508,
+                1920,
+                767
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1127,
+                457,
+                1221,
+                736
+              ],
+              "candidate_index": 2,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1246,
+                450,
+                1355,
+                717
+              ],
+              "candidate_index": 3,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Four people, no other scoped objects."
+        },
+        {
+          "frame_number": 699,
+          "frame_id": "SRC04-F000699",
+          "timestamp_sec": 23.3,
+          "sha256": "d61890efdc99017f1270757459a4fae8e50328c4f4b4e58d8aba49911b982392",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1423,
+                517,
+                1588,
+                770
+              ],
+              "candidate_index": 0,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1750,
+                499,
+                1910,
+                744
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1332,
+                514,
+                1453,
+                802
+              ],
+              "candidate_index": 2,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1684,
+                466,
+                1821,
+                697
+              ],
+              "candidate_index": 3,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Four people, overlapping boxes refer to separate people."
+        },
+        {
+          "frame_number": 1049,
+          "frame_id": "SRC04-F001049",
+          "timestamp_sec": 34.96666666666667,
+          "sha256": "cca2cc621af1913b16c2c30aa7aad9cea7537323fc68739223bc665378aab410",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1668,
+                505,
+                1795,
+                753
+              ],
+              "candidate_index": 0,
+              "review_action": "corrected"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1797,
+                491,
+                1919,
+                736
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1249,
+                453,
+                1391,
+                710
+              ],
+              "candidate_index": 2,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1728,
+                462,
+                1843,
+                691
+              ],
+              "review_action": "manual_addition"
+            }
+          ],
+          "review_note": "Candidate0 merged black-shirt woman and black-jacket man. Correct woman box and manually add separate partially occluded man; four people total."
+        }
+      ],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "AI visual-reviewed sparse reference. Complete means exhaustive only within declared class scope; partial frames unscored."
+    },
+    "clef": {
+      "invoke_vlm": true,
+      "reviewed": true,
+      "rationale": "Physical interaction and aggressive gestures require visual interpretation. A staged setting does not make observable physical interaction normal for this demo ontology.",
+      "policy": "Invoke VLM for visible abnormal movement/interaction, or unresolved authorization, visibility or action ambiguity requiring visual/human review. Suppress only explicit confident normal with all risk axes known and low risk. Do not infer routing solely from event name."
+    },
+    "vlm": {
+      "label": "physical_conflict",
+      "reviewed": true,
+      "reference_label": "physical_conflict",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth.",
+      "observation": "Four people form two pairs against a green backdrop. Later frames show confrontational raised arms, contact and kicking/punching-style movement. It appears staged; actual hostile intent is unknown.",
+      "support_frame_interval": [
+        549,
+        1049
+      ],
+      "support_interval_precision": "coarse_visual_support_not_exact_boundary",
+      "review_artifacts": [
+        "SRC04_zoom.jpg",
+        "data/frames/P004/SRC04/049.png"
+      ]
+    },
+    "reference_quality": "AI-assisted demo reference; not independent expert/human gold",
+    "revision": "ai-visual-reference-v1"
+  },
+  "SRC05": {
+    "reviewer": "MAIN AI visual review",
+    "reviewed_at": "2026-10-09",
+    "yolo": {
+      "frames": [
+        {
+          "frame_number": 0,
+          "frame_id": "SRC05-F000000",
+          "timestamp_sec": 0.0,
+          "sha256": "c3440575c4f6cf8f74588cb3ccdc814f9ca7b9d6427ba66f9c153d61381e764d",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1187,
+                622,
+                1309,
+                983
+              ],
+              "candidate_index": 0,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                966,
+                298,
+                1067,
+                490
+              ],
+              "candidate_index": 2,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1107,
+                430,
+                1214,
+                724
+              ],
+              "candidate_index": 3,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Person scope only, three visibly identifiable people. Vehicle/class ambiguity not scored."
+        },
+        {
+          "frame_number": 306,
+          "frame_id": "SRC05-F000306",
+          "timestamp_sec": 10.2,
+          "sha256": "3f9f76e8ace0829a2c0a941e7578cf962c979148103ef955697880c1b3ff4f62",
+          "complete": false,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1004,
+                381,
+                1096,
+                620
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "One near person confirmed; opposing person partly hidden in foliage with unclear full visible extent; frame unscored."
+        },
+        {
+          "frame_number": 612,
+          "frame_id": "SRC05-F000612",
+          "timestamp_sec": 20.4,
+          "sha256": "0e9ff4589ca779c0f41fbe12c66bc51a7661cabaaa90b4c6aa1b4c03eca400aa",
+          "complete": false,
+          "objects": [],
+          "review_note": "Foliage hides interacting people; visible fragments insufficient for reliable whole-person box. Frame unscored, not a negative."
+        },
+        {
+          "frame_number": 918,
+          "frame_id": "SRC05-F000918",
+          "timestamp_sec": 30.6,
+          "sha256": "bd0ec49119392f7680264d560d4eb3f8beee1b380dd4cf13d640adf97ed33afd",
+          "complete": true,
+          "objects": [],
+          "review_note": "Directly inspected entirely black endpoint, no visible object. This does not make the video a normal event."
+        }
+      ],
+      "class_scope": [
+        "person"
+      ],
+      "note": "AI visual-reviewed sparse reference. Complete means exhaustive only within declared class scope; partial frames unscored."
+    },
+    "clef": {
+      "invoke_vlm": true,
+      "reviewed": true,
+      "rationale": "Opposing physical interaction plus partial occlusion is unresolved visual risk. VLM/human review is required even if exact contact cannot be established in an individual frame.",
+      "policy": "Invoke VLM for visible abnormal movement/interaction, or unresolved authorization, visibility or action ambiguity requiring visual/human review. Suppress only explicit confident normal with all risk axes known and low risk. Do not infer routing solely from event name."
+    },
+    "vlm": {
+      "label": "physical_conflict",
+      "reviewed": true,
+      "reference_label": "physical_conflict",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth.",
+      "observation": "Two opposing people at a crossing show raised-arm and lunging/leg movements in sequence, with substantial tree occlusion. This reference is supported by the source's own frames and the README context; many contacts are obscured.",
+      "support_frame_interval": [
+        233,
+        583
+      ],
+      "support_interval_precision": "coarse_visual_support_not_exact_boundary",
+      "review_artifacts": [
+        "SRC05_zoom.jpg",
+        "data/frames/P005/SRC05/017.png",
+        "data/frames/P005/SRC05/021.png",
+        "data/frames/P005/SRC05/025.png",
+        "data/frames/P005/SRC05/029.png",
+        "data/frames/P005/SRC05/033.png",
+        "data/frames/P005/SRC05/037.png"
+      ]
+    },
+    "reference_quality": "AI-assisted demo reference; not independent expert/human gold",
+    "revision": "ai-visual-reference-v1"
+  },
+  "SRC06": {
+    "reviewer": "MAIN AI visual review",
+    "reviewed_at": "2026-10-09",
+    "yolo": {
+      "frames": [
+        {
+          "frame_number": 0,
+          "frame_id": "SRC06-F000000",
+          "timestamp_sec": 0.0,
+          "sha256": "0f092269fa02853865c1894a25c1f65ded6077718a94f74bd76693dca2a85df2",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1300,
+                390,
+                1400,
+                660
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                18,
+                434,
+                101,
+                628
+              ],
+              "candidate_index": 3,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                534,
+                422,
+                618,
+                602
+              ],
+              "candidate_index": 5,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Person scope only: three visible people including two partially shrub-occluded bystanders; accepted visible extents."
+        },
+        {
+          "frame_number": 318,
+          "frame_id": "SRC06-F000318",
+          "timestamp_sec": 10.6,
+          "sha256": "4e4f90e746b878cac97829e0c1cc18a5d5e63d4e7ef5b226351427bd54c046e8",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1118,
+                434,
+                1314,
+                713
+              ],
+              "candidate_index": 1,
+              "review_action": "visually_accepted"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                870,
+                428,
+                1130,
+                684
+              ],
+              "candidate_index": 2,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Person scope only: two interacting people."
+        },
+        {
+          "frame_number": 636,
+          "frame_id": "SRC06-F000636",
+          "timestamp_sec": 21.2,
+          "sha256": "a5a8d1540151b951be45fd2b7894615069eb4aa7abcbbfd471681d7e755b62e5",
+          "complete": true,
+          "objects": [
+            {
+              "class_name": "person",
+              "bbox": [
+                1455,
+                485,
+                1678,
+                825
+              ],
+              "candidate_index": 1,
+              "review_action": "corrected"
+            },
+            {
+              "class_name": "person",
+              "bbox": [
+                1564,
+                766,
+                1690,
+                921
+              ],
+              "candidate_index": 6,
+              "review_action": "visually_accepted"
+            }
+          ],
+          "review_note": "Person scope only: upright white-shirt person and separate ground-posture dark-shirt person. Correct raised/lowered foot extent."
+        },
+        {
+          "frame_number": 954,
+          "frame_id": "SRC06-F000954",
+          "timestamp_sec": 31.8,
+          "sha256": "bd0ec49119392f7680264d560d4eb3f8beee1b380dd4cf13d640adf97ed33afd",
+          "complete": true,
+          "objects": [],
+          "review_note": "Directly inspected entirely black endpoint, no visible object. Video-level event remains physical interaction."
+        }
+      ],
+      "class_scope": [
+        "person"
+      ],
+      "note": "AI visual-reviewed sparse reference. Complete means exhaustive only within declared class scope; partial frames unscored."
+    },
+    "clef": {
+      "invoke_vlm": true,
+      "reviewed": true,
+      "rationale": "Direct physical interaction and ground posture require visual interpretation and human review; detector boxes alone cannot safely suppress this incident.",
+      "policy": "Invoke VLM for visible abnormal movement/interaction, or unresolved authorization, visibility or action ambiguity requiring visual/human review. Suppress only explicit confident normal with all risk axes known and low risk. Do not infer routing solely from event name."
+    },
+    "vlm": {
+      "label": "physical_conflict",
+      "reviewed": true,
+      "reference_label": "physical_conflict",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth.",
+      "observation": "Chronological frames show opposing arm contact and kicking, a person falling near the parked white vehicle and subsequent standing-over/kicking interaction. The final frame is black.",
+      "support_frame_interval": [
+        363,
+        909
+      ],
+      "support_interval_precision": "coarse_visual_support_not_exact_boundary",
+      "review_artifacts": [
+        "SRC06_zoom.jpg"
+      ]
+    },
+    "reference_quality": "AI-assisted demo reference; not independent expert/human gold",
+    "revision": "ai-visual-reference-v1"
+  }
+}

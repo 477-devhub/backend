@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "executed": true,
+  "output": {
+    "sources": [
+      {
+        "source_id": "SRC05",
+        "invoke_vlm": true,
+        "proposed_route": "human_review",
+        "route_confidence": 0.589,
+        "incident_probability": 0.3008,
+        "cv_uncertain": true,
+        "needs_human_review": true,
+        "reason": "cv_information_incomplete"
+      }
+    ]
+  },
+  "errors": [],
+  "cost_usd": {
+    "value": 0.0034595999999999997,
+    "basis": "usage_based_estimate",
+    "invoice_usd": null
+  },
+  "metadata": {
+    "model": "clef",
+    "images_sent": 0,
+    "feature_frames": 64,
+    "retry_count": 0,
+    "context_truncation_status": "unknown",
+    "byte_token_proxy": false,
+    "request_body_limit_bytes": 196608,
+    "request_bytes": 31169,
+    "preprocessing_ms": 559.8149998113513,
+    "sources": [
+      "SRC05"
+    ],
+    "prompt_in_request": true,
+    "reservation_id": "5e8268fed25c4ba793b237b69f2d9b10",
+    "http_status": 200,
+    "usage": {
+      "input_tokens": 14415,
+      "output_tokens": 0
+    },
+    "input_price_per_million": 0.24,
+    "output_price_per_million": 0.0,
+    "reported_model": "clef",
+    "request_ms": 2578.6608001217246
+  },
+  "latency_ms": 3191.43890007399
+}

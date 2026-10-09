@@ -1,0 +1,10 @@
+evaluation_engineer에게 app/eval/**와 tests/eval/**만 맡겨줘.
+manifest 검사, 동일 입력 hash, 실제 asset-map injection, provider/preprocess/end-to-end 측정 기록을 연결해줘.
+A local_cv / B clef_direct / C general_vlm을 같은 validation 샘플로 실행해줘.
+B가 접근 불가면 B를 N/A/BLOCKED로 적고 A/C 결과만 내. mock 수치를 발표하지 마.
+실패 샘플을 지우지 말고 F1/critical_event_recall/critical_escalation_recall/FPR/review_recall/error/latency/cost coverage를 함께 보고해줘.
+macro-F1 클래스 목록, 각 분모/지원 범위와 risk annotation coverage도 기록해줘.
+필요한 prompt/threshold 조정은 validation으로만 하며 test는 열지 마.
+MAIN과 reviewer가 표본 누수·분할·전처리 공정성을 확인하고 reports/validation.md에 결과를 남겨줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

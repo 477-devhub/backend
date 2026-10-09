@@ -1,0 +1,9 @@
+# Known working versions; CPU torch installation is documented in README.
+numpy>=1.26,<3
+opencv-python>=4.10,<5
+ultralytics==8.4.174
+torch>=2.9,<3
+psutil>=6,<8
+httpx>=0.27,<1
+jsonschema>=4.23,<5
+pytest>=8,<10

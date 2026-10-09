@@ -1,0 +1,28 @@
+{
+  "id": "26ab5ead-b929-4e90-bfcc-74a64f6ef060",
+  "object": "chat.completion",
+  "created": 1791473689,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"assessments\":[{\"source_id\":\"SRC02\",\"event_type\":\"normal\",\"event_confidence\":0.7,\"risk_axes\":{\"severity\":null,\"imminence\":null,\"exposure\":null,\"persistence\":null},\"evidence_refs\":[\"SRC02-F000000\",\"SRC02-F000017\",\"SRC02-F000033\",\"SRC02-F000050\",\"SRC02-F000067\",\"SRC02-F000083\",\"SRC02-F000100\",\"SRC02-F000117\",\"SRC02-F000133\",\"SRC02-F000150\",\"SRC02-F000167\",\"SRC02-F000183\",\"SRC02-F000200\",\"SRC02-F000216\",\"SRC02-F000233\",\"SRC02-F000250\",\"SRC02-F000266\",\"SRC02-F000283\",\"SRC02-F000300\",\"SRC02-F000316\",\"SRC02-F000333\",\"SRC02-F000350\",\"SRC02-F000366\",\"SRC02-F000383\",\"SRC02-F000400\",\"SRC02-F000416\",\"SRC02-F000433\",\"SRC02-F000450\",\"SRC02-F000466\",\"SRC02-F000483\",\"SRC02-F000500\",\"SRC02-F000516\",\"SRC02-F000533\",\"SRC02-F000549\",\"SRC02-F000566\",\"SRC02-F000583\",\"SRC02-F000599\",\"SRC02-F000616\",\"SRC02-F000633\",\"SRC02-F000649\",\"SRC02-F000666\",\"SRC02-F000683\",\"SRC02-F000699\",\"SRC02-F000716\",\"SRC02-F000733\",\"SRC02-F000749\",\"SRC02-F000766\",\"SRC02-F000783\",\"SRC02-F000799\",\"SRC02-F000816\",\"SRC02-F000833\",\"SRC02-F000849\",\"SRC02-F000866\",\"SRC02-F000882\",\"SRC02-F000899\",\"SRC02-F000916\",\"SRC02-F000932\",\"SRC02-F000949\",\"SRC02-F000966\",\"SRC02-F000982\",\"SRC02-F000999\",\"SRC02-F001016\",\"SRC02-F001032\",\"SRC02-F001049\"],\"needs_human_review\":false,\"uncertainty_reason\":null}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 64734,
+    "completion_tokens": 524,
+    "total_tokens": 65258,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 64734
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

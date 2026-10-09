@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "exact_vs_wrong": true,
+    "skipped_vs_exact": true,
+    "scope": "synthetic scorer checks, not model execution"
+  },
+  "item_count": 12,
+  "paid_enabled": true,
+  "preflight_ms": 15326.833499828354,
+  "forecast_reservation_upper_usd": 1.08251136,
+  "inherited_remaining_usd": null,
+  "explicit_uncapped_authorization": "[REDACTED]",
+  "ground_truth_review_pending": true,
+  "invoice_cost_usd": null
+}

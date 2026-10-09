@@ -1,0 +1,108 @@
+{
+  "assessments": [
+    {
+      "source_id": "SRC01",
+      "event_type": "fall_ground_posture",
+      "event_confidence": 0.95,
+      "risk_axes": {
+        "severity": null,
+        "imminence": null,
+        "exposure": null,
+        "persistence": null
+      },
+      "evidence_refs": [
+        "SRC01-F000250",
+        "SRC01-F000300",
+        "SRC01-F000350",
+        "SRC01-F000400",
+        "SRC01-F000450",
+        "SRC01-F000500",
+        "SRC01-F000549",
+        "SRC01-F000599",
+        "SRC01-F000649",
+        "SRC01-F000699",
+        "SRC01-F000749",
+        "SRC01-F000799",
+        "SRC01-F000849",
+        "SRC01-F000899",
+        "SRC01-F000949",
+        "SRC01-F000999",
+        "SRC01-F001049"
+      ],
+      "needs_human_review": true,
+      "uncertainty_reason": "Person is observed lying on the ground for an extended period; medical status and cause cannot be determined from video alone."
+    },
+    {
+      "source_id": "SRC03",
+      "event_type": "normal",
+      "event_confidence": 0.9,
+      "risk_axes": {
+        "severity": null,
+        "imminence": null,
+        "exposure": null,
+        "persistence": null
+      },
+      "evidence_refs": [
+        "SRC03-F000000",
+        "SRC03-F000052",
+        "SRC03-F000105",
+        "SRC03-F000157",
+        "SRC03-F000210",
+        "SRC03-F000262",
+        "SRC03-F000315",
+        "SRC03-F000367",
+        "SRC03-F000420",
+        "SRC03-F000472",
+        "SRC03-F000525",
+        "SRC03-F000577",
+        "SRC03-F000629",
+        "SRC03-F000682",
+        "SRC03-F000734",
+        "SRC03-F000787",
+        "SRC03-F000839",
+        "SRC03-F000892",
+        "SRC03-F000944",
+        "SRC03-F000997",
+        "SRC03-F001049"
+      ],
+      "needs_human_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "source_id": "SRC05",
+      "event_type": "normal",
+      "event_confidence": 0.9,
+      "risk_axes": {
+        "severity": null,
+        "imminence": null,
+        "exposure": null,
+        "persistence": null
+      },
+      "evidence_refs": [
+        "SRC05-F000000",
+        "SRC05-F000046",
+        "SRC05-F000092",
+        "SRC05-F000138",
+        "SRC05-F000184",
+        "SRC05-F000230",
+        "SRC05-F000275",
+        "SRC05-F000321",
+        "SRC05-F000367",
+        "SRC05-F000413",
+        "SRC05-F000459",
+        "SRC05-F000505",
+        "SRC05-F000551",
+        "SRC05-F000597",
+        "SRC05-F000643",
+        "SRC05-F000689",
+        "SRC05-F000734",
+        "SRC05-F000780",
+        "SRC05-F000826",
+        "SRC05-F000872",
+        "SRC05-F000918"
+      ],
+      "needs_human_review": false,
+      "uncertainty_reason": null
+    }
+  ]
+}

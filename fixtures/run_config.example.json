@@ -1,0 +1,17 @@
+{
+  "contract_version": "1.0",
+  "adapters": [
+    "local_cv",
+    "clef_direct",
+    "general_vlm"
+  ],
+  "timeout_sec": 5,
+  "feature_extractor_version": "REPLACE_BEFORE_FREEZE",
+  "frame_sampling_version": "REPLACE_BEFORE_FREEZE",
+  "provider_models": {
+    "clef_direct": "UNVERIFIED",
+    "general_vlm": "UNVERIFIED"
+  },
+  "prompt_versions": {},
+  "code_commit": "REPLACE_BEFORE_FREEZE"
+}

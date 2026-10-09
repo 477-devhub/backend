@@ -1,0 +1,9 @@
+validation에서 선택을 끝낸 설정으로 실제 run_config를 만들어줘.
+모델/weight checksum/prompt/threshold/sampling/feature cache/코드 commit을 고정하고 placeholder를 모두 제거해줘.
+MAIN이 scripts/freeze_dataset.py로 manifest/run config를 잠그고 checksum 기록을 검토해줘.
+python -m app.eval.batch 명령에 --split test --allow-test --lock --run-config를 사용해 각 실제 adapter를 평가해줘.
+오류 포함 전체 샘플, 재현 artifacts와 최종 표를 reports/final-test.md에 남겨줘.
+test 결과를 보고 다시 prompt/threshold를 튜닝하지 마. 변경이 필요하면 새 검증/test 프로토콜부터 설계해줘.
+A/B/C 결과와 candidate recall이 충분한 근거가 된 이후에만 D router→VLM 필요 여부를 제안해줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

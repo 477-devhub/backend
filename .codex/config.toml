@@ -1,0 +1,6 @@
+# Current standalone custom-agent format, checked 2026-10-06.
+# Inherit account's selected model/effort; avoid unavailable model overrides.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 3
+interrupt_message = true

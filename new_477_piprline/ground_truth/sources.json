@@ -1,0 +1,164 @@
+{
+  "SRC01": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "yolo": {
+      "frames": [],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "No annotation files supplied; exhaustive box review required."
+    },
+    "clef": {
+      "invoke_vlm": null,
+      "reviewed": false,
+      "rationale": null
+    },
+    "vlm": {
+      "label": null,
+      "reviewed": false,
+      "reference_label": "fall_ground_posture",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth."
+    }
+  },
+  "SRC02": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "yolo": {
+      "frames": [],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "No annotation files supplied; exhaustive box review required."
+    },
+    "clef": {
+      "invoke_vlm": null,
+      "reviewed": false,
+      "rationale": null
+    },
+    "vlm": {
+      "label": null,
+      "reviewed": false,
+      "reference_label": "boundary_crossing",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth."
+    }
+  },
+  "SRC03": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "yolo": {
+      "frames": [],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "No annotation files supplied; exhaustive box review required."
+    },
+    "clef": {
+      "invoke_vlm": null,
+      "reviewed": false,
+      "rationale": null
+    },
+    "vlm": {
+      "label": null,
+      "reviewed": false,
+      "reference_label": "gate_entry_authorization_unknown",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth."
+    }
+  },
+  "SRC04": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "yolo": {
+      "frames": [],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "No annotation files supplied; exhaustive box review required."
+    },
+    "clef": {
+      "invoke_vlm": null,
+      "reviewed": false,
+      "rationale": null
+    },
+    "vlm": {
+      "label": null,
+      "reviewed": false,
+      "reference_label": "physical_conflict",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth."
+    }
+  },
+  "SRC05": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "yolo": {
+      "frames": [],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "No annotation files supplied; exhaustive box review required."
+    },
+    "clef": {
+      "invoke_vlm": null,
+      "reviewed": false,
+      "rationale": null
+    },
+    "vlm": {
+      "label": null,
+      "reviewed": false,
+      "reference_label": "physical_conflict",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth."
+    }
+  },
+  "SRC06": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "yolo": {
+      "frames": [],
+      "class_scope": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "bus",
+        "truck"
+      ],
+      "note": "No annotation files supplied; exhaustive box review required."
+    },
+    "clef": {
+      "invoke_vlm": null,
+      "reviewed": false,
+      "rationale": null
+    },
+    "vlm": {
+      "label": null,
+      "reviewed": false,
+      "reference_label": "physical_conflict",
+      "reference_note": "Candidate README observable-behavior description, not adjudicated ground truth."
+    }
+  }
+}

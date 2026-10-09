@@ -1,0 +1,28 @@
+{
+  "result": {
+    "model": "clef",
+    "answers": {
+      "incident.SRC03": {
+        "type": "noul",
+        "noul": 0.0887
+      },
+      "route.SRC03": {
+        "type": "choice",
+        "choice": "human_review",
+        "probabilities": {
+          "invoke_vlm": 0.1393,
+          "no_action": 0.0532,
+          "human_review": 0.8075
+        },
+        "confidence": 0.5115
+      }
+    },
+    "usage": {
+      "input_tokens": 60615,
+      "output_tokens": 0
+    }
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}

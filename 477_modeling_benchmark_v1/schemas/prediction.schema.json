@@ -1,0 +1,395 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://477.local/prediction.schema.json",
+  "title": "Common camera reasoning output",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/single"
+    },
+    {
+      "$ref": "#/$defs/attention"
+    },
+    {
+      "$ref": "#/$defs/multi"
+    }
+  ],
+  "$defs": {
+    "single": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_type",
+        "is_incident",
+        "observations",
+        "temporal_summary",
+        "risk",
+        "confidence",
+        "uncertainties",
+        "reason",
+        "human_review_required"
+      ],
+      "properties": {
+        "event_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "is_incident": {
+          "type": "boolean"
+        },
+        "observations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "camera",
+              "timestamp_sec",
+              "description"
+            ],
+            "properties": {
+              "camera": {
+                "type": "string",
+                "enum": [
+                  "CAM_01",
+                  "CAM_02",
+                  "CAM_03"
+                ]
+              },
+              "timestamp_sec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "temporal_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "risk": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "severity",
+            "imminence",
+            "exposure",
+            "persistence"
+          ],
+          "properties": {
+            "severity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "imminence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "exposure": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "persistence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_review_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "attention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assessments",
+        "attention_queue"
+      ],
+      "properties": {
+        "assessments": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "camera",
+              "assessment"
+            ],
+            "properties": {
+              "camera": {
+                "type": "string",
+                "enum": [
+                  "CAM_01",
+                  "CAM_02",
+                  "CAM_03"
+                ]
+              },
+              "assessment": {
+                "$ref": "#/$defs/single"
+              }
+            }
+          }
+        },
+        "attention_queue": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "camera",
+              "rank",
+              "reason"
+            ],
+            "properties": {
+              "camera": {
+                "type": "string",
+                "enum": [
+                  "CAM_01",
+                  "CAM_02",
+                  "CAM_03"
+                ]
+              },
+              "rank": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 3
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "multi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_type",
+        "is_incident",
+        "observations",
+        "temporal_summary",
+        "risk",
+        "confidence",
+        "uncertainties",
+        "reason",
+        "human_review_required",
+        "same_incident",
+        "camera_evidence",
+        "cross_camera_summary",
+        "additional_information_from_second_view"
+      ],
+      "properties": {
+        "event_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "is_incident": {
+          "type": "boolean"
+        },
+        "observations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "camera",
+              "timestamp_sec",
+              "description"
+            ],
+            "properties": {
+              "camera": {
+                "type": "string",
+                "enum": [
+                  "CAM_01",
+                  "CAM_02",
+                  "CAM_03"
+                ]
+              },
+              "timestamp_sec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "temporal_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "risk": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "severity",
+            "imminence",
+            "exposure",
+            "persistence"
+          ],
+          "properties": {
+            "severity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "imminence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "exposure": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "persistence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_review_required": {
+          "type": "boolean"
+        },
+        "same_incident": {
+          "type": "boolean"
+        },
+        "camera_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "CAM_01",
+            "CAM_02"
+          ],
+          "properties": {
+            "CAM_01": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "camera",
+                  "timestamp_sec",
+                  "description"
+                ],
+                "properties": {
+                  "camera": {
+                    "type": "string",
+                    "enum": [
+                      "CAM_01",
+                      "CAM_02",
+                      "CAM_03"
+                    ]
+                  },
+                  "timestamp_sec": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "CAM_02": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "camera",
+                  "timestamp_sec",
+                  "description"
+                ],
+                "properties": {
+                  "camera": {
+                    "type": "string",
+                    "enum": [
+                      "CAM_01",
+                      "CAM_02",
+                      "CAM_03"
+                    ]
+                  },
+                  "timestamp_sec": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "cross_camera_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additional_information_from_second_view": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "d87f2804-6804-4563-9c26-9a9193176618",
+  "object": "chat.completion",
+  "created": 1791473992,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"assessments\":[{\"source_id\":\"SRC06\",\"event_type\":\"physical_conflict\",\"event_confidence\":0.9,\"risk_axes\":{\"severity\":0.7,\"imminence\":0.8,\"exposure\":0.6,\"persistence\":0.5},\"evidence_refs\":[\"SRC06-F000303\",\"SRC06-F000318\",\"SRC06-F000333\",\"SRC06-F000348\",\"SRC06-F000363\",\"SRC06-F000379\",\"SRC06-F000394\",\"SRC06-F000409\",\"SRC06-F000424\",\"SRC06-F000439\",\"SRC06-F000454\",\"SRC06-F000469\",\"SRC06-F000485\",\"SRC06-F000500\",\"SRC06-F000515\",\"SRC06-F000530\",\"SRC06-F000545\",\"SRC06-F000560\",\"SRC06-F000575\",\"SRC06-F000591\",\"SRC06-F000606\",\"SRC06-F000621\",\"SRC06-F000636\",\"SRC06-F000651\",\"SRC06-F000666\",\"SRC06-F000681\",\"SRC06-F000697\",\"SRC06-F000712\",\"SRC06-F000727\",\"SRC06-F000742\",\"SRC06-F000757\",\"SRC06-F000772\",\"SRC06-F000787\",\"SRC06-F000803\",\"SRC06-F000818\",\"SRC06-F000833\",\"SRC06-F000848\",\"SRC06-F000863\",\"SRC06-F000878\",\"SRC06-F000893\",\"SRC06-F000909\",\"SRC06-F000924\",\"SRC06-F000939\"],\"needs_human_review\":true,\"uncertainty_reason\":\"Physical altercation observed between two individuals; intent and context unknown.\"}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 64730,
+    "completion_tokens": 399,
+    "total_tokens": 65129,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 64730
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

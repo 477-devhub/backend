@@ -1,0 +1,2945 @@
+{
+  "model": "clef",
+  "state": {
+    "sources": [
+      {
+        "source_id": "SRC01",
+        "frames": [
+          {
+            "frame_id": "SRC01-F000000",
+            "frame_number": 0,
+            "timestamp_sec": 0.0,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.07,
+                  370.95,
+                  1522.75,
+                  1074.53
+                ],
+                "confidence": 0.90689,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.29,
+                  39.04,
+                  588.99
+                ],
+                "confidence": 0.42596,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000034",
+            "frame_number": 34,
+            "timestamp_sec": 1.1333333333333333,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.66,
+                  370.36,
+                  1523.36,
+                  1074.36
+                ],
+                "confidence": 0.8992,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.16,
+                  39.32,
+                  588.71
+                ],
+                "confidence": 0.41874,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000068",
+            "frame_number": 68,
+            "timestamp_sec": 2.2666666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.56,
+                  370.52,
+                  1523.23,
+                  1074.16
+                ],
+                "confidence": 0.90692,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  506.99,
+                  38.99,
+                  588.98
+                ],
+                "confidence": 0.43785,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000102",
+            "frame_number": 102,
+            "timestamp_sec": 3.4,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  611.46,
+                  370.55,
+                  1523.03,
+                  1074.27
+                ],
+                "confidence": 0.90336,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.34,
+                  39.26,
+                  588.97
+                ],
+                "confidence": 0.41429,
+                "track_id": "2"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.08,
+                  505.14,
+                  60.0,
+                  883.12
+                ],
+                "confidence": 0.15929,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000135",
+            "frame_number": 135,
+            "timestamp_sec": 4.5,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  523.77,
+                  332.79,
+                  728.31,
+                  587.22
+                ],
+                "confidence": 0.92584,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.25,
+                  370.68,
+                  1522.72,
+                  1073.82
+                ],
+                "confidence": 0.90387,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.07,
+                  507.71,
+                  38.37,
+                  588.79
+                ],
+                "confidence": 0.70311,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000169",
+            "frame_number": 169,
+            "timestamp_sec": 5.633333333333334,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  610.93,
+                  370.22,
+                  1523.29,
+                  1074.23
+                ],
+                "confidence": 0.90124,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  705.33,
+                  256.05,
+                  790.9,
+                  541.32
+                ],
+                "confidence": 0.87234,
+                "track_id": null
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.11,
+                  507.17,
+                  38.77,
+                  589.0
+                ],
+                "confidence": 0.7058,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000203",
+            "frame_number": 203,
+            "timestamp_sec": 6.766666666666667,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  614.09,
+                  370.06,
+                  1522.94,
+                  1074.17
+                ],
+                "confidence": 0.89265,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  836.74,
+                  243.72,
+                  929.45,
+                  441.66
+                ],
+                "confidence": 0.86931,
+                "track_id": null
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.25,
+                  38.51,
+                  589.17
+                ],
+                "confidence": 0.59977,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000237",
+            "frame_number": 237,
+            "timestamp_sec": 7.9,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  614.17,
+                  370.32,
+                  1522.85,
+                  1073.88
+                ],
+                "confidence": 0.90701,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  821.57,
+                  337.99,
+                  975.51,
+                  511.67
+                ],
+                "confidence": 0.89391,
+                "track_id": null
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.5,
+                  38.46,
+                  589.24
+                ],
+                "confidence": 0.64222,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000271",
+            "frame_number": 271,
+            "timestamp_sec": 9.033333333333333,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  614.33,
+                  369.18,
+                  1522.66,
+                  1073.91
+                ],
+                "confidence": 0.91029,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  856.87,
+                  330.7,
+                  980.75,
+                  505.24
+                ],
+                "confidence": 0.88919,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.65,
+                  38.62,
+                  589.13
+                ],
+                "confidence": 0.56619,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000305",
+            "frame_number": 305,
+            "timestamp_sec": 10.166666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.76,
+                  370.69,
+                  1522.81,
+                  1074.34
+                ],
+                "confidence": 0.91783,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  843.34,
+                  388.3,
+                  988.49,
+                  529.78
+                ],
+                "confidence": 0.90341,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.18,
+                  38.83,
+                  589.18
+                ],
+                "confidence": 0.62551,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000338",
+            "frame_number": 338,
+            "timestamp_sec": 11.266666666666667,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.8,
+                  369.38,
+                  1522.77,
+                  1074.19
+                ],
+                "confidence": 0.9133,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  794.83,
+                  386.55,
+                  984.56,
+                  518.96
+                ],
+                "confidence": 0.91094,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.33,
+                  38.37,
+                  589.03
+                ],
+                "confidence": 0.67404,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000372",
+            "frame_number": 372,
+            "timestamp_sec": 12.4,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  614.65,
+                  369.66,
+                  1522.72,
+                  1074.1
+                ],
+                "confidence": 0.91598,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  779.81,
+                  386.47,
+                  984.23,
+                  519.37
+                ],
+                "confidence": 0.90749,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.36,
+                  38.33,
+                  589.2
+                ],
+                "confidence": 0.69155,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000406",
+            "frame_number": 406,
+            "timestamp_sec": 13.533333333333333,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.29,
+                  369.33,
+                  1522.58,
+                  1074.27
+                ],
+                "confidence": 0.91461,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.22,
+                  386.51,
+                  984.33,
+                  519.34
+                ],
+                "confidence": 0.90474,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.69,
+                  38.26,
+                  589.04
+                ],
+                "confidence": 0.67247,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000440",
+            "frame_number": 440,
+            "timestamp_sec": 14.666666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  611.92,
+                  369.94,
+                  1523.05,
+                  1073.97
+                ],
+                "confidence": 0.91457,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.03,
+                  386.33,
+                  984.9,
+                  518.94
+                ],
+                "confidence": 0.90623,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.34,
+                  38.54,
+                  588.95
+                ],
+                "confidence": 0.66212,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000474",
+            "frame_number": 474,
+            "timestamp_sec": 15.8,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.52,
+                  370.12,
+                  1522.6,
+                  1073.89
+                ],
+                "confidence": 0.91728,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.25,
+                  386.44,
+                  985.07,
+                  518.95
+                ],
+                "confidence": 0.90569,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.49,
+                  38.42,
+                  588.98
+                ],
+                "confidence": 0.64779,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000508",
+            "frame_number": 508,
+            "timestamp_sec": 16.933333333333334,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.68,
+                  368.9,
+                  1522.98,
+                  1073.97
+                ],
+                "confidence": 0.91427,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.37,
+                  386.57,
+                  985.35,
+                  519.06
+                ],
+                "confidence": 0.90822,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.25,
+                  38.69,
+                  588.88
+                ],
+                "confidence": 0.63444,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000541",
+            "frame_number": 541,
+            "timestamp_sec": 18.033333333333335,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.78,
+                  370.52,
+                  1522.91,
+                  1073.65
+                ],
+                "confidence": 0.91342,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.33,
+                  386.38,
+                  985.23,
+                  519.05
+                ],
+                "confidence": 0.91065,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.43,
+                  38.61,
+                  589.08
+                ],
+                "confidence": 0.61449,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000575",
+            "frame_number": 575,
+            "timestamp_sec": 19.166666666666668,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.26,
+                  369.35,
+                  1522.81,
+                  1073.78
+                ],
+                "confidence": 0.91462,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.01,
+                  386.62,
+                  985.21,
+                  518.82
+                ],
+                "confidence": 0.91247,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.37,
+                  38.67,
+                  588.91
+                ],
+                "confidence": 0.62958,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000609",
+            "frame_number": 609,
+            "timestamp_sec": 20.3,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  614.96,
+                  369.56,
+                  1522.77,
+                  1073.95
+                ],
+                "confidence": 0.9169,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  779.74,
+                  386.37,
+                  985.44,
+                  518.87
+                ],
+                "confidence": 0.90891,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.28,
+                  38.7,
+                  589.02
+                ],
+                "confidence": 0.64256,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000643",
+            "frame_number": 643,
+            "timestamp_sec": 21.433333333333334,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.81,
+                  370.95,
+                  1523.03,
+                  1073.94
+                ],
+                "confidence": 0.92014,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.07,
+                  386.53,
+                  985.12,
+                  518.89
+                ],
+                "confidence": 0.90914,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.15,
+                  39.03,
+                  589.05
+                ],
+                "confidence": 0.62728,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000677",
+            "frame_number": 677,
+            "timestamp_sec": 22.566666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  614.05,
+                  369.91,
+                  1523.17,
+                  1074.03
+                ],
+                "confidence": 0.91369,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.17,
+                  386.48,
+                  985.2,
+                  518.99
+                ],
+                "confidence": 0.91004,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.6,
+                  38.56,
+                  588.86
+                ],
+                "confidence": 0.63688,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000711",
+            "frame_number": 711,
+            "timestamp_sec": 23.7,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.81,
+                  370.76,
+                  1522.75,
+                  1074.16
+                ],
+                "confidence": 0.91034,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  779.81,
+                  386.66,
+                  985.2,
+                  519.06
+                ],
+                "confidence": 0.90949,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.26,
+                  38.45,
+                  588.89
+                ],
+                "confidence": 0.63204,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000744",
+            "frame_number": 744,
+            "timestamp_sec": 24.8,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.0,
+                  386.74,
+                  985.14,
+                  519.2
+                ],
+                "confidence": 0.90837,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.37,
+                  370.89,
+                  1522.82,
+                  1073.99
+                ],
+                "confidence": 0.90694,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.31,
+                  39.08,
+                  588.78
+                ],
+                "confidence": 0.64861,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000778",
+            "frame_number": 778,
+            "timestamp_sec": 25.933333333333334,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.05,
+                  386.83,
+                  985.03,
+                  519.04
+                ],
+                "confidence": 0.90808,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  615.97,
+                  369.77,
+                  1522.95,
+                  1073.89
+                ],
+                "confidence": 0.90734,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.18,
+                  38.19,
+                  588.59
+                ],
+                "confidence": 0.62759,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000812",
+            "frame_number": 812,
+            "timestamp_sec": 27.066666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.36,
+                  370.15,
+                  1522.61,
+                  1073.85
+                ],
+                "confidence": 0.90977,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.35,
+                  386.85,
+                  985.04,
+                  519.41
+                ],
+                "confidence": 0.90412,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.2,
+                  38.3,
+                  588.97
+                ],
+                "confidence": 0.61511,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000846",
+            "frame_number": 846,
+            "timestamp_sec": 28.2,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  779.77,
+                  386.48,
+                  985.12,
+                  519.35
+                ],
+                "confidence": 0.90472,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.1,
+                  369.04,
+                  1522.62,
+                  1073.82
+                ],
+                "confidence": 0.89257,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.49,
+                  38.07,
+                  588.86
+                ],
+                "confidence": 0.65324,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000880",
+            "frame_number": 880,
+            "timestamp_sec": 29.333333333333332,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.37,
+                  386.37,
+                  984.97,
+                  519.23
+                ],
+                "confidence": 0.90415,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.16,
+                  369.28,
+                  1522.44,
+                  1074.18
+                ],
+                "confidence": 0.9018,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.42,
+                  38.34,
+                  588.83
+                ],
+                "confidence": 0.63587,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000914",
+            "frame_number": 914,
+            "timestamp_sec": 30.466666666666665,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.17,
+                  386.71,
+                  984.96,
+                  519.2
+                ],
+                "confidence": 0.90378,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.22,
+                  370.57,
+                  1522.73,
+                  1074.04
+                ],
+                "confidence": 0.9034,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.2,
+                  38.21,
+                  588.72
+                ],
+                "confidence": 0.64375,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000947",
+            "frame_number": 947,
+            "timestamp_sec": 31.566666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.15,
+                  370.65,
+                  1522.84,
+                  1074.0
+                ],
+                "confidence": 0.90822,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.26,
+                  386.79,
+                  984.91,
+                  519.37
+                ],
+                "confidence": 0.9066,
+                "track_id": "6"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.47,
+                  38.19,
+                  588.67
+                ],
+                "confidence": 0.64311,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F000981",
+            "frame_number": 981,
+            "timestamp_sec": 32.7,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.16,
+                  386.76,
+                  984.87,
+                  519.31
+                ],
+                "confidence": 0.90584,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.24,
+                  370.58,
+                  1522.95,
+                  1074.16
+                ],
+                "confidence": 0.8943,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.2,
+                  38.22,
+                  588.62
+                ],
+                "confidence": 0.65007,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F001015",
+            "frame_number": 1015,
+            "timestamp_sec": 33.833333333333336,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  779.95,
+                  386.7,
+                  985.04,
+                  519.34
+                ],
+                "confidence": 0.90521,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  612.81,
+                  370.93,
+                  1522.66,
+                  1074.16
+                ],
+                "confidence": 0.89888,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.09,
+                  507.21,
+                  38.73,
+                  588.86
+                ],
+                "confidence": 0.63264,
+                "track_id": "2"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC01-F001049",
+            "frame_number": 1049,
+            "timestamp_sec": 34.96666666666667,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  780.23,
+                  386.88,
+                  984.92,
+                  519.42
+                ],
+                "confidence": 0.90563,
+                "track_id": "6"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  613.93,
+                  370.73,
+                  1522.92,
+                  1074.16
+                ],
+                "confidence": 0.88881,
+                "track_id": "1"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  0.1,
+                  507.39,
+                  38.58,
+                  588.94
+                ],
+                "confidence": 0.64729,
+                "track_id": "2"
+              }
+            ]
+          }
+        ],
+        "tracks": [
+          {
+            "track_id": "1",
+            "class_name": "car",
+            "first_timestamp_sec": 0.0,
+            "last_timestamp_sec": 34.96666666666667,
+            "observations": 32,
+            "observed_span_sec": 34.96666666666667,
+            "interpolated_visible_sec": 34.966667,
+            "max_observation_gap_sec": 1.1333333333333364,
+            "path_length_pixels": 21.97,
+            "net_displacement_pixels": 1.06,
+            "person_dwell_candidate": false
+          },
+          {
+            "track_id": "2",
+            "class_name": "person",
+            "first_timestamp_sec": 0.0,
+            "last_timestamp_sec": 34.96666666666667,
+            "observations": 32,
+            "observed_span_sec": 34.96666666666667,
+            "interpolated_visible_sec": 34.966667,
+            "max_observation_gap_sec": 1.1333333333333364,
+            "path_length_pixels": 6.17,
+            "net_displacement_pixels": 0.23,
+            "person_dwell_candidate": true
+          },
+          {
+            "track_id": "6",
+            "class_name": "person",
+            "first_timestamp_sec": 9.033333333333333,
+            "last_timestamp_sec": 34.96666666666667,
+            "observations": 24,
+            "observed_span_sec": 25.933333333333337,
+            "interpolated_visible_sec": 25.933333,
+            "max_observation_gap_sec": 1.1333333333333364,
+            "path_length_pixels": 79.23,
+            "net_displacement_pixels": 50.5,
+            "person_dwell_candidate": true
+          }
+        ],
+        "quality": {
+          "zone_configured": false,
+          "event_classifier_available": false,
+          "detector_confidence_is_not_event_confidence": true
+        },
+        "risk_axes": {
+          "severity": null,
+          "imminence": null,
+          "exposure": null,
+          "persistence": null
+        },
+        "cv_uncertain": true
+      },
+      {
+        "source_id": "SRC02",
+        "frames": [
+          {
+            "frame_id": "SRC02-F000000",
+            "frame_number": 0,
+            "timestamp_sec": 0.0,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  1005.99,
+                  434.0,
+                  1080.48,
+                  627.47
+                ],
+                "confidence": 0.86963,
+                "track_id": "7"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.61,
+                  491.54,
+                  1661.92,
+                  628.09
+                ],
+                "confidence": 0.77869,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  992.17,
+                  286.08,
+                  1108.24,
+                  395.8
+                ],
+                "confidence": 0.32479,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  992.31,
+                  286.25,
+                  1107.38,
+                  395.43
+                ],
+                "confidence": 0.28749,
+                "track_id": "10"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  911.66,
+                  259.89,
+                  1108.4,
+                  395.78
+                ],
+                "confidence": 0.11791,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000034",
+            "frame_number": 34,
+            "timestamp_sec": 1.1333333333333333,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  1012.17,
+                  433.51,
+                  1081.54,
+                  628.54
+                ],
+                "confidence": 0.8518,
+                "track_id": "7"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.6,
+                  491.32,
+                  1662.0,
+                  627.92
+                ],
+                "confidence": 0.78121,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  992.04,
+                  286.2,
+                  1108.45,
+                  395.88
+                ],
+                "confidence": 0.35369,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  910.56,
+                  260.11,
+                  1108.66,
+                  396.04
+                ],
+                "confidence": 0.12879,
+                "track_id": null
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  1150.57,
+                  293.67,
+                  1180.64,
+                  349.8
+                ],
+                "confidence": 0.11795,
+                "track_id": null
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  984.09,
+                  285.75,
+                  1108.86,
+                  395.98
+                ],
+                "confidence": 0.11737,
+                "track_id": "10"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000068",
+            "frame_number": 68,
+            "timestamp_sec": 2.2666666666666666,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  1012.61,
+                  429.18,
+                  1090.57,
+                  627.9
+                ],
+                "confidence": 0.84961,
+                "track_id": "7"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.53,
+                  491.42,
+                  1661.96,
+                  628.91
+                ],
+                "confidence": 0.78278,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  991.36,
+                  286.04,
+                  1109.02,
+                  395.78
+                ],
+                "confidence": 0.36013,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  987.93,
+                  286.02,
+                  1109.32,
+                  395.87
+                ],
+                "confidence": 0.16725,
+                "track_id": "10"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  910.97,
+                  260.03,
+                  1109.45,
+                  396.28
+                ],
+                "confidence": 0.10714,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000102",
+            "frame_number": 102,
+            "timestamp_sec": 3.4,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  1035.79,
+                  452.21,
+                  1144.59,
+                  670.3
+                ],
+                "confidence": 0.88015,
+                "track_id": "7"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.6,
+                  491.43,
+                  1662.05,
+                  629.35
+                ],
+                "confidence": 0.78803,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  991.07,
+                  286.04,
+                  1108.92,
+                  396.21
+                ],
+                "confidence": 0.40123,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  988.78,
+                  286.13,
+                  1109.03,
+                  396.22
+                ],
+                "confidence": 0.24501,
+                "track_id": "10"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000135",
+            "frame_number": 135,
+            "timestamp_sec": 4.5,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  984.47,
+                  466.1,
+                  1104.97,
+                  728.0
+                ],
+                "confidence": 0.82725,
+                "track_id": "7"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.43,
+                  491.41,
+                  1662.15,
+                  628.74
+                ],
+                "confidence": 0.74298,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  992.08,
+                  286.07,
+                  1107.94,
+                  395.84
+                ],
+                "confidence": 0.39243,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000169",
+            "frame_number": 169,
+            "timestamp_sec": 5.633333333333334,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  944.12,
+                  500.62,
+                  1068.67,
+                  740.99
+                ],
+                "confidence": 0.89358,
+                "track_id": "7"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.49,
+                  491.32,
+                  1662.09,
+                  629.99
+                ],
+                "confidence": 0.73918,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.58,
+                  286.77,
+                  1107.85,
+                  396.06
+                ],
+                "confidence": 0.35496,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000203",
+            "frame_number": 203,
+            "timestamp_sec": 6.766666666666667,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  899.49,
+                  466.42,
+                  1024.86,
+                  672.62
+                ],
+                "confidence": 0.87978,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.92,
+                  491.56,
+                  1661.83,
+                  628.18
+                ],
+                "confidence": 0.73862,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.97,
+                  286.41,
+                  1108.19,
+                  396.09
+                ],
+                "confidence": 0.39333,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  991.88,
+                  286.39,
+                  1108.41,
+                  396.08
+                ],
+                "confidence": 0.19347,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000237",
+            "frame_number": 237,
+            "timestamp_sec": 7.9,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.58,
+                  491.5,
+                  1662.08,
+                  628.84
+                ],
+                "confidence": 0.77504,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.48,
+                  286.87,
+                  1107.69,
+                  396.11
+                ],
+                "confidence": 0.40693,
+                "track_id": "9"
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  889.04,
+                  490.9,
+                  987.69,
+                  613.8
+                ],
+                "confidence": 0.30624,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000271",
+            "frame_number": 271,
+            "timestamp_sec": 9.033333333333333,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  849.41,
+                  521.55,
+                  972.83,
+                  711.98
+                ],
+                "confidence": 0.87279,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.47,
+                  491.41,
+                  1662.25,
+                  628.55
+                ],
+                "confidence": 0.76141,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.49,
+                  286.51,
+                  1108.19,
+                  395.97
+                ],
+                "confidence": 0.45899,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000305",
+            "frame_number": 305,
+            "timestamp_sec": 10.166666666666666,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  768.14,
+                  575.37,
+                  856.98,
+                  767.71
+                ],
+                "confidence": 0.89309,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.67,
+                  491.62,
+                  1662.06,
+                  627.58
+                ],
+                "confidence": 0.78504,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.27,
+                  286.57,
+                  1108.31,
+                  396.29
+                ],
+                "confidence": 0.45221,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000338",
+            "frame_number": 338,
+            "timestamp_sec": 11.266666666666667,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  648.04,
+                  692.3,
+                  773.72,
+                  897.81
+                ],
+                "confidence": 0.89917,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.53,
+                  491.54,
+                  1662.16,
+                  628.79
+                ],
+                "confidence": 0.75641,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.26,
+                  286.6,
+                  1108.43,
+                  396.09
+                ],
+                "confidence": 0.40478,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  992.64,
+                  286.74,
+                  1108.62,
+                  396.36
+                ],
+                "confidence": 0.1899,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000372",
+            "frame_number": 372,
+            "timestamp_sec": 12.4,
+            "detections": [
+              {
+                "class_name": "person",
+                "bbox": [
+                  351.78,
+                  949.16,
+                  549.85,
+                  1080.0
+                ],
+                "confidence": 0.87998,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.55,
+                  491.46,
+                  1661.98,
+                  627.37
+                ],
+                "confidence": 0.79594,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.54,
+                  286.39,
+                  1108.71,
+                  395.94
+                ],
+                "confidence": 0.36761,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  994.65,
+                  286.62,
+                  1107.71,
+                  395.55
+                ],
+                "confidence": 0.34013,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000406",
+            "frame_number": 406,
+            "timestamp_sec": 13.533333333333333,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.73,
+                  491.55,
+                  1661.91,
+                  627.99
+                ],
+                "confidence": 0.79443,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.53,
+                  286.58,
+                  1108.88,
+                  395.96
+                ],
+                "confidence": 0.37618,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  994.09,
+                  286.35,
+                  1108.64,
+                  396.04
+                ],
+                "confidence": 0.32611,
+                "track_id": "17"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000440",
+            "frame_number": 440,
+            "timestamp_sec": 14.666666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.62,
+                  491.47,
+                  1662.0,
+                  628.33
+                ],
+                "confidence": 0.79243,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.62,
+                  286.44,
+                  1108.38,
+                  396.07
+                ],
+                "confidence": 0.40853,
+                "track_id": "17"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.87,
+                  286.21,
+                  1108.6,
+                  396.29
+                ],
+                "confidence": 0.21668,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000474",
+            "frame_number": 474,
+            "timestamp_sec": 15.8,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1540.72,
+                  491.35,
+                  1660.84,
+                  628.44
+                ],
+                "confidence": 0.73377,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  1497.96,
+                  390.18,
+                  1689.01,
+                  525.43
+                ],
+                "confidence": 0.46717,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.9,
+                  286.18,
+                  1108.59,
+                  395.85
+                ],
+                "confidence": 0.38948,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.46,
+                  285.99,
+                  1108.37,
+                  395.93
+                ],
+                "confidence": 0.33039,
+                "track_id": "17"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1498.57,
+                  390.55,
+                  1656.03,
+                  525.64
+                ],
+                "confidence": 0.29566,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1538.54,
+                  489.32,
+                  1724.3,
+                  628.83
+                ],
+                "confidence": 0.11931,
+                "track_id": null
+              },
+              {
+                "class_name": "person",
+                "bbox": [
+                  1150.23,
+                  293.77,
+                  1180.23,
+                  349.29
+                ],
+                "confidence": 0.10559,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000508",
+            "frame_number": 508,
+            "timestamp_sec": 16.933333333333334,
+            "detections": [
+              {
+                "class_name": "truck",
+                "bbox": [
+                  1183.77,
+                  324.44,
+                  1578.82,
+                  527.96
+                ],
+                "confidence": 0.87075,
+                "track_id": null
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.55,
+                  491.49,
+                  1662.54,
+                  629.19
+                ],
+                "confidence": 0.81131,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  995.03,
+                  286.65,
+                  1108.08,
+                  396.29
+                ],
+                "confidence": 0.35601,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  994.39,
+                  286.43,
+                  1107.84,
+                  396.32
+                ],
+                "confidence": 0.32054,
+                "track_id": "17"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  903.04,
+                  260.48,
+                  1107.86,
+                  396.08
+                ],
+                "confidence": 0.10123,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000541",
+            "frame_number": 541,
+            "timestamp_sec": 18.033333333333335,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.56,
+                  491.22,
+                  1662.13,
+                  629.59
+                ],
+                "confidence": 0.76342,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  982.05,
+                  282.69,
+                  1243.79,
+                  441.85
+                ],
+                "confidence": 0.37348,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000575",
+            "frame_number": 575,
+            "timestamp_sec": 19.166666666666668,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.45,
+                  491.35,
+                  1662.01,
+                  628.03
+                ],
+                "confidence": 0.78254,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.71,
+                  286.5,
+                  1108.03,
+                  396.01
+                ],
+                "confidence": 0.41107,
+                "track_id": null
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  992.16,
+                  286.59,
+                  1108.2,
+                  396.2
+                ],
+                "confidence": 0.2188,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000609",
+            "frame_number": 609,
+            "timestamp_sec": 20.3,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.57,
+                  491.54,
+                  1661.77,
+                  628.85
+                ],
+                "confidence": 0.77892,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.76,
+                  286.37,
+                  1108.16,
+                  395.87
+                ],
+                "confidence": 0.37279,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.86,
+                  286.55,
+                  1107.28,
+                  395.52
+                ],
+                "confidence": 0.34592,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000643",
+            "frame_number": 643,
+            "timestamp_sec": 21.433333333333334,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.47,
+                  491.28,
+                  1661.84,
+                  628.48
+                ],
+                "confidence": 0.7961,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.31,
+                  286.75,
+                  1107.43,
+                  395.55
+                ],
+                "confidence": 0.35669,
+                "track_id": "9"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.22,
+                  286.51,
+                  1108.28,
+                  395.93
+                ],
+                "confidence": 0.32835,
+                "track_id": "22"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000677",
+            "frame_number": 677,
+            "timestamp_sec": 22.566666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.54,
+                  491.28,
+                  1662.3,
+                  628.58
+                ],
+                "confidence": 0.79606,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  994.56,
+                  286.65,
+                  1107.42,
+                  395.49
+                ],
+                "confidence": 0.36221,
+                "track_id": "9"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.55,
+                  286.83,
+                  1108.0,
+                  395.96
+                ],
+                "confidence": 0.35487,
+                "track_id": "22"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000711",
+            "frame_number": 711,
+            "timestamp_sec": 23.7,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.49,
+                  491.58,
+                  1661.88,
+                  627.4
+                ],
+                "confidence": 0.78848,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.39,
+                  286.56,
+                  1108.51,
+                  395.88
+                ],
+                "confidence": 0.38174,
+                "track_id": "22"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  994.52,
+                  286.8,
+                  1107.65,
+                  395.51
+                ],
+                "confidence": 0.34556,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000744",
+            "frame_number": 744,
+            "timestamp_sec": 24.8,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.4,
+                  491.3,
+                  1662.01,
+                  628.52
+                ],
+                "confidence": 0.78321,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.05,
+                  286.28,
+                  1108.15,
+                  396.06
+                ],
+                "confidence": 0.40505,
+                "track_id": "22"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.58,
+                  286.03,
+                  1107.89,
+                  396.15
+                ],
+                "confidence": 0.33916,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000778",
+            "frame_number": 778,
+            "timestamp_sec": 25.933333333333334,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.43,
+                  491.3,
+                  1662.18,
+                  629.23
+                ],
+                "confidence": 0.77449,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.94,
+                  286.34,
+                  1108.36,
+                  396.02
+                ],
+                "confidence": 0.38018,
+                "track_id": "22"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.37,
+                  286.17,
+                  1108.14,
+                  396.03
+                ],
+                "confidence": 0.31738,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000812",
+            "frame_number": 812,
+            "timestamp_sec": 27.066666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.7,
+                  491.37,
+                  1661.98,
+                  628.64
+                ],
+                "confidence": 0.80233,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.8,
+                  286.74,
+                  1108.14,
+                  396.22
+                ],
+                "confidence": 0.33797,
+                "track_id": "22"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.25,
+                  286.16,
+                  1108.12,
+                  396.13
+                ],
+                "confidence": 0.29481,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  909.75,
+                  259.3,
+                  1108.11,
+                  396.37
+                ],
+                "confidence": 0.15292,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000846",
+            "frame_number": 846,
+            "timestamp_sec": 28.2,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.46,
+                  491.3,
+                  1662.26,
+                  628.69
+                ],
+                "confidence": 0.76852,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  992.3,
+                  286.37,
+                  1107.54,
+                  395.82
+                ],
+                "confidence": 0.39305,
+                "track_id": "9"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  910.43,
+                  259.21,
+                  1108.3,
+                  396.35
+                ],
+                "confidence": 0.14545,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000880",
+            "frame_number": 880,
+            "timestamp_sec": 29.333333333333332,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.55,
+                  491.49,
+                  1662.35,
+                  628.66
+                ],
+                "confidence": 0.79036,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  992.34,
+                  286.29,
+                  1107.55,
+                  395.53
+                ],
+                "confidence": 0.36671,
+                "track_id": "9"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  992.37,
+                  286.08,
+                  1108.37,
+                  395.89
+                ],
+                "confidence": 0.29348,
+                "track_id": null
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  909.18,
+                  259.7,
+                  1108.42,
+                  396.08
+                ],
+                "confidence": 0.12276,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000914",
+            "frame_number": 914,
+            "timestamp_sec": 30.466666666666665,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.26,
+                  491.14,
+                  1662.54,
+                  627.87
+                ],
+                "confidence": 0.77232,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  991.82,
+                  286.12,
+                  1107.75,
+                  395.54
+                ],
+                "confidence": 0.35534,
+                "track_id": "9"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  992.0,
+                  285.99,
+                  1108.64,
+                  395.91
+                ],
+                "confidence": 0.28856,
+                "track_id": null
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  909.99,
+                  259.52,
+                  1108.91,
+                  396.11
+                ],
+                "confidence": 0.12948,
+                "track_id": null
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000947",
+            "frame_number": 947,
+            "timestamp_sec": 31.566666666666666,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.34,
+                  491.22,
+                  1662.54,
+                  628.86
+                ],
+                "confidence": 0.76671,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.04,
+                  286.38,
+                  1107.51,
+                  395.7
+                ],
+                "confidence": 0.41105,
+                "track_id": "9"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  992.87,
+                  286.14,
+                  1108.42,
+                  396.08
+                ],
+                "confidence": 0.322,
+                "track_id": "24"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F000981",
+            "frame_number": 981,
+            "timestamp_sec": 32.7,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.5,
+                  491.41,
+                  1662.16,
+                  628.39
+                ],
+                "confidence": 0.79121,
+                "track_id": "8"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.19,
+                  286.17,
+                  1107.92,
+                  396.01
+                ],
+                "confidence": 0.38812,
+                "track_id": "24"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.36,
+                  286.38,
+                  1107.19,
+                  395.58
+                ],
+                "confidence": 0.37233,
+                "track_id": "9"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F001015",
+            "frame_number": 1015,
+            "timestamp_sec": 33.833333333333336,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.79,
+                  491.3,
+                  1662.16,
+                  629.49
+                ],
+                "confidence": 0.77921,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  993.64,
+                  286.13,
+                  1107.3,
+                  395.61
+                ],
+                "confidence": 0.40297,
+                "track_id": "9"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  993.56,
+                  285.97,
+                  1107.92,
+                  395.96
+                ],
+                "confidence": 0.31613,
+                "track_id": "24"
+              }
+            ]
+          },
+          {
+            "frame_id": "SRC02-F001049",
+            "frame_number": 1049,
+            "timestamp_sec": 34.96666666666667,
+            "detections": [
+              {
+                "class_name": "car",
+                "bbox": [
+                  1539.55,
+                  491.47,
+                  1662.0,
+                  629.27
+                ],
+                "confidence": 0.78199,
+                "track_id": "8"
+              },
+              {
+                "class_name": "truck",
+                "bbox": [
+                  992.12,
+                  286.31,
+                  1107.24,
+                  395.59
+                ],
+                "confidence": 0.44958,
+                "track_id": "9"
+              },
+              {
+                "class_name": "car",
+                "bbox": [
+                  994.22,
+                  285.48,
+                  1107.77,
+                  395.71
+                ],
+                "confidence": 0.10186,
+                "track_id": "24"
+              }
+            ]
+          }
+        ],
+        "tracks": [
+          {
+            "track_id": "10",
+            "class_name": "truck",
+            "first_timestamp_sec": 0.0,
+            "last_timestamp_sec": 3.4,
+            "observations": 4,
+            "observed_span_sec": 3.4,
+            "interpolated_visible_sec": 3.4,
+            "max_observation_gap_sec": 1.1333333333333333,
+            "path_length_pixels": 5.88,
+            "net_displacement_pixels": 1.0,
+            "person_dwell_candidate": false
+          },
+          {
+            "track_id": "17",
+            "class_name": "truck",
+            "first_timestamp_sec": 13.533333333333333,
+            "last_timestamp_sec": 16.933333333333334,
+            "observations": 4,
+            "observed_span_sec": 3.4000000000000004,
+            "interpolated_visible_sec": 3.4,
+            "max_observation_gap_sec": 1.1333333333333346,
+            "path_length_pixels": 1.26,
+            "net_displacement_pixels": 0.31,
+            "person_dwell_candidate": false
+          },
+          {
+            "track_id": "22",
+            "class_name": "car",
+            "first_timestamp_sec": 21.433333333333334,
+            "last_timestamp_sec": 27.066666666666666,
+            "observations": 6,
+            "observed_span_sec": 5.633333333333333,
+            "interpolated_visible_sec": 5.633333,
+            "max_observation_gap_sec": 1.1333333333333329,
+            "path_length_pixels": 1.56,
+            "net_displacement_pixels": 0.34,
+            "person_dwell_candidate": false
+          },
+          {
+            "track_id": "24",
+            "class_name": "car",
+            "first_timestamp_sec": 31.566666666666666,
+            "last_timestamp_sec": 34.96666666666667,
+            "observations": 4,
+            "observed_span_sec": 3.400000000000002,
+            "interpolated_visible_sec": 3.4,
+            "max_observation_gap_sec": 1.1333333333333364,
+            "path_length_pixels": 0.76,
+            "net_displacement_pixels": 0.62,
+            "person_dwell_candidate": false
+          },
+          {
+            "track_id": "7",
+            "class_name": "person",
+            "first_timestamp_sec": 0.0,
+            "last_timestamp_sec": 5.633333333333334,
+            "observations": 6,
+            "observed_span_sec": 5.633333333333334,
+            "interpolated_visible_sec": 5.633333,
+            "max_observation_gap_sec": 1.1333333333333337,
+            "path_length_pixels": 162.54,
+            "net_displacement_pixels": 97.31,
+            "person_dwell_candidate": false
+          },
+          {
+            "track_id": "8",
+            "class_name": "car",
+            "first_timestamp_sec": 0.0,
+            "last_timestamp_sec": 34.96666666666667,
+            "observations": 32,
+            "observed_span_sec": 34.96666666666667,
+            "interpolated_visible_sec": 34.966667,
+            "max_observation_gap_sec": 1.1333333333333364,
+            "path_length_pixels": 11.63,
+            "net_displacement_pixels": 0.56,
+            "person_dwell_candidate": false
+          },
+          {
+            "track_id": "9",
+            "class_name": "car",
+            "first_timestamp_sec": 0.0,
+            "last_timestamp_sec": 34.96666666666667,
+            "observations": 30,
+            "observed_span_sec": 34.96666666666667,
+            "interpolated_visible_sec": 34.966667,
+            "max_observation_gap_sec": 3.366666666666667,
+            "path_length_pixels": 9.81,
+            "net_displacement_pixels": 0.53,
+            "person_dwell_candidate": false
+          }
+        ],
+        "quality": {
+          "zone_configured": false,
+          "event_classifier_available": false,
+          "detector_confidence_is_not_event_confidence": true
+        },
+        "risk_axes": {
+          "severity": null,
+          "imminence": null,
+          "exposure": null,
+          "persistence": null
+        },
+        "cv_uncertain": true
+      }
+    ],
+    "limitations": [
+      "Sparse uniformly sampled frames, not continuous video tracking.",
+      "Track IDs are independent per source; no cross-source identity matching.",
+      "Screen dwell alone does not establish loitering; missing zones cannot establish intrusion."
+    ],
+    "frame_count": 64
+  },
+  "questions": {
+    "incident.SRC01": {
+      "type": "noul",
+      "instructions": "You assist a human CCTV operator. Analyze only visible evidence. Each source_id is an independent clip with its own time origin. Never track an object across source IDs or assume synchronization or same-incident correspondence. Produce a separate assessment for each active_sources entry, exactly once. Other supplied sources are contextual images and must not replace evidence for an active source.\nDescribe observable fall/ground posture, physical conflict, boundary crossing, gate entry with unknown authorization, sustained loitering, normality, or uncertainty. Do not infer identity, intent, medical diagnosis, authorization, or legal intrusion. Boundary crossing is not proof of unauthorized intrusion. Use only the supplied output labels and JSON schema. Keep unmeasured risk axes null. Failures and uncertain evidence require human review. Evidence must cite exact input frame_id values belonging to that source. Return only JSON; do not invent results for skipped sources.\n\nFor source SRC01 only, assess whether CV observations support a possible incident. Detection confidence is not event confidence; absent detections do not establish normality."
+    },
+    "route.SRC01": {
+      "type": "choice",
+      "instructions": "You assist a human CCTV operator. Analyze only visible evidence. Each source_id is an independent clip with its own time origin. Never track an object across source IDs or assume synchronization or same-incident correspondence. Produce a separate assessment for each active_sources entry, exactly once. Other supplied sources are contextual images and must not replace evidence for an active source.\nDescribe observable fall/ground posture, physical conflict, boundary crossing, gate entry with unknown authorization, sustained loitering, normality, or uncertainty. Do not infer identity, intent, medical diagnosis, authorization, or legal intrusion. Boundary crossing is not proof of unauthorized intrusion. Use only the supplied output labels and JSON schema. Keep unmeasured risk axes null. Failures and uncertain evidence require human review. Evidence must cite exact input frame_id values belonging to that source. Return only JSON; do not invent results for skipped sources.\n\nFor source SRC01 only, choose further processing. Missing zones, measured risk axes, or an event classifier require further review.",
+      "criteria": {
+        "invoke_vlm": "Visual analysis is needed to evaluate a possible incident.",
+        "no_action": "Explicit normality is established with sufficient measured evidence.",
+        "human_review": "Evidence is uncertain or insufficient for an automatic decision."
+      }
+    },
+    "incident.SRC02": {
+      "type": "noul",
+      "instructions": "You assist a human CCTV operator. Analyze only visible evidence. Each source_id is an independent clip with its own time origin. Never track an object across source IDs or assume synchronization or same-incident correspondence. Produce a separate assessment for each active_sources entry, exactly once. Other supplied sources are contextual images and must not replace evidence for an active source.\nDescribe observable fall/ground posture, physical conflict, boundary crossing, gate entry with unknown authorization, sustained loitering, normality, or uncertainty. Do not infer identity, intent, medical diagnosis, authorization, or legal intrusion. Boundary crossing is not proof of unauthorized intrusion. Use only the supplied output labels and JSON schema. Keep unmeasured risk axes null. Failures and uncertain evidence require human review. Evidence must cite exact input frame_id values belonging to that source. Return only JSON; do not invent results for skipped sources.\n\nFor source SRC02 only, assess whether CV observations support a possible incident. Detection confidence is not event confidence; absent detections do not establish normality."
+    },
+    "route.SRC02": {
+      "type": "choice",
+      "instructions": "You assist a human CCTV operator. Analyze only visible evidence. Each source_id is an independent clip with its own time origin. Never track an object across source IDs or assume synchronization or same-incident correspondence. Produce a separate assessment for each active_sources entry, exactly once. Other supplied sources are contextual images and must not replace evidence for an active source.\nDescribe observable fall/ground posture, physical conflict, boundary crossing, gate entry with unknown authorization, sustained loitering, normality, or uncertainty. Do not infer identity, intent, medical diagnosis, authorization, or legal intrusion. Boundary crossing is not proof of unauthorized intrusion. Use only the supplied output labels and JSON schema. Keep unmeasured risk axes null. Failures and uncertain evidence require human review. Evidence must cite exact input frame_id values belonging to that source. Return only JSON; do not invent results for skipped sources.\n\nFor source SRC02 only, choose further processing. Missing zones, measured risk axes, or an event classifier require further review.",
+      "criteria": {
+        "invoke_vlm": "Visual analysis is needed to evaluate a possible incident.",
+        "no_action": "Explicit normality is established with sufficient measured evidence.",
+        "human_review": "Evidence is uncertain or insufficient for an automatic decision."
+      }
+    }
+  }
+}

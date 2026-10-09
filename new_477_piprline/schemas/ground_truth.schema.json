@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evaluator-only source truth",
+  "type": "object",
+  "patternProperties": {
+    "^SRC0[1-6]$": {
+      "type": "object",
+      "required": ["yolo", "clef", "vlm"],
+      "properties": {
+        "reviewer": {"type": ["string", "null"]},
+        "reviewed_at": {"type": ["string", "null"]},
+        "yolo": {
+          "type": "object", "required": ["frames"],
+          "properties": {"frames": {"type": "array", "items": {"$ref": "#/$defs/frame"}}}
+        },
+        "clef": {"type": "object", "required": ["invoke_vlm", "reviewed"], "properties": {
+          "invoke_vlm": {"type": ["boolean", "null"]}, "reviewed": {"type": "boolean"}, "rationale": {"type": ["string", "null"]}}},
+        "vlm": {"type": "object", "required": ["label", "reviewed"], "properties": {
+          "label": {"type": ["string", "null"], "enum": [null, "normal", "fall_ground_posture", "boundary_crossing", "gate_entry_authorization_unknown", "physical_conflict", "loitering", "uncertain"]},
+          "reviewed": {"type": "boolean"}, "reference_label": {"type": ["string", "null"]}}}
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "frame": {
+      "type": "object", "required": ["frame_number", "complete", "objects"],
+      "properties": {
+        "frame_number": {"type": "integer", "minimum": 0},
+        "complete": {"type": "boolean"},
+        "objects": {"type": "array", "items": {"$ref": "#/$defs/annotation"}}
+      }
+    },
+    "annotation": {
+      "type": "object", "required": ["class_name", "bbox"],
+      "properties": {
+        "class_name": {"enum": ["person", "bicycle", "car", "motorcycle", "bus", "truck"]},
+        "bbox": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number", "minimum": 0}}
+      }
+    }
+  }
+}

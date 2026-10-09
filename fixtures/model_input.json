@@ -1,0 +1,51 @@
+{
+  "sample_id": "fixture-001",
+  "camera": {
+    "id": "CAM_08",
+    "location": "roadside",
+    "zone_type": "vehicle_access"
+  },
+  "window": {
+    "start_ms": 0,
+    "end_ms": 10000
+  },
+  "temporal_state": {
+    "person_count": 1,
+    "vehicle_count": 1,
+    "events": [
+      {
+        "t_ms": 2800,
+        "type": "standing_to_ground"
+      },
+      {
+        "t_ms": 8500,
+        "type": "stationary"
+      }
+    ],
+    "relations": [
+      {
+        "subject": "vehicle:1",
+        "relation": "approaching",
+        "object": "person:1"
+      }
+    ],
+    "quality": {
+      "tracking": 0.94,
+      "pose": 0.88,
+      "occlusion": 0.1
+    },
+    "feature_version": "fixture-v1"
+  },
+  "evidence": [
+    {
+      "frame_id": "f001",
+      "timestamp_ms": 2800,
+      "media_ref": "frame_001"
+    },
+    {
+      "frame_id": "f002",
+      "timestamp_ms": 8500,
+      "media_ref": "frame_002"
+    }
+  ]
+}

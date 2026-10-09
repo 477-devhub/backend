@@ -1,0 +1,51 @@
+{
+  "pipeline477/metrics.py": {
+    "origin": "app/eval/new_pipeline_metrics.py",
+    "sha256": "1ccaabbfc251288414a94623f7ec831ffc64a068d62993812aad2f3dccca0de5",
+    "transformation": "portable imports"
+  },
+  "pipeline477/adapters/cv.py": {
+    "origin": "app/models/adapters/new_pipeline_cv.py",
+    "sha256": "61beb7f5e516190c55170296c180503507ad38d5ab9cc9d94134583096cdf9d3",
+    "transformation": "portable imports"
+  },
+  "pipeline477/adapters/clef.py": {
+    "origin": "app/models/adapters/new_pipeline_clef.py",
+    "sha256": "a9047ac3ee34698172955056acb13a2236418cf443115d1e3374ea0af58ecb25",
+    "transformation": "portable imports"
+  },
+  "pipeline477/adapters/vlm.py": {
+    "origin": "app/models/adapters/new_pipeline_vlm.py",
+    "sha256": "91189c297994f271875072659774e232421948c8ff5922061044322eaeb8f0a4",
+    "transformation": "portable imports"
+  },
+  "pipeline477/adapters/yolo_worker.py": {
+    "origin": "app/models/adapters/yolo_benchmark_worker.py",
+    "sha256": "f314226e64f80739ae9e7c1b8b4e1f1e9ccb72843e5521a3b65e02a5ed589c13",
+    "transformation": "SRC01..06 and explicit local COCO .pt weights"
+  },
+  "tests/test_metrics.py": {
+    "origin": "tests/eval/test_new_pipeline_metrics.py",
+    "sha256": "c7e1570eadd9dbbee0e478be31b3226c9763313efd05ea7b9dadd9454d3cab80",
+    "transformation": "portable imports"
+  },
+  "tests/test_cv.py": {
+    "origin": "tests/models/test_new_pipeline_cv.py",
+    "sha256": "7ee102fcebde748875781b5d2b3b36cd3a6a46ddd192eddd950b719f38a40cf8",
+    "transformation": "portable imports"
+  },
+  "tests/test_clef.py": {
+    "origin": "tests/models/test_new_pipeline_clef.py",
+    "sha256": "9f1d8bf995f655add0dd3ed1fec94f74d9280f79bd6023462bf20f619a11b796",
+    "transformation": "portable imports"
+  },
+  "tests/test_vlm.py": {
+    "origin": "tests/models/test_new_pipeline_vlm.py",
+    "sha256": "a5479bd60c8b3ce5e76c6f2d12a30c5c3c38238d8d045796fafc9cf7ef702d5b",
+    "transformation": "portable imports"
+  },
+  "pipeline477/execution.py": {
+    "origin": "app/models/execution.py",
+    "sha256": "790c4caf8e579a9e79e858380c0de2eee70ab556c28548e729be5302ce5b1b6c"
+  }
+}

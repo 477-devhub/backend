@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "executed": true,
+  "output": {
+    "sources": [
+      {
+        "source_id": "SRC01",
+        "invoke_vlm": true,
+        "proposed_route": "human_review",
+        "route_confidence": 0.4848,
+        "incident_probability": 0.3434,
+        "cv_uncertain": true,
+        "needs_human_review": true,
+        "reason": "cv_information_incomplete"
+      },
+      {
+        "source_id": "SRC02",
+        "invoke_vlm": true,
+        "proposed_route": "human_review",
+        "route_confidence": 0.8007,
+        "incident_probability": 0.1033,
+        "cv_uncertain": true,
+        "needs_human_review": true,
+        "reason": "cv_information_incomplete"
+      },
+      {
+        "source_id": "SRC03",
+        "invoke_vlm": true,
+        "proposed_route": "human_review",
+        "route_confidence": 0.7466,
+        "incident_probability": 0.2712,
+        "cv_uncertain": true,
+        "needs_human_review": true,
+        "reason": "cv_information_incomplete"
+      },
+      {
+        "source_id": "SRC04",
+        "invoke_vlm": true,
+        "proposed_route": "human_review",
+        "route_confidence": 0.5979,
+        "incident_probability": 0.4739,
+        "cv_uncertain": true,
+        "needs_human_review": true,
+        "reason": "cv_information_incomplete"
+      },
+      {
+        "source_id": "SRC05",
+        "invoke_vlm": true,
+        "proposed_route": "human_review",
+        "route_confidence": 0.7571,
+        "incident_probability": 0.0792,
+        "cv_uncertain": true,
+        "needs_human_review": true,
+        "reason": "cv_information_incomplete"
+      },
+      {
+        "source_id": "SRC06",
+        "invoke_vlm": true,
+        "proposed_route": "human_review",
+        "route_confidence": 0.8202,
+        "incident_probability": 0.1074,
+        "cv_uncertain": true,
+        "needs_human_review": true,
+        "reason": "cv_information_incomplete"
+      }
+    ]
+  },
+  "errors": [],
+  "cost_usd": {
+    "value": 0.007511759999999999,
+    "basis": "usage_based_estimate",
+    "invoice_usd": null
+  },
+  "metadata": {
+    "model": "clef",
+    "images_sent": 0,
+    "feature_frames": 64,
+    "retry_count": 0,
+    "context_truncation_status": "unknown",
+    "byte_token_proxy": false,
+    "request_body_limit_bytes": 196608,
+    "request_bytes": 74796,
+    "preprocessing_ms": 1237.637200159952,
+    "sources": [
+      "SRC01",
+      "SRC02",
+      "SRC03",
+      "SRC04",
+      "SRC05",
+      "SRC06"
+    ],
+    "prompt_in_request": true,
+    "reservation_id": "f9b05814527f4c49bf22c0feb4a358c8",
+    "http_status": 200,
+    "usage": {
+      "input_tokens": 31299,
+      "output_tokens": 0
+    },
+    "input_price_per_million": 0.24,
+    "output_price_per_million": 0.0,
+    "reported_model": "clef",
+    "request_ms": 5817.9614001419395
+  },
+  "latency_ms": 7125.267700059339
+}

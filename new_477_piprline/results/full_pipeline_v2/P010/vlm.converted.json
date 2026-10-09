@@ -1,0 +1,124 @@
+{
+  "assessments": [
+    {
+      "source_id": "SRC01",
+      "event_type": "fall_ground_posture",
+      "event_confidence": 0.95,
+      "risk_axes": {
+        "severity": null,
+        "imminence": null,
+        "exposure": null,
+        "persistence": null
+      },
+      "evidence_refs": [
+        "SRC01-F000280",
+        "SRC01-F000350",
+        "SRC01-F000420",
+        "SRC01-F000490",
+        "SRC01-F000559",
+        "SRC01-F000629",
+        "SRC01-F000699",
+        "SRC01-F000769",
+        "SRC01-F000839",
+        "SRC01-F000909",
+        "SRC01-F000979",
+        "SRC01-F001049"
+      ],
+      "needs_human_review": true,
+      "uncertainty_reason": "Person observed lying on the ground; medical status and cause cannot be determined from video alone."
+    },
+    {
+      "source_id": "SRC02",
+      "event_type": "normal",
+      "event_confidence": 0.9,
+      "risk_axes": {
+        "severity": null,
+        "imminence": null,
+        "exposure": null,
+        "persistence": null
+      },
+      "evidence_refs": [
+        "SRC02-F000000",
+        "SRC02-F000070",
+        "SRC02-F000140",
+        "SRC02-F000210",
+        "SRC02-F000280",
+        "SRC02-F000350",
+        "SRC02-F000420",
+        "SRC02-F000490",
+        "SRC02-F000559",
+        "SRC02-F000629",
+        "SRC02-F000699",
+        "SRC02-F000769",
+        "SRC02-F000839",
+        "SRC02-F000909",
+        "SRC02-F000979",
+        "SRC02-F001049"
+      ],
+      "needs_human_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "source_id": "SRC03",
+      "event_type": "normal",
+      "event_confidence": 0.9,
+      "risk_axes": {
+        "severity": null,
+        "imminence": null,
+        "exposure": null,
+        "persistence": null
+      },
+      "evidence_refs": [
+        "SRC03-F000000",
+        "SRC03-F000070",
+        "SRC03-F000140",
+        "SRC03-F000210",
+        "SRC03-F000280",
+        "SRC03-F000350",
+        "SRC03-F000420",
+        "SRC03-F000490",
+        "SRC03-F000559",
+        "SRC03-F000629",
+        "SRC03-F000699",
+        "SRC03-F000769",
+        "SRC03-F000839",
+        "SRC03-F000909",
+        "SRC03-F000979",
+        "SRC03-F001049"
+      ],
+      "needs_human_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "source_id": "SRC04",
+      "event_type": "normal",
+      "event_confidence": 0.9,
+      "risk_axes": {
+        "severity": null,
+        "imminence": null,
+        "exposure": null,
+        "persistence": null
+      },
+      "evidence_refs": [
+        "SRC04-F000000",
+        "SRC04-F000070",
+        "SRC04-F000140",
+        "SRC04-F000210",
+        "SRC04-F000280",
+        "SRC04-F000350",
+        "SRC04-F000420",
+        "SRC04-F000490",
+        "SRC04-F000559",
+        "SRC04-F000629",
+        "SRC04-F000699",
+        "SRC04-F000769",
+        "SRC04-F000839",
+        "SRC04-F000909",
+        "SRC04-F000979",
+        "SRC04-F001049"
+      ],
+      "needs_human_review": false,
+      "uncertainty_reason": null
+    }
+  ]
+}

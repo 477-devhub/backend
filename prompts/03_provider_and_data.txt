@@ -1,0 +1,12 @@
+explorer로 Clef의 정확한 제품/제공사/API/model 식별자, 현재 접근 권한, 공식 문서,
+이미지/비디오/JSON feature 입력 지원, structured output, SDK, 제한과 비용 노출 여부를 먼저 확인해줘.
+'Clef는 당연히 멀티모달' 또는 'VLM을 대체한다'는 가정은 하지 마.
+해당 제공사가 특정되지 않으면 필요한 이름/공식 링크/접근 정보만 물어봐. 확인 불가는 BLOCKED로 기록해줘.
+로컬 CV/VLM 후보도 실제 환경과 이벤트 지원 범위를 확인한 뒤 선정해줘.
+MAIN은 중립 MediaResolver/asset-map 생성자 주입과 fixed frame sampling, 비디오 입력/feature cache 경계를 설계해줘.
+model_engineer는 app/models/adapters/ingestion.py와 tests/models/의 전처리 테스트만 담당하게 해줘.
+annotation에서 event/정답 시점을 읽어서 feature/evidence를 만들지 마. clip_ref로 원본 bytes를 읽을 수 있게 해줘.
+데이터 담당자가 받은 전달 규격에 따라 validation 소량을 준비하면 manifest 검사를 먼저 수행해줘.
+의존성 추가/registry/schema 수정은 worker 요청을 받은 MAIN만 수행해줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

@@ -1,0 +1,7 @@
+계약이 동결되고 단계 02와 04를 위한 사전 입력 준비가 끝났을 때만 실행해줘.
+backend_engineer: app/api/**, app/services/**, app/repositories/memory.py, tests/backend/**.
+model_engineer: 이번에 지정한 단일 adapter와 해당 tests/models/**.
+두 writer를 병렬로 실행하고 shared schemas/base/execution/registry/config/main/pyproject/docs를 변경하지 않게 해줘.
+공유 변경은 handoff 요청으로 보내고 MAIN이 두 writer가 끝난 후 반영해줘.
+worker는 Git commit/reset/merge, dependencies install, nested delegation을 하지 마.
+MAIN이 diff, 전체 테스트, 계약 hash, reviewer 결과를 검사한 뒤 통합 commit을 남겨줘.

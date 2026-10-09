@@ -1,0 +1,13 @@
+{
+  "problem_count": 12,
+  "repeats": 1,
+  "preflight_ms": 15326.833499828354,
+  "suite_wall_ms": 1027209.2368998565,
+  "yolo_successes": 12,
+  "whole_pipeline_stage_completions": 2,
+  "format_and_reference_valid_items": 12,
+  "semantic_accuracy": null,
+  "reviewed_source_occurrences": 0,
+  "reason": "Source occurrences repeat across items; this is a small demo, not independent CCTV generalization.",
+  "budget_remaining_usd": null
+}

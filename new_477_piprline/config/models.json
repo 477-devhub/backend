@@ -1,0 +1,7 @@
+{
+  "yolo": {"plugin": "pipeline477.adapters.cv:Adapter", "model": "yolo26s.pt", "weights": "models/yolo26s.pt", "device": "cpu", "imgsz": 960, "conf": 0.1},
+  "clef": {"plugin": "pipeline477.adapters.clef:Adapter", "model": "clef", "base_url": "https://api.cloudflare.com", "reservation_upper_usd": 0.03145728, "input_price_per_million": 0.24, "output_price_per_million": 0.0},
+  "vlm": {"plugin": "pipeline477.adapters.vlm:Adapter", "model": "deepseek-flash", "base_url": "https://api.deepseek.com", "reservation_upper_usd": 0.058752, "max_tokens": 4096, "jpeg_quality": 80, "input_price_per_million": 0.3, "cached_input_price_per_million": 0.006, "output_price_per_million": 1.2},
+  "fallback": "stop",
+  "timeout_sec": 600
+}

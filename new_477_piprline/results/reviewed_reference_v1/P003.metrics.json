@@ -1,0 +1,85 @@
+{
+  "ground_truth_validation": {
+    "valid": true,
+    "errors": [],
+    "review_required": []
+  },
+  "yolo": {
+    "evaluated_frame_count": 0,
+    "evaluated_object_count": 0,
+    "unannotated_frame_count": 60,
+    "partial_annotation_frame_count": 4,
+    "noncanonical_annotation_frame_count": 0,
+    "missing_prediction_frame_count": 0,
+    "true_positives": null,
+    "false_positives": null,
+    "false_negatives": null,
+    "precision": null,
+    "recall": null,
+    "map50": null,
+    "per_class": {},
+    "output_mapping_valid": true,
+    "output_errors": [],
+    "stage_status": "ok",
+    "event_classification_accuracy": null
+  },
+  "clef": {
+    "per_source": {
+      "SRC03": {
+        "expected_invoke_vlm": true,
+        "actual_invoke_vlm": true,
+        "correct": true,
+        "proposed_route": "human_review",
+        "proposed_correct": true,
+        "reviewed": true
+      }
+    },
+    "reviewed_source_count": 1,
+    "available_decision_count": 1,
+    "unavailable_decision_count": 0,
+    "accuracy_including_unavailable": 1.0,
+    "conditional_decision_accuracy": 1.0,
+    "false_negative_calls": 0,
+    "false_positive_calls": 0,
+    "missing_required_calls": 0,
+    "output_format_valid": true,
+    "output_errors": []
+  },
+  "vlm": {
+    "per_source": {
+      "SRC03": {
+        "expected_event_type": "gate_entry_authorization_unknown",
+        "predicted_event_type": "normal",
+        "semantic_correct": false,
+        "executed": true,
+        "output_format_valid": true,
+        "input_reference_valid": true,
+        "evidence_content_accuracy": null,
+        "safety_policy_valid": false,
+        "status": "error",
+        "omission_cause": null,
+        "omitted_reviewed_source": false
+      }
+    },
+    "reviewed_source_count": 1,
+    "attempted_reviewed_source_count": 1,
+    "pipeline_event_accuracy_including_omissions": 0.0,
+    "conditional_attempted_event_accuracy": 0.0,
+    "omitted_reviewed_source_count": 0,
+    "output_format_valid": true,
+    "input_reference_valid": true,
+    "evidence_content_accuracy": null,
+    "output_errors": []
+  },
+  "pipeline": {
+    "all_stages_ok": false,
+    "event_accuracy": 0.0,
+    "stage_statuses": {
+      "yolo": "ok",
+      "clef": "ok",
+      "vlm": "error"
+    },
+    "fallback_recorded": false,
+    "semantic_evidence_accuracy": null
+  }
+}

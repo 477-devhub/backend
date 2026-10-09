@@ -1,0 +1,10 @@
+backend_engineer에게 app/api/**, app/services/**, app/repositories/memory.py, tests/backend/**만 맡겨줘.
+현재 데모/ACK/WS를 유지하면서 빠진 integration seam을 최소한으로 보완해줘.
+MAIN은 registry/settings/main.py의 의존성 주입을 담당해 모델 execute → policy → Incident 또는 Suppressed
+→ repository → WS snapshot이 실제로 이어지는 integration 테스트를 추가해줘.
+원본 provider SDK를 API route에서 import하지 마. mock 기반 연결임을 표시하고 실제 모델이라고 말하지 마.
+프론트가 사용할 각 endpoint 응답과 WebSocket 첫 snapshot 예제를 handoffs/frontend.md에 저장해줘.
+매체 파일이 없으면 503/available=false를 유지하고 영상이 있다고 꾸미지 마.
+reviewer가 ACK 중복, rank, UNKNOWN review, reconnect, suppression restore를 검토한 뒤 PASS면 마무리해줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.

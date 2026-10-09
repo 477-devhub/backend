@@ -1,0 +1,13 @@
+{
+  "purpose": "development source snapshot only; not a frozen real dataset/model run",
+  "sha256": {
+    "docs/contracts.lock.json": "e7d1362fbc5e2a6e94ad33b7851c8cc380875300090208895f91f5a9aea85569",
+    "app/schemas/model.py": "021ef350a647e556b9820c247f358ec281de22ddb2c3640c9e46d75f98a69818",
+    "app/models/execution.py": "911768b5566a2d78bb44774d4cd7efc909b0bbdc3865f7be172fec234bddb716",
+    "app/models/registry.py": "2416ddf6091c027f5fc34b5fdba3b91da5a7315689171255ea387757d9ee027a",
+    "app/models/adapters/local_cv.py": "3b3b1bc0bffcebb87f709adb6eec8739489615d02f43c3728f0eb2adc4b521cf",
+    "app/models/adapters/local_cv_worker.py": "d3d3d7a16fd8e515924affd4b9c312a19191af8e9023a7d09dd797bb8c632421",
+    "app/eval/pipeline.py": "8753d5e51a9885f7dbdd24405b6289de622feebad870c0d532e28c048fda91e6",
+    "app/eval/annotations.py": "7ef59eccd3e12a9a192b0bd691f6952f214ba1cc8c8469a0f1c3bdd0bd26a910"
+  }
+}

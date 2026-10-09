@@ -1,0 +1,31 @@
+# Tested direct/transitive versions on Linux Python 3.12.14
+# Snapshot only; optional platform dependencies are resolved by pip.
+fastapi==0.142.2
+uvicorn==0.54.0
+pydantic==2.13.5
+httpx==0.28.1
+pytest==9.1.1
+pytest-asyncio==1.4.0
+starlette==1.7.0
+anyio==4.15.1
+pydantic-core==2.46.5
+typing-extensions==4.16.0
+typing-inspection==0.4.4
+annotated-types==0.8.0
+annotated-doc==0.0.5
+opentelemetry-api==1.45.0
+certifi==2026.7.22
+httpcore==1.0.9
+h11==0.16.0
+idna==3.19
+iniconfig==2.3.0
+packaging==26.3
+pluggy==1.6.0
+pygments==2.21.0
+click==8.5.0
+httptools==0.8.0
+python-dotenv==1.2.4
+pyyaml==6.0.3
+watchfiles==1.3.0
+websockets==16.0
+uvloop==0.23.0; sys_platform != "win32" and platform_python_implementation == "CPython"

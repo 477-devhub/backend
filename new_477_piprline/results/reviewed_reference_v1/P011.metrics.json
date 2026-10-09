@@ -1,0 +1,230 @@
+{
+  "ground_truth_validation": {
+    "valid": true,
+    "errors": [],
+    "review_required": []
+  },
+  "yolo": {
+    "evaluated_frame_count": 14,
+    "evaluated_object_count": 28,
+    "unannotated_frame_count": 46,
+    "partial_annotation_frame_count": 4,
+    "noncanonical_annotation_frame_count": 2,
+    "missing_prediction_frame_count": 0,
+    "true_positives": 28,
+    "false_positives": 5,
+    "false_negatives": 0,
+    "precision": 0.8484848484848485,
+    "recall": 1.0,
+    "map50": 0.9934474879848729,
+    "per_class": {
+      "bicycle": {
+        "object_count": 0,
+        "prediction_count": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": null,
+        "recall": null,
+        "ap50": null
+      },
+      "bus": {
+        "object_count": 0,
+        "prediction_count": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": null,
+        "recall": null,
+        "ap50": null
+      },
+      "car": {
+        "object_count": 4,
+        "prediction_count": 4,
+        "true_positives": 4,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "ap50": 1.0
+      },
+      "motorcycle": {
+        "object_count": 0,
+        "prediction_count": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": null,
+        "recall": null,
+        "ap50": null
+      },
+      "person": {
+        "object_count": 24,
+        "prediction_count": 29,
+        "true_positives": 24,
+        "false_positives": 5,
+        "false_negatives": 0,
+        "precision": 0.8275862068965517,
+        "recall": 1.0,
+        "ap50": 0.9868949759697457
+      },
+      "truck": {
+        "object_count": 0,
+        "prediction_count": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": null,
+        "recall": null,
+        "ap50": null
+      }
+    },
+    "output_mapping_valid": true,
+    "output_errors": [],
+    "stage_status": "ok",
+    "event_classification_accuracy": null
+  },
+  "clef": {
+    "per_source": {
+      "SRC01": {
+        "expected_invoke_vlm": true,
+        "actual_invoke_vlm": true,
+        "correct": true,
+        "proposed_route": "human_review",
+        "proposed_correct": true,
+        "reviewed": true
+      },
+      "SRC02": {
+        "expected_invoke_vlm": true,
+        "actual_invoke_vlm": true,
+        "correct": true,
+        "proposed_route": "human_review",
+        "proposed_correct": true,
+        "reviewed": true
+      },
+      "SRC03": {
+        "expected_invoke_vlm": true,
+        "actual_invoke_vlm": true,
+        "correct": true,
+        "proposed_route": "human_review",
+        "proposed_correct": true,
+        "reviewed": true
+      },
+      "SRC04": {
+        "expected_invoke_vlm": true,
+        "actual_invoke_vlm": true,
+        "correct": true,
+        "proposed_route": "human_review",
+        "proposed_correct": true,
+        "reviewed": true
+      },
+      "SRC05": {
+        "expected_invoke_vlm": true,
+        "actual_invoke_vlm": true,
+        "correct": true,
+        "proposed_route": "human_review",
+        "proposed_correct": true,
+        "reviewed": true
+      }
+    },
+    "reviewed_source_count": 5,
+    "available_decision_count": 5,
+    "unavailable_decision_count": 0,
+    "accuracy_including_unavailable": 1.0,
+    "conditional_decision_accuracy": 1.0,
+    "false_negative_calls": 0,
+    "false_positive_calls": 0,
+    "missing_required_calls": 0,
+    "output_format_valid": true,
+    "output_errors": []
+  },
+  "vlm": {
+    "per_source": {
+      "SRC01": {
+        "expected_event_type": "fall_ground_posture",
+        "predicted_event_type": "fall_ground_posture",
+        "semantic_correct": true,
+        "executed": true,
+        "output_format_valid": true,
+        "input_reference_valid": true,
+        "evidence_content_accuracy": null,
+        "safety_policy_valid": true,
+        "status": "error",
+        "omission_cause": null,
+        "omitted_reviewed_source": false
+      },
+      "SRC02": {
+        "expected_event_type": "boundary_crossing",
+        "predicted_event_type": "normal",
+        "semantic_correct": false,
+        "executed": true,
+        "output_format_valid": true,
+        "input_reference_valid": true,
+        "evidence_content_accuracy": null,
+        "safety_policy_valid": false,
+        "status": "error",
+        "omission_cause": null,
+        "omitted_reviewed_source": false
+      },
+      "SRC03": {
+        "expected_event_type": "gate_entry_authorization_unknown",
+        "predicted_event_type": "normal",
+        "semantic_correct": false,
+        "executed": true,
+        "output_format_valid": true,
+        "input_reference_valid": true,
+        "evidence_content_accuracy": null,
+        "safety_policy_valid": false,
+        "status": "error",
+        "omission_cause": null,
+        "omitted_reviewed_source": false
+      },
+      "SRC04": {
+        "expected_event_type": "physical_conflict",
+        "predicted_event_type": "normal",
+        "semantic_correct": false,
+        "executed": true,
+        "output_format_valid": true,
+        "input_reference_valid": true,
+        "evidence_content_accuracy": null,
+        "safety_policy_valid": false,
+        "status": "error",
+        "omission_cause": null,
+        "omitted_reviewed_source": false
+      },
+      "SRC05": {
+        "expected_event_type": "physical_conflict",
+        "predicted_event_type": "normal",
+        "semantic_correct": false,
+        "executed": true,
+        "output_format_valid": true,
+        "input_reference_valid": true,
+        "evidence_content_accuracy": null,
+        "safety_policy_valid": false,
+        "status": "error",
+        "omission_cause": null,
+        "omitted_reviewed_source": false
+      }
+    },
+    "reviewed_source_count": 5,
+    "attempted_reviewed_source_count": 5,
+    "pipeline_event_accuracy_including_omissions": 0.2,
+    "conditional_attempted_event_accuracy": 0.2,
+    "omitted_reviewed_source_count": 0,
+    "output_format_valid": true,
+    "input_reference_valid": true,
+    "evidence_content_accuracy": null,
+    "output_errors": []
+  },
+  "pipeline": {
+    "all_stages_ok": false,
+    "event_accuracy": 0.2,
+    "stage_statuses": {
+      "yolo": "ok",
+      "clef": "ok",
+      "vlm": "error"
+    },
+    "fallback_recorded": false,
+    "semantic_evidence_accuracy": null
+  }
+}

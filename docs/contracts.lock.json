@@ -1,0 +1,19 @@
+{
+  "app/config.py": "151da276b35c067f3702e0dba352ad6b553c91349bdaa8e47e7a6d43e0ac80a6",
+  "app/models/base.py": "7d2f541e7f57e20054c1df276fb67436392dfde6aa8a60a134da0feedf7e233f",
+  "app/models/benchmark_assessment.py": "d1d6ca56219ee5d1107df2c6003e541e4e74cd8c3b8a564fb656b8e24ba5944f",
+  "app/models/benchmark_media.py": "6983dcde9e376234ae30e449939b5099ac80aee986da08b1cd1c85006e549e95",
+  "app/models/budget.py": "5c1078c1d9029eb228d0581edb9fd4c3316afe98f3a9611351f15e4136221c85",
+  "app/models/execution.py": "0a4d923849cef697e7d1c710d6e28384068d5ff283741a3518640922a4ef3010",
+  "app/models/media.py": "dd7a272d291cdbcd66ace5b5d0d64accfbe83485b78db9ef4b7aaccd54ab09fb",
+  "app/models/registry.py": "9d401635f6833535c35cc42efd95eead0402e12b678022688c89ca951ab67ccb",
+  "app/repositories/protocol.py": "d77f0c7c482b2ca569f7e227c3ee4846cd41debb6ac139585f261d194b115091",
+  "app/schemas/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/schemas/benchmark.py": "1c033d8f8aa0b6345eee4980bf907f0f8516dbeb0dfa1ae6086e7d3a7aa01684",
+  "app/schemas/incident.py": "84deeec532b16eb842dbe9051818c6adb0402a7d37a77bdf837e9b4c6b9ac604",
+  "app/schemas/model.py": "204bebc98f9fb46eb05a07da478f09bf8168d6c16969998b27c8f9935f6a061c",
+  "docs/api-contract.md": "25cf0031377ef90f3fe08c6a52b86d8614b2a16981f0dcd8b6658c78a189ad35",
+  "docs/dataset-handoff.md": "1843ff2951d82f336640cb43d6fa62fa0d62eb3632396381ca3772f9395dc790",
+  "docs/evaluation-contract.md": "8b6e5dd10cd899bae0c549a033dadb93a423e7c7319fec5b2d201a0b5c7af782",
+  "docs/model-contract.md": "73d0d1476ffd27c169623e2351f8dc3eb193f2b6a6a4c29ab4223ad4207e31e8"
+}

@@ -1,0 +1,9 @@
+model_engineer에게 general_vlm adapter 하나만 구현시켜줘.
+허용: app/models/adapters/general_vlm.py, 관련 helper와 tests/models/test_vlm*.py.
+실제 제공사/모델/SDK/credential을 확인하고 schema-constrained structured output을 사용해줘.
+Clef와 동일 sample/window/fixed sampling을 사용하고 modality 차이는 결과에 표시해줘.
+원본 파일명/정답/split/scenario를 요청에 넣지 마. frame bytes와 중립 reference만 사용해줘.
+free-form text를 application state로 직접 사용하지 말고 ModelAssessment로 검증해줘.
+MAIN이 registry/settings/dependency를 반영하고 실제 영상 또는 실제 API 검증 결과를 handoffs/vlm.md에 저장해줘.
+
+완료 보고: 변경 파일 / 실행 명령과 실제 결과 / 실제·mock·미구현 구분 / blocker / 다음 단계.
