@@ -4,7 +4,7 @@ from app.models.adapters.mock_vlm import MockGeneralVLMAdapter
 from app.models.adapters.unconfigured import UnconfiguredAdapter
 from app.models.media import MediaResolver
 
-ADAPTER_NAMES = ("local_cv", "clef_direct", "general_vlm", "mock_local_cv", "mock_clef", "mock_vlm")
+ADAPTER_NAMES = ("local_cv", "clef_direct", "general_vlm", "cascade_v1", "mock_local_cv", "mock_clef", "mock_vlm")
 def get_adapter(name: str, *, resolver: MediaResolver | None = None):
     mocks = {"mock_local_cv": MockLocalCVAdapter, "mock_clef": MockClefDirectAdapter, "mock_vlm": MockGeneralVLMAdapter}
     if name in mocks:
@@ -12,6 +12,9 @@ def get_adapter(name: str, *, resolver: MediaResolver | None = None):
     if name == "local_cv" and resolver is not None:
         from app.models.adapters.local_cv import LocalCVAdapter
         return LocalCVAdapter(resolver)
+    if name == "cascade_v1" and resolver is not None:
+        from app.models.adapters.cascade_v1 import CascadeV1Adapter
+        return CascadeV1Adapter(resolver)
     if name in ADAPTER_NAMES:
         return UnconfiguredAdapter(name)
     raise ValueError(f"unknown adapter: {name}")

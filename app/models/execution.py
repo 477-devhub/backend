@@ -36,7 +36,10 @@ async def execute(adapter: ModelAdapter, model_input: ModelInput, timeout_sec: f
             raise ValueError("wrong adapter identifier")
         if set(result.evidence_refs) - {e.frame_id for e in model_input.evidence}:
             raise ValueError("unknown evidence reference")
-        if result.risk_axes is not None and not result.evidence_refs:
+        if set(result.evidence_descriptions) - set(result.evidence_refs):
+            raise ValueError("description without cited evidence")
+        window_normal = result.routing is not None and result.routing.selected_stage == "p1" and bool(model_input.evidence)
+        if result.risk_axes is not None and not result.evidence_refs and not window_normal:
             raise ValueError("event has no evidence")
     except TimeoutError:
         code = "timeout"
@@ -47,5 +50,11 @@ async def execute(adapter: ModelAdapter, model_input: ModelInput, timeout_sec: f
     latency = (time.perf_counter() - started) * 1000
     if code:
         # Sanitized reason: never expose exception payloads, prompts or credentials.
-        return failure_assessment(adapter.name, model_input, code, latency)
+        failed = failure_assessment(adapter.name, model_input, code, latency)
+        from app.schemas.model import StageRecord
+        try:
+            trace = [StageRecord.model_validate(s) for s in getattr(adapter, "failure_trace", [])][:16]
+        except (ValidationError, ValueError, TypeError):
+            trace = []
+        return failed.model_copy(update={"metadata": failed.metadata.model_copy(update={"stage_trace": trace})})
     return result.model_copy(update={"metadata": result.metadata.model_copy(update={"latency_ms": latency})})

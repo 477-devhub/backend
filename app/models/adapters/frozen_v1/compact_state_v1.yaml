@@ -1,0 +1,53 @@
+# Compact Decision State v1 — deterministic serializer configuration.
+# Input: P0 Canonical CV State (cv-state-v1). Output: compact, model-agnostic observation summary reused by
+# P1 (Decisions API), P2 and P3. Written before any Decisions API call; frozen in freeze/p1_freeze.json.
+# Selection rules are generic observation-quality / salience scores: no item IDs, labels or event semantics.
+schema_version: compact-decision-state-v1
+source_state_version: cv-state-v1
+
+limits:
+  max_tracks_per_camera: 6
+  max_interactions_per_camera: 4
+  max_fragment_links_per_camera: 4
+
+track_selection:
+  # score = observed_frames * reliability_score * visible_fraction (null reliability -> 0); ties -> lower P0 track number
+  formula: observed_frames*reliability_score*visible_fraction
+  min_observed_frames: 2
+
+interaction_selection:
+  # only pairs whose two tracks are both included; salience = close_proximity_fraction * co_observed_frames * pair_reliability
+  # ties -> smaller minimum distance, then pair order
+  formula: close_proximity_fraction*co_observed_frames*reliability
+  min_co_observed_frames: 2
+
+rounding_digits: 3
+cross_camera_count_curve: true      # per-phase mean person count (base observation), 16 bins from P0
+
+# features whose reliability was shown to be limited in the P0 report: sent with an explicit reliability flag
+limited_reliability_features:
+  contact_proxy: heuristic visual proxy, not confirmed contact
+  rapid_limb_motion_score: wrist displacement between sparse samples; aliasing likely, saturates easily
+  arm_extension_score: 2D keypoint geometry proxy; not an action label
+  hip_based_downward_change: hip drop underestimates body lowering under steep/overhead views
+  person_count_similarity: unstable when one view is mostly empty
+  posture_transition_similarity: coarse normalized-phase comparison only
+  temporal_pattern_similarity: coarse normalized-phase comparison only
+  motion_peak_similarity: coarse normalized-phase comparison only
+
+# fields that must never appear in a compact state (P0 decisions, harness metadata, labels)
+forbidden_keys: [item_id, input_fingerprint, benchmark_input_fingerprint, frame_fingerprint_sha256, generator,
+                 event_type, is_incident, risk, confidence_of_event, attention_queue, same_incident,
+                 same_incident_similarity_score, incident_signature_similarity, incident_signature_vectors,
+                 priority_score, reason, run_id, model_id, source, label, annotation, ground_truth]
+
+# text placed before the compact JSON in the model input (generic; identical for every item)
+model_input_preamble: |
+  Generic CCTV safety decision support. The JSON below is a compact summary of automatic computer-vision (CV)
+  observations extracted from a small number of uniformly sampled frames per camera (no images are provided).
+  Times are seconds relative to each camera clip; cameras are not synchronized and person identity across cameras
+  is unknown. Track refs (T1, T2, ...) are per-camera generic labels. Distances and speeds are in body heights
+  (bh) or frame heights (fh), per second of actual sample time. Postures are automatic proxies (standing, crouched,
+  low_posture, horizontal, unknown). Values marked reliability "limited" are heuristic proxies and must be treated
+  as uncertain evidence. null means unknown or unavailable, not false. Scene semantics such as gates, walls,
+  restricted areas and authorization are not available to this CV system.

@@ -1,0 +1,15 @@
+# Preserve byte hashes for frozen contracts and imported model artifacts.
+app/models/adapters/frozen_v1/** -text whitespace=cr-at-eol
+app/config.py -text whitespace=cr-at-eol
+app/models/base.py -text whitespace=cr-at-eol
+app/models/execution.py -text whitespace=cr-at-eol
+app/models/media.py -text whitespace=cr-at-eol
+app/models/registry.py -text whitespace=cr-at-eol
+app/repositories/protocol.py -text whitespace=cr-at-eol
+app/schemas/__init__.py -text whitespace=cr-at-eol
+app/schemas/incident.py -text whitespace=cr-at-eol
+app/schemas/model.py -text whitespace=cr-at-eol
+docs/api-contract.md -text whitespace=cr-at-eol
+docs/dataset-handoff.md -text whitespace=cr-at-eol
+docs/evaluation-contract.md -text whitespace=cr-at-eol
+docs/model-contract.md -text whitespace=cr-at-eol

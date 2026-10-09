@@ -39,6 +39,30 @@ def test_incident_persists_risk_without_confidence_multiplication(model_input):
         (e.frame_id, e.timestamp_ms) for e in model_input.evidence]
 
 
+def test_cited_description_is_preserved_and_p1_suppression_has_no_frame_citations(model_input):
+    from app.schemas.model import RoutingAssessment
+    assessment = synthetic_assessment(model_input)
+    cited = model_input.evidence[0].frame_id
+    assessment = ModelAssessment.model_validate({**assessment.model_dump(),
+        "evidence_descriptions": {cited: "Person remains on the floor"}})
+    result = apply_assessment(MemoryStore(), model_input, assessment)
+    assert result.record.evidence[0].text == "Person remains on the floor"
+    normal = ModelAssessment(event_type="normal", event_confidence=.99,
+        risk_axes=RiskAxes(severity=.1, imminence=.1, exposure=.1, persistence=.1),
+        metadata=ModelMetadata(adapter="cascade", model="p1"),
+        routing=RoutingAssessment(mode="frozen_cascade_v1", selected_stage="p1",
+            p_incident=.001, frozen_guard_passed=True, backend_guard_passed=True,
+            evidence_scope="window_observations"))
+    suppressed_store = MemoryStore()
+    suppressed = apply_assessment(suppressed_store, model_input, normal)
+    assert suppressed.record["evidence_refs"] == []
+    assert suppressed.record["evidence_scope"] == "window_observations"
+    assert suppressed.record["routing"]["selected_stage"] == "p1"
+    assert suppressed_store.media_context[suppressed.record["id"]] == {
+        "clip_ref": model_input.clip_ref, "start_ms": model_input.window.start_ms,
+        "end_ms": model_input.window.end_ms}
+
+
 @pytest.mark.parametrize("axes,confidence,mock", [(None,.95,False), (.9,.5,False), (.0,.99,True)])
 def test_unknown_low_confidence_and_mock_stay_visible(model_input, axes, confidence, mock):
     store = MemoryStore()

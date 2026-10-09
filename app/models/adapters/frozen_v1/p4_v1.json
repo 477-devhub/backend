@@ -1,0 +1,62 @@
+{
+  "p4_version": "p4-v1",
+  "run_id": "p4_gpt61_sol_vision-v1",
+  "model_id": "p4_gpt61_sol_vision:gpt-6.1-sol@v1-responses-high-vision",
+  "pipeline_actual": "p4_gpt61_sol_vision",
+  "pipeline_schema_value": "vlm_only",
+  "provider": "openai",
+  "decision_model": "gpt-6.1-sol",
+  "endpoint": "POST /v1/responses",
+  "sdk_call": "client.responses.with_raw_response.create(model, input=[one user message: input_text + (input_text label, input_image) x 64], reasoning, text.format json_schema strict, max_output_tokens, store=false)",
+  "reasoning_effort": "high",
+  "service_tier": "default/standard (no service_tier parameter sent; returned value recorded)",
+  "tools": [],
+  "store": false,
+  "max_output_tokens": 32000,
+  "input_modality": "vision: 64 canonical RGB frames + generic text (prompt, frame labels F### | CAM_## | t=s.sssS); no CV state, no compact state",
+  "frame_protocol": "uniform_total64_v1 via benchmark_v1/scripts/load_model_input.py iter_model_frames(item_id); canonical order kept; frame refs F001..F064 in iteration order",
+  "image_transport": {
+    "format": "lossless_webp",
+    "pillow_save_kwargs": {"lossless": true, "quality": 50, "method": 2},
+    "parallel_encode_threads": 16,
+    "data_url": "data:image/webp;base64,<...> built in memory; no image files written; base64 payload never stored",
+    "roundtrip_check": "every frame decoded locally after encoding; SHA256(decoded RGB) must equal SHA256(source RGB) or the item fails before any API call",
+    "choice_note": "lossless effort chosen before any benchmark API call from local encode timing only (q50/m2: exact, ~16% smaller than q0/m0, ~1 s/frame single-thread)"
+  },
+  "image_detail": "high",
+  "api_limits_checked": {"max_payload_bytes_per_request": 536870912, "max_images_per_request": 1500, "context_window_tokens": 1050000,
+                         "source": "https://developers.openai.com/api/docs/guides/images-vision ('Up to 512 MB total payload per request', 'Up to 1,500 images per request'); gpt-6.1-sol model page (1,050,000 context)",
+                         "checked_at": "2026-10-08"},
+  "preflight_token_estimate_rule": "ESTIMATE ONLY (gpt-6.1-sol not listed in the vision guide): gpt-5.6-sol 'high' rule (fit 2048x2048 and 2,500 32px patches; tokens = ceil(patches*1.2)); provider usage is authoritative for cost",
+  "evidence": {"min_per_assessment": 1, "max_per_assessment": 6, "frame_ref_enum": "restricted per request (and per camera for attention/multi) to refs actually supplied", "timestamp": "deterministic lookup frame_ref -> (camera, relative timestamp)"},
+  "prompt_modality_adaptation": {
+    "note": "P1/P3 decision definitions are reused with CV-state-specific wording replaced by visual wording only (deterministic substitutions in src/visual_prompt_builder.py); categories, level labels/descriptions, risk anchors and thresholds unchanged",
+    "confound_disclosed": "the possible_scene_or_boundary_entry description drops 'boundary semantics are not known' (true for the CV state, not for frames) and names visible walls/gates/doorways generically, as the P4 base prompt also does"
+  },
+  "probability_source": "model_generated_estimate",
+  "requests_per_item": 1,
+  "timeouts_sec": {"connect": 10.0, "read_write": 900.0},
+  "max_retries": 2,
+  "retry_policy": "network/timeout errors, HTTP 429, HTTP 5xx only; exponential backoff 1s*2^n + U(0,0.25)s jitter; 4xx and schema failures never retried",
+  "failure_policy": {
+    "refusal": "recorded as FAILED (no result file): a schema-valid prediction requires >=1 visual evidence item and a refusal supplies none; nothing is fabricated",
+    "incomplete": "FAILED, no retry",
+    "schema_or_frame_ref_failure": "FAILED, no retry",
+    "transport": "network / 429 / 5xx after 2 retries -> FAILED",
+    "preflight_or_roundtrip_failure": "item not sent; FAILED; a new transport protocol would be P4-v2"
+  },
+  "adapter": {
+    "decision": "experiments/p1_decisions/src/decision_adapter.py frozen bytes (thresholds 0.5, confidence formula, priority 0.35/0.30/0.20/0.15, tie-break, human-review rule)",
+    "final": "experiments/common_adapter_v2 frozen (event_type consistency only)",
+    "evidence_text": "model-generated observable descriptions keyed by frame_ref; temporal_summary, uncertainties, reason model-generated (short); attention queue / cross-camera texts deterministic templates"
+  },
+  "pricing": {
+    "model": "gpt-6.1-sol", "service_tier": "standard",
+    "input_usd_per_1m_tokens": 2.0, "cached_input_usd_per_1m_tokens": 0.1, "cache_write_usd_per_1m_tokens": 2.5, "output_usd_per_1m_tokens": 10.0,
+    "reasoning_tokens_billing": "included in output_tokens", "image_tokens_billing": "included in provider input_tokens",
+    "long_context_threshold_tokens": 272000, "long_context_multipliers": {"input_and_cache": 2.0, "output": 1.5},
+    "regional_processing_premium_applied": false,
+    "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol (Standard: Input $2, Cached input $0.1, Cache writes $2.5, Output $10 per 1M)",
+    "pricing_checked_at": "2026-10-08", "pricing_unit": "USD per 1M tokens"
+  }
+}
