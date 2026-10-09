@@ -1,4 +1,12 @@
-# 477 AI Role 1 — Validated Agent Kit v2
+# 477 Backend
+
+## 2026-10-09 벤치마크 정리
+
+백엔드 API·데모·모델 입력 연결·로컬 CV 전처리를 유지하고, 별도 벤치마크 기능을 제거했습니다.
+`new_477_piprline`, `477_modeling_benchmark_v1`, `final_candidates_v1`의 영상·가중치·실험 결과와
+전용 어댑터·평가 코드·실행 스크립트·테스트·`benchmark` 선택 의존성을 삭제했습니다.
+일반 입력 검증 및 평가 유틸리티는 유지합니다. 아래 과거 검증 기록의 테스트 수는 당시 기준입니다.
+Git 이력은 유지되므로 `.git`에 있는 과거 대용량 파일은 이번 작업으로 줄어들지 않습니다.
 
 한국어 실행 안내: [시작하기.md](시작하기.md)
 구조·완성도 평가: [reports/assessment-ko.md](reports/assessment-ko.md)
